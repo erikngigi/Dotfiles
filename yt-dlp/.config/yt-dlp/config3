@@ -1,0 +1,13 @@
+# YouTube-dl configuration settings
+
+--ignore-errors
+--no-playlist
+--limit-rate 900K
+
+#Video Save Location
+
+-o "/home/eric/YouTube/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
+
+#Video Preferences
+
+-f 140

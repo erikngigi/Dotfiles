@@ -1,0 +1,7 @@
+configuration {
+  font: "JetBrainsMono Nerd Font 10.5";
+  terminal: "alacritty";
+  hide-scrollbar: true;
+  }
+//@theme "/usr/share/rofi/themes/android_notification.rasi"
+@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"

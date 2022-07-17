@@ -1,0 +1,8 @@
+# Screen Layout Script
+/home/eric/.screenlayout/screenlayout2.sh &
+
+# Dunstify 
+killall -q dunst; dunst &
+
+# Network-Manager Applet
+nm-applet --indicator &

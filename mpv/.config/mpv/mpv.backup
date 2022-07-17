@@ -1,0 +1,42 @@
+## -- Profiles --##
+save-position-on-quit=yes
+
+## -- Video Settings --##
+#autosync=1
+cache=yes
+#hdr-compute-peak=no
+hidpi-window-scale=no
+#hr-seek-framedrop=no
+hwdec-codecs=h264
+hwdec=vdpau-copy
+#gpu-dumb-mode=no
+#no-correct-pts
+stop-screensaver=no
+window-scale=0.705
+
+## --OSD-- ##
+osd-font-size=22.5
+osd-font=Jetbrains Mono
+
+## --Subtitles --##
+sid=no
+sub-scale=0.45
+
+## --Screenshots --##
+screenshot-directory=/home/eric/Pictures/MPV/
+screenshot-format=jpg
+
+##-- Audio --##
+audio-device=alsa
+alsa-resample=yes
+volume=50
+volume-max=150
+
+#Gamma correction for a PC screen (sRGB)
+#Not needed for a TV screen (Rec.709/Rec.2020)
+#Sets the output to sRGB with approximately 2.2 power law gamma
+#target-trc=srgb
+#gamma-factor=1.1
+
+##-- Youtube-DL --##
+ytdl-format=137+140/22+140/136+140/135+140/133+140/160+140

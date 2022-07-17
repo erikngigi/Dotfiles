@@ -1,0 +1,52 @@
+#!/bin/sh
+# HISTFILE="$XDG_DATA_HOME"/zsh/history
+HISTSIZE=1000000
+SAVEHIST=1000000
+export PATH="$HOME/.local/bin":$PATH
+export MANPAGER='nvim +Man!'
+export MANWIDTH=999
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.local/share/go/bin:$PATH
+export PATH=$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH
+export PATH=/usr/bin/python2:$PATH
+export PATH=/usr/bin/python3:$PATH
+export PATH=/usr/bin/luarocks:$PATH
+export PATH=/usr/bin/gem:$PATH
+export GOPATH=$HOME/.local/share/go
+export PATH=$HOME/.fnm:$PATH
+export PATH=$HOME/.rvm/bin:$PATH
+export PATH=$HOME/.nvm/versions/node/v18.5.0/bin:$PATH
+export NVM_DIR=$HOME/.nvm
+[[ -s "NVM_DIR/nvm.sh" ]] && source "NVM_DIR/nvm.sh" --no-use
+export PATH=$HOME/.scripts/brightness:$PATH
+export PATH=$HOME/.scripts/clearcache:$PATH
+export PATH=$HOME/.scripts/pacman:$PATH
+export PATH=$HOME/.scripts/pass-gen:$PATH
+export PATH=$HOME/.scripts/performance:$PATH
+export PATH=$HOME/.scripts/public-ip-address:$PATH
+export PATH=$HOME/.scripts/set-brightness:$PATH
+export PATH=$HOME/.zshrc:$PATH
+export PATH="$PATH:./node_modules/.bin"
+export NNN_PLUG='r:renamer'
+export NNN_COLORS='#27272727'
+export NNN_BMS="a:$HOME/Aria2;d:$HOME/Downloads;g:$HOME/GitHub;l:$HOME/Library;m:$HOME/Movies;o:$HOME/Torrents;p:$HOME/Podcast;t:$HOME/Tv-Shows;v:$HOME/Videos;w:$HOME/Wallpapers;y:$HOME/YouTube"
+export NNN_TRASH=1
+export NVM_LAZY=1
+eval "$(fnm env)"
+eval "$(zoxide init zsh)"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$("$HOME/.miniconda/bin/conda" 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "$HOME/.miniconda/etc/profile.d/conda.sh" ]; then
+        . "$HOME/.miniconda/etc/profile.d/conda.sh"
+    else
+        export PATH="$HOME/.miniconda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
