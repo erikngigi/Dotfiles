@@ -15,7 +15,7 @@ https://github.com/ErikNgigi/Dotfiles.git
 Then run the ```stow``` to symlink everything or just select folders
 
 ``````bash
-stow */  ---This will stow everything in the directory---
+stow */  ---This will stow everything within the directory---
 ``````
 
 ``````bash
