@@ -1,7 +1,4 @@
 #!/bin/sh
-alias j='z'
-alias f='zi'
-alias g='lazygit'
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
 alias nvimrc='nvim ~/.config/nvim/'
 
@@ -10,10 +7,6 @@ alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacma
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
 alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
-
-# Remarkable
-alias remarkable_ssh='ssh root@10.11.99.1'
-alias restream='restream -p'
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -35,9 +28,18 @@ alias rm='rm -i'
 alias cp='advcp -gu'
 alias mv='advmv -gu'
 
+#node-versions
+alias ns='~/.scripts/node/node-switch.sh'
+
+#xrandr brightness
+alias br='xrandr --output VGA-0 --brightness '
+
 # nnn
 alias n='nnn -dr'
 alias N='doas nnn -drx'
+
+#brightness
+alias set-br='doas set-brightness.sh'
 
 # neovim
 alias nv='nvim'
@@ -49,16 +51,9 @@ alias feh-display='feh -d -. Wallpapers'
 # git
 alias gcl='git clone'
 
-# oracle
-alias sqlplus="rlwrap -pBlue -i -b '()=\!<>&+-*|:;,' -f ~/.sqlplus.wordlist sqlplus"
-
 # Vanaheim HDD
-alias vanaheim='doas mount -o noatime,space_cache=v2 /dev/sdb1 /mnt/Vanaheim'
+alias vanaheim='doas mount /dev/sdb1 /mnt/Vanaheim'
 alias uvanaheim='doas umount /dev/sdb1 /mnt/Vanaheim'
-
-# Nidavellir HDD
-alias nidavellir='doas mount -o noatime,barrier=0 /dev/sdb1 /mnt/Nidavellir'
-alias unidavellir='doas umount /dev/sdb1 /mnt/Nidavellir'
 
 # Youtube
 alias yt='yt-dlp --config-location /home/eric/.config/yt-dlp/config'
@@ -99,20 +94,8 @@ alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate ar
 # systemd
 alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 
-alias mach_java_mode="export SDKMAN_DIR="$HOME/.sdkman" && [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh""
-
 alias m="git checkout master"
 alias s="git checkout stable"
 
-alias dragon-ball-5="mpv --aid=2 --sid=2 Tv-Shows/Dragon\ Ball\ Super/Season\ 5"
 alias dr-stone="mpv --aid=3 --sid=4 Tv-Shows/Dr\ Stone"
-
-case "$(uname -s)" in
-
-CYGWIN* | MINGW32* | MSYS* | MINGW*)
-	# echo 'MS Windows'
-	;;
-*)
-	# echo 'Other OS'
-	;;
-esac
+alias berserk="mpv --aid=2 --sid=2 Tv-Shows/Berserk"

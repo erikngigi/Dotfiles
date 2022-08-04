@@ -1,0 +1,135 @@
+2022-07-28 13:49:01.835177 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-07-28 13:49:02.542143 [NOTICE] [HttpResponse.cc:168] CUID#7 - Redirecting to https://www71.ff-01.com/token=6vhU5lujAE6jqcBzWqbkpQ/1659018912/105.163.0.0/147/c/a3/9ff1da5b994b6ad5d3046df798e61a3c-1080p.mp4
+2022-07-28 13:49:03.947805 [NOTICE] [HttpResponse.cc:168] CUID#8 - Redirecting to https://www71.ff-01.com/token=6vhU5lujAE6jqcBzWqbkpQ/1659018912/105.163.0.0/147/c/a3/9ff1da5b994b6ad5d3046df798e61a3c-1080p.mp4
+2022-07-28 13:49:04.068856 [NOTICE] [HttpResponse.cc:168] CUID#10 - Redirecting to https://www71.ff-01.com/token=6vhU5lujAE6jqcBzWqbkpQ/1659018912/105.163.0.0/147/c/a3/9ff1da5b994b6ad5d3046df798e61a3c-1080p.mp4
+2022-07-28 13:49:04.085747 [NOTICE] [HttpResponse.cc:168] CUID#9 - Redirecting to https://www71.ff-01.com/token=6vhU5lujAE6jqcBzWqbkpQ/1659018912/105.163.0.0/147/c/a3/9ff1da5b994b6ad5d3046df798e61a3c-1080p.mp4
+2022-07-28 13:49:05.096576 [NOTICE] [DownloadEngine.cc:255] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.
+2022-07-28 13:49:05.150826 [NOTICE] [RequestGroupMan.cc:424] Download GID#c104ac38915641e0 not complete: /home/eric/Aria2/9ff1da5b994b6ad5d3046df798e61a3c-1080p.mp4
+2022-07-28 13:49:14.325102 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-07-28 13:49:14.992397 [NOTICE] [HttpResponse.cc:168] CUID#7 - Redirecting to https://www71.ff-01.com/token=6vhU5lujAE6jqcBzWqbkpQ/1659018912/105.163.0.0/147/c/a3/9ff1da5b994b6ad5d3046df798e61a3c-1080p.mp4
+2022-07-28 13:49:16.745819 [NOTICE] [HttpResponse.cc:168] CUID#9 - Redirecting to https://www71.ff-01.com/token=6vhU5lujAE6jqcBzWqbkpQ/1659018912/105.163.0.0/147/c/a3/9ff1da5b994b6ad5d3046df798e61a3c-1080p.mp4
+2022-07-28 13:49:16.863371 [NOTICE] [HttpResponse.cc:168] CUID#11 - Redirecting to https://www71.ff-01.com/token=6vhU5lujAE6jqcBzWqbkpQ/1659018912/105.163.0.0/147/c/a3/9ff1da5b994b6ad5d3046df798e61a3c-1080p.mp4
+2022-07-28 13:49:16.870531 [NOTICE] [HttpResponse.cc:168] CUID#10 - Redirecting to https://www71.ff-01.com/token=6vhU5lujAE6jqcBzWqbkpQ/1659018912/105.163.0.0/147/c/a3/9ff1da5b994b6ad5d3046df798e61a3c-1080p.mp4
+2022-07-28 13:53:34.384554 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/9ff1da5b994b6ad5d3046df798e61a3c-1080p.mp4
+2022-07-31 17:44:43.435206 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-07-31 17:45:06.168040 [ERROR] [AbstractCommand.cc:349] CUID#8 - Download aborted. URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-07-31 17:45:06.395808 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-07-31 17:45:13.399761 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-07-31 17:45:14.783365 [NOTICE] [DownloadEngine.cc:255] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.
+2022-07-31 17:45:14.842438 [NOTICE] [RequestGroupMan.cc:424] Download GID#d554c5d68b3753a2 not complete: /home/eric/Aria2/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+2022-07-31 17:46:57.868067 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-07-31 17:47:00.058479 [ERROR] [AbstractCommand.cc:349] CUID#8 - Download aborted. URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-07-31 17:47:00.296085 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-07-31 17:47:00.833484 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-07-31 17:48:11.306442 [NOTICE] [DownloadEngine.cc:255] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.
+2022-07-31 17:48:11.315824 [NOTICE] [RequestGroupMan.cc:424] Download GID#762b8f3a33c5e51c not complete: /home/eric/Aria2/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+2022-07-31 17:48:55.671496 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-07-31 17:48:58.724708 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-07-31 17:48:58.914367 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-07-31 17:48:58.988077 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-07-31 17:50:59.178753 [NOTICE] [DownloadEngine.cc:255] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.
+2022-07-31 17:50:59.202438 [NOTICE] [RequestGroupMan.cc:424] Download GID#064f1bcaf6da1d05 not complete: /home/eric/Aria2/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+2022-07-31 17:51:16.190112 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-07-31 17:51:17.793881 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-07-31 17:51:17.805314 [ERROR] [AbstractCommand.cc:349] CUID#8 - Download aborted. URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-07-31 17:51:17.863667 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www69.uptobox.com/dl/E_cFaG5MxGDpgPbCC9G6bWigFn_DMLlP4CEMX2MxuyMNxvOHInEtlLoAz7TioFct2q6d9RsQsWEuHDOQnX8Cbv2DJSqvNs_fGYUrPlejuCgiyhWW13fbGoGeU9zpFluMdjHmJkkepFXbFgKScU6Maw/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-07-31 18:28:50.879442 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/Casino.1995.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+2022-08-01 10:52:02.481979 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-08-01 11:01:50.492738 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/archlinux-2022.07.01-x86_64.iso
+2022-08-02 19:05:37.629775 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-08-02 19:05:38.314676 [NOTICE] [HttpResponse.cc:168] CUID#7 - Redirecting to https://www1745.ff-04.com/token=-OIZXabshueK1Hsu0RnUmg/1659470782/105.163.0.0/108/8/06/7caf56189326f381ca5b7746383b2068-720p.mp4
+2022-08-02 19:05:41.584307 [NOTICE] [HttpResponse.cc:168] CUID#8 - Redirecting to https://www1745.ff-04.com/token=-OIZXabshueK1Hsu0RnUmg/1659470782/105.163.0.0/108/8/06/7caf56189326f381ca5b7746383b2068-720p.mp4
+2022-08-02 19:05:41.830600 [NOTICE] [HttpResponse.cc:168] CUID#10 - Redirecting to https://www1745.ff-04.com/token=-OIZXabshueK1Hsu0RnUmg/1659470782/105.163.0.0/108/8/06/7caf56189326f381ca5b7746383b2068-720p.mp4
+2022-08-02 19:05:41.862051 [NOTICE] [HttpResponse.cc:168] CUID#9 - Redirecting to https://www1745.ff-04.com/token=-OIZXabshueK1Hsu0RnUmg/1659470782/105.163.0.0/108/8/06/7caf56189326f381ca5b7746383b2068-720p.mp4
+2022-08-02 19:07:48.994603 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/7caf56189326f381ca5b7746383b2068-720p.mp4
+2022-08-03 20:56:46.428667 [NOTICE] [Context.cc:310] Downloading 13 item(s)
+2022-08-03 20:56:47.147411 [NOTICE] [HttpResponse.cc:168] CUID#7 - Redirecting to https://www1071.ff-03.com/token=iQsiCX_KOsF3KI68qBK5hw/1659563314/105.163.0.0/115/e/c4/f3a9407e0f6b67198156d6f09e024c4e-1080p.mp4
+2022-08-03 20:56:49.343138 [NOTICE] [HttpResponse.cc:168] CUID#8 - Redirecting to https://www1071.ff-03.com/token=iQsiCX_KOsF3KI68qBK5hw/1659563314/105.163.0.0/115/e/c4/f3a9407e0f6b67198156d6f09e024c4e-1080p.mp4
+2022-08-03 20:56:49.463530 [NOTICE] [HttpResponse.cc:168] CUID#9 - Redirecting to https://www1071.ff-03.com/token=iQsiCX_KOsF3KI68qBK5hw/1659563314/105.163.0.0/115/e/c4/f3a9407e0f6b67198156d6f09e024c4e-1080p.mp4
+2022-08-03 20:56:49.492615 [NOTICE] [HttpResponse.cc:168] CUID#10 - Redirecting to https://www1071.ff-03.com/token=iQsiCX_KOsF3KI68qBK5hw/1659563314/105.163.0.0/115/e/c4/f3a9407e0f6b67198156d6f09e024c4e-1080p.mp4
+2022-08-03 21:01:45.070117 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/f3a9407e0f6b67198156d6f09e024c4e-1080p.mp4
+2022-08-03 21:01:45.659505 [NOTICE] [HttpResponse.cc:168] CUID#11 - Redirecting to https://www2143.ff-05.com/token=Ol65L3ihd1QdclF10gtzQA/1659563383/105.163.0.0/139/2/c6/9301b87da4ce8c9302ce071294b17c62-1080p.mp4
+2022-08-03 21:01:48.271795 [NOTICE] [HttpResponse.cc:168] CUID#12 - Redirecting to https://www2143.ff-05.com/token=Ol65L3ihd1QdclF10gtzQA/1659563383/105.163.0.0/139/2/c6/9301b87da4ce8c9302ce071294b17c62-1080p.mp4
+2022-08-03 21:01:48.393033 [NOTICE] [HttpResponse.cc:168] CUID#13 - Redirecting to https://www2143.ff-05.com/token=Ol65L3ihd1QdclF10gtzQA/1659563383/105.163.0.0/139/2/c6/9301b87da4ce8c9302ce071294b17c62-1080p.mp4
+2022-08-03 21:01:48.442392 [NOTICE] [HttpResponse.cc:168] CUID#14 - Redirecting to https://www2143.ff-05.com/token=Ol65L3ihd1QdclF10gtzQA/1659563383/105.163.0.0/139/2/c6/9301b87da4ce8c9302ce071294b17c62-1080p.mp4
+2022-08-03 21:05:12.045932 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/9301b87da4ce8c9302ce071294b17c62-1080p.mp4
+2022-08-03 21:05:12.640913 [NOTICE] [HttpResponse.cc:168] CUID#15 - Redirecting to https://www463.ff-01.com/token=IBLGliDZFVRMQ349dcdmlw/1659563362/105.163.0.0/152/4/24/b98713e423a9d95d523dfd5d6388c244-1080p.mp4
+2022-08-03 21:05:15.120233 [NOTICE] [HttpResponse.cc:168] CUID#16 - Redirecting to https://www463.ff-01.com/token=IBLGliDZFVRMQ349dcdmlw/1659563362/105.163.0.0/152/4/24/b98713e423a9d95d523dfd5d6388c244-1080p.mp4
+2022-08-03 21:05:15.244081 [NOTICE] [HttpResponse.cc:168] CUID#17 - Redirecting to https://www463.ff-01.com/token=IBLGliDZFVRMQ349dcdmlw/1659563362/105.163.0.0/152/4/24/b98713e423a9d95d523dfd5d6388c244-1080p.mp4
+2022-08-03 21:05:15.456230 [NOTICE] [HttpResponse.cc:168] CUID#18 - Redirecting to https://www463.ff-01.com/token=IBLGliDZFVRMQ349dcdmlw/1659563362/105.163.0.0/152/4/24/b98713e423a9d95d523dfd5d6388c244-1080p.mp4
+2022-08-03 21:10:12.977192 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/b98713e423a9d95d523dfd5d6388c244-1080p.mp4
+2022-08-03 21:10:13.596942 [NOTICE] [HttpResponse.cc:168] CUID#19 - Redirecting to https://www1670.ff-04.com/token=gGVVGYyOm7wHqBzkfqsUMg/1659563364/105.163.0.0/147/2/88/1fdc9b99573fe085cb798ab71200f882-1080p.mp4
+2022-08-03 21:10:15.729892 [NOTICE] [HttpResponse.cc:168] CUID#20 - Redirecting to https://www1670.ff-04.com/token=gGVVGYyOm7wHqBzkfqsUMg/1659563364/105.163.0.0/147/2/88/1fdc9b99573fe085cb798ab71200f882-1080p.mp4
+2022-08-03 21:10:15.861563 [NOTICE] [HttpResponse.cc:168] CUID#21 - Redirecting to https://www1670.ff-04.com/token=gGVVGYyOm7wHqBzkfqsUMg/1659563364/105.163.0.0/147/2/88/1fdc9b99573fe085cb798ab71200f882-1080p.mp4
+2022-08-03 21:10:15.866120 [NOTICE] [HttpResponse.cc:168] CUID#22 - Redirecting to https://www1670.ff-04.com/token=gGVVGYyOm7wHqBzkfqsUMg/1659563364/105.163.0.0/147/2/88/1fdc9b99573fe085cb798ab71200f882-1080p.mp4
+2022-08-03 21:13:47.760881 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/1fdc9b99573fe085cb798ab71200f882-1080p.mp4
+2022-08-03 21:13:48.359782 [NOTICE] [HttpResponse.cc:168] CUID#23 - Redirecting to https://www805.ff-02.com/token=0wnYCn0fiHPWnkdoX01LTw/1659563418/105.163.0.0/159/8/75/416e73ff396d7ef4aec0f84041b2d758-1080p.mp4
+2022-08-03 21:13:49.858383 [NOTICE] [HttpResponse.cc:168] CUID#24 - Redirecting to https://www805.ff-02.com/token=0wnYCn0fiHPWnkdoX01LTw/1659563418/105.163.0.0/159/8/75/416e73ff396d7ef4aec0f84041b2d758-1080p.mp4
+2022-08-03 21:13:49.992527 [NOTICE] [HttpResponse.cc:168] CUID#25 - Redirecting to https://www805.ff-02.com/token=0wnYCn0fiHPWnkdoX01LTw/1659563418/105.163.0.0/159/8/75/416e73ff396d7ef4aec0f84041b2d758-1080p.mp4
+2022-08-03 21:13:50.289639 [NOTICE] [HttpResponse.cc:168] CUID#26 - Redirecting to https://www805.ff-02.com/token=0wnYCn0fiHPWnkdoX01LTw/1659563418/105.163.0.0/159/8/75/416e73ff396d7ef4aec0f84041b2d758-1080p.mp4
+2022-08-03 21:16:41.411949 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/416e73ff396d7ef4aec0f84041b2d758-1080p.mp4
+2022-08-03 21:16:42.033152 [NOTICE] [HttpResponse.cc:168] CUID#27 - Redirecting to https://www1416.ff-03.com/token=MGV_Rw7AdHCpm9Zw-BYw6g/1659563420/105.163.0.0/89/6/6d/50a69287e9bda0316bccec50dce906d6-1080p.mp4
+2022-08-03 21:16:44.089398 [NOTICE] [HttpResponse.cc:168] CUID#28 - Redirecting to https://www1416.ff-03.com/token=MGV_Rw7AdHCpm9Zw-BYw6g/1659563420/105.163.0.0/89/6/6d/50a69287e9bda0316bccec50dce906d6-1080p.mp4
+2022-08-03 21:16:44.242785 [NOTICE] [HttpResponse.cc:168] CUID#29 - Redirecting to https://www1416.ff-03.com/token=MGV_Rw7AdHCpm9Zw-BYw6g/1659563420/105.163.0.0/89/6/6d/50a69287e9bda0316bccec50dce906d6-1080p.mp4
+2022-08-03 21:16:44.431449 [NOTICE] [HttpResponse.cc:168] CUID#30 - Redirecting to https://www1416.ff-03.com/token=MGV_Rw7AdHCpm9Zw-BYw6g/1659563420/105.163.0.0/89/6/6d/50a69287e9bda0316bccec50dce906d6-1080p.mp4
+2022-08-03 21:22:36.976327 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/50a69287e9bda0316bccec50dce906d6-1080p.mp4
+2022-08-03 21:22:37.580562 [NOTICE] [HttpResponse.cc:168] CUID#31 - Redirecting to https://www1490.ff-03.com/token=zh-blSDud-rcEY03hwVn1Q/1659563422/105.163.0.0/196/5/e9/3e25c2446affca396784ab905372ae95-1080p.mp4
+2022-08-03 21:22:39.930377 [NOTICE] [HttpResponse.cc:168] CUID#32 - Redirecting to https://www1490.ff-03.com/token=zh-blSDud-rcEY03hwVn1Q/1659563422/105.163.0.0/196/5/e9/3e25c2446affca396784ab905372ae95-1080p.mp4
+2022-08-03 21:22:40.049098 [NOTICE] [HttpResponse.cc:168] CUID#33 - Redirecting to https://www1490.ff-03.com/token=zh-blSDud-rcEY03hwVn1Q/1659563422/105.163.0.0/196/5/e9/3e25c2446affca396784ab905372ae95-1080p.mp4
+2022-08-03 21:22:40.232421 [NOTICE] [HttpResponse.cc:168] CUID#34 - Redirecting to https://www1490.ff-03.com/token=zh-blSDud-rcEY03hwVn1Q/1659563422/105.163.0.0/196/5/e9/3e25c2446affca396784ab905372ae95-1080p.mp4
+2022-08-03 21:26:09.991345 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/3e25c2446affca396784ab905372ae95-1080p.mp4
+2022-08-03 21:26:10.592050 [NOTICE] [HttpResponse.cc:168] CUID#35 - Redirecting to https://www342.ff-01.com/token=rwkr1B2nbUjL14-DhiHBwQ/1659563317/105.163.0.0/196/4/d2/9fda5e3553b670bf31e7eb95c0628d24-1080p.mp4
+2022-08-03 21:26:12.178775 [NOTICE] [HttpResponse.cc:168] CUID#36 - Redirecting to https://www342.ff-01.com/token=rwkr1B2nbUjL14-DhiHBwQ/1659563317/105.163.0.0/196/4/d2/9fda5e3553b670bf31e7eb95c0628d24-1080p.mp4
+2022-08-03 21:26:12.307917 [NOTICE] [HttpResponse.cc:168] CUID#38 - Redirecting to https://www342.ff-01.com/token=rwkr1B2nbUjL14-DhiHBwQ/1659563317/105.163.0.0/196/4/d2/9fda5e3553b670bf31e7eb95c0628d24-1080p.mp4
+2022-08-03 21:26:12.317206 [NOTICE] [HttpResponse.cc:168] CUID#37 - Redirecting to https://www342.ff-01.com/token=rwkr1B2nbUjL14-DhiHBwQ/1659563317/105.163.0.0/196/4/d2/9fda5e3553b670bf31e7eb95c0628d24-1080p.mp4
+2022-08-03 21:30:59.271246 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/9fda5e3553b670bf31e7eb95c0628d24-1080p.mp4
+2022-08-03 21:30:59.903865 [NOTICE] [HttpResponse.cc:168] CUID#39 - Redirecting to https://www2255.ff-05.com/token=fwj6YKIAicqIUnFx1FtAhg/1659563341/105.163.0.0/193/a/13/d7b2348ecb300270eaa5330a04b5413a-1080p.mp4
+2022-08-03 21:31:02.026370 [NOTICE] [HttpResponse.cc:168] CUID#40 - Redirecting to https://www2255.ff-05.com/token=fwj6YKIAicqIUnFx1FtAhg/1659563341/105.163.0.0/193/a/13/d7b2348ecb300270eaa5330a04b5413a-1080p.mp4
+2022-08-03 21:31:02.136761 [NOTICE] [HttpResponse.cc:168] CUID#42 - Redirecting to https://www2255.ff-05.com/token=fwj6YKIAicqIUnFx1FtAhg/1659563341/105.163.0.0/193/a/13/d7b2348ecb300270eaa5330a04b5413a-1080p.mp4
+2022-08-03 21:31:02.346051 [NOTICE] [HttpResponse.cc:168] CUID#41 - Redirecting to https://www2255.ff-05.com/token=fwj6YKIAicqIUnFx1FtAhg/1659563341/105.163.0.0/193/a/13/d7b2348ecb300270eaa5330a04b5413a-1080p.mp4
+2022-08-03 21:34:26.931286 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/d7b2348ecb300270eaa5330a04b5413a-1080p.mp4
+2022-08-03 21:34:27.546263 [NOTICE] [HttpResponse.cc:168] CUID#43 - Redirecting to https://www599.ff-02.com/token=_dhUAftfiWgZFStoAdfbHw/1659563680/105.163.0.0/193/6/f4/ed90e1c8fe220c49a7db75f702081f46-1080p.mp4
+2022-08-03 21:34:29.090072 [NOTICE] [HttpResponse.cc:168] CUID#44 - Redirecting to https://www2193.ff-05.com/token=EDsCi2lBZArOxhkeDbLp7A/1659563680/105.163.0.0/193/6/f4/ed90e1c8fe220c49a7db75f702081f46-1080p.mp4
+2022-08-03 21:34:29.206912 [NOTICE] [HttpResponse.cc:168] CUID#45 - Redirecting to https://www2193.ff-05.com/token=EDsCi2lBZArOxhkeDbLp7A/1659563680/105.163.0.0/193/6/f4/ed90e1c8fe220c49a7db75f702081f46-1080p.mp4
+2022-08-03 21:34:29.218840 [NOTICE] [HttpResponse.cc:168] CUID#46 - Redirecting to https://www2193.ff-05.com/token=EDsCi2lBZArOxhkeDbLp7A/1659563680/105.163.0.0/193/6/f4/ed90e1c8fe220c49a7db75f702081f46-1080p.mp4
+2022-08-03 21:37:40.980953 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/ed90e1c8fe220c49a7db75f702081f46-1080p.mp4
+2022-08-03 21:37:41.613555 [NOTICE] [HttpResponse.cc:168] CUID#47 - Redirecting to https://www211.ff-01.com/token=1gV1Eswv-LlAvnrF2qRBww/1659563786/105.163.0.0/195/8/43/1b01d769eb70882cccbb258275d93438-1080p.mp4
+2022-08-03 21:37:43.576839 [NOTICE] [HttpResponse.cc:168] CUID#48 - Redirecting to https://www211.ff-01.com/token=1gV1Eswv-LlAvnrF2qRBww/1659563786/105.163.0.0/195/8/43/1b01d769eb70882cccbb258275d93438-1080p.mp4
+2022-08-03 21:37:43.693083 [NOTICE] [HttpResponse.cc:168] CUID#49 - Redirecting to https://www211.ff-01.com/token=1gV1Eswv-LlAvnrF2qRBww/1659563786/105.163.0.0/195/8/43/1b01d769eb70882cccbb258275d93438-1080p.mp4
+2022-08-03 21:37:43.916706 [NOTICE] [HttpResponse.cc:168] CUID#50 - Redirecting to https://www211.ff-01.com/token=1gV1Eswv-LlAvnrF2qRBww/1659563786/105.163.0.0/195/8/43/1b01d769eb70882cccbb258275d93438-1080p.mp4
+2022-08-03 21:41:18.840338 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/1b01d769eb70882cccbb258275d93438-1080p.mp4
+2022-08-03 21:41:19.441472 [NOTICE] [HttpResponse.cc:168] CUID#51 - Redirecting to https://www320.ff-01.com/token=qmV8tt3vhFVyEHh7VeNmTA/1659563689/105.163.0.0/198/4/d0/eb513930e66097049e5ce331bc725d04-1080p.mp4
+2022-08-03 21:41:21.055890 [NOTICE] [HttpResponse.cc:168] CUID#52 - Redirecting to https://www320.ff-01.com/token=qmV8tt3vhFVyEHh7VeNmTA/1659563689/105.163.0.0/198/4/d0/eb513930e66097049e5ce331bc725d04-1080p.mp4
+2022-08-03 21:41:21.178672 [NOTICE] [HttpResponse.cc:168] CUID#54 - Redirecting to https://www320.ff-01.com/token=qmV8tt3vhFVyEHh7VeNmTA/1659563689/105.163.0.0/198/4/d0/eb513930e66097049e5ce331bc725d04-1080p.mp4
+2022-08-03 21:41:21.212668 [NOTICE] [HttpResponse.cc:168] CUID#53 - Redirecting to https://www320.ff-01.com/token=qmV8tt3vhFVyEHh7VeNmTA/1659563689/105.163.0.0/198/4/d0/eb513930e66097049e5ce331bc725d04-1080p.mp4
+2022-08-03 21:47:53.017069 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/eb513930e66097049e5ce331bc725d04-1080p.mp4
+2022-08-03 21:47:53.646948 [NOTICE] [HttpResponse.cc:168] CUID#55 - Redirecting to https://www700.ff-02.com/token=ONrq95Y_937N4SnOijTcJA/1659563692/105.163.0.0/201/f/4d/5204b8c6ec38bd02396a1252c09ac4df-1080p.mp4
+2022-08-03 21:47:55.383583 [NOTICE] [HttpResponse.cc:168] CUID#56 - Redirecting to https://www700.ff-02.com/token=ONrq95Y_937N4SnOijTcJA/1659563692/105.163.0.0/201/f/4d/5204b8c6ec38bd02396a1252c09ac4df-1080p.mp4
+2022-08-03 21:47:55.522850 [NOTICE] [HttpResponse.cc:168] CUID#58 - Redirecting to https://www700.ff-02.com/token=ONrq95Y_937N4SnOijTcJA/1659563692/105.163.0.0/201/f/4d/5204b8c6ec38bd02396a1252c09ac4df-1080p.mp4
+2022-08-03 21:47:55.523272 [NOTICE] [HttpResponse.cc:168] CUID#57 - Redirecting to https://www700.ff-02.com/token=ONrq95Y_937N4SnOijTcJA/1659563692/105.163.0.0/201/f/4d/5204b8c6ec38bd02396a1252c09ac4df-1080p.mp4
+2022-08-03 21:47:56.069714 [NOTICE] [HttpResponse.cc:168] CUID#57 - Redirecting to https://www700.ff-02.com/token=ONrq95Y_937N4SnOijTcJA/1659563692/105.163.0.0/201/f/4d/5204b8c6ec38bd02396a1252c09ac4df-1080p.mp4
+2022-08-03 21:51:57.734158 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/5204b8c6ec38bd02396a1252c09ac4df-1080p.mp4

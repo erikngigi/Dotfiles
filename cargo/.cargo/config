@@ -1,0 +1,23 @@
+#Put it in the file '$home /. Cargo / config'
+[source.crates-io]
+registry = "https://github.com/rust-lang/crates.io-index"
+
+#Replace it with your preferred mirror source
+replace-with = 'sjtu'
+#replace-with = 'ustc'
+
+#Tsinghua University
+[source.tuna]
+registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
+
+#University of science and technology of China
+[source.ustc]
+registry = "git://mirrors.ustc.edu.cn/crates.io-index"
+
+#Shanghai Jiaotong University
+[source.sjtu]
+registry = "https://mirrors.sjtug.sjtu.edu.cn/git/crates.io-index"
+
+#Rustcc community
+[source.rustcc]
+registry = "git://crates.rustcc.cn/crates.io-index"
