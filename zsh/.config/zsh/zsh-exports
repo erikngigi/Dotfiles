@@ -22,9 +22,8 @@ export PATH=$HOME/.scripts/performance:$PATH
 export PATH=$HOME/.scripts/public-ip-address:$PATH
 export PATH=$HOME/.scripts/node/node-switch.sh:$PATH
 export PATH=$HOME/.zshrc:$PATH
+export PATH=$HOME/.npm-global/bin:$PATH
 export NNN_PLUG='r:renamer'
 export NNN_COLORS='#27272727'
 export NNN_BMS="a:$HOME/Aria2;d:$HOME/Downloads;g:$HOME/GitHub;l:$HOME/Library;m:$HOME/Movies;o:$HOME/Torrents;p:$HOME/Podcast;t:$HOME/Tv-Shows;v:$HOME/Videos;w:$HOME/Wallpapers;y:$HOME/YouTube"
 export NNN_TRASH=1
-eval "$(fnm env)"
-eval "$(zoxide init zsh)"

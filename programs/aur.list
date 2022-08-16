@@ -1,9 +1,9 @@
 aic94xx-firmware
 alacritty-theme
 betterlockscreen
-brave-bin
+celt
 downgrade
-fnm-bin
+forx
 gruvbox-material-gtk-theme-git
 gruvbox-material-icon-theme-git
 i3lock-color
@@ -12,7 +12,10 @@ ngrok
 siji-git
 staruml
 sublime-text-4
+ttf-font-awesome-4
+ttf-font-awesome-5
 ttf-material-design-icons-desktop-git
 ttf-monaco
 wd719x-firmware
+xmind
 yay

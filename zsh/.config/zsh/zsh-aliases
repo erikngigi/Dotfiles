@@ -31,6 +31,9 @@ alias mv='advmv -gu'
 #node-versions
 alias ns='~/.scripts/node/node-switch.sh'
 
+#eisenhower
+# alias te='~/.scripts/taskwarrior/eisenhower.sh'
+
 #xrandr brightness
 alias br='xrandr --output VGA-0 --brightness '
 
@@ -97,5 +100,4 @@ alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 alias m="git checkout master"
 alias s="git checkout stable"
 
-alias dr-stone="mpv --aid=3 --sid=4 Tv-Shows/Dr\ Stone"
-alias berserk="mpv --aid=2 --sid=2 Tv-Shows/Berserk"
+alias black-clover="mpv Tv-Shows/Black\ Clover/"

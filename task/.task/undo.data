@@ -1,0 +1,167 @@
+time 1660202982
+new [description:"Read Github documents on dotfiles" entry:"1660202982" modified:"1660202982" project:"Archlinux" status:"pending" uuid:"82e23140-bfef-4621-83d1-097f70dc43a6"]
+---
+time 1660203017
+new [description:"Organize the dotfiles on the local workstation" entry:"1660203017" modified:"1660203017" project:"Archlinux" status:"pending" uuid:"9766b343-3297-4f07-a573-3219f7b29ab3"]
+---
+time 1660203042
+new [description:"Add the dotfiles to the appropraite Github Repository" entry:"1660203042" modified:"1660203042" project:"Archlinux" status:"pending" uuid:"84408a13-27be-4481-9fcc-94c7e10eeac6"]
+---
+time 1660203102
+new [description:"Organize all browser bookmarks" entry:"1660203102" modified:"1660203102" project:"Archlinux" status:"pending" uuid:"887732eb-e5a5-4d62-8b57-dbe42d046ffa"]
+---
+time 1660203159
+new [description:"Read on the specifics of the btrfs filesystem" entry:"1660203159" modified:"1660203159" project:"Archlinux" status:"pending" uuid:"b8eb8dd1-e098-4c8a-ab12-f80115d315d5"]
+---
+time 1660203179
+new [description:"Understand btrfs snapshots for file recoveries" entry:"1660203179" modified:"1660203179" project:"Archlinux" status:"pending" uuid:"f8b11f0b-52f5-4c11-a91c-d87087604c1b"]
+---
+time 1660203243
+new [description:"Format the workstation" entry:"1660203243" modified:"1660203243" project:"Archlinux" status:"pending" uuid:"93c2a46e-3c12-4eed-b9fb-1359393835e1"]
+---
+time 1660203283
+old [description:"Format the workstation" entry:"1660203243" modified:"1660203243" project:"Archlinux" status:"pending" uuid:"93c2a46e-3c12-4eed-b9fb-1359393835e1"]
+new [description:"Format the workstation" due:"1660338000" entry:"1660203243" modified:"1660203283" project:"Archlinux" status:"pending" uuid:"93c2a46e-3c12-4eed-b9fb-1359393835e1"]
+---
+time 1660203338
+new [description:"Pay the Rent" due:"1662325200" entry:"1660203338" modified:"1660203338" project:"Expense" status:"pending" uuid:"6399623d-5bc8-4b21-ab7f-c74bca08009b"]
+---
+time 1660226317
+new [description:"Write up and Design a Cover Letter in Latex" due:"1660338000" entry:"1660226317" modified:"1660226317" project:"Cover-Letters" status:"pending" uuid:"1aefbd5a-ecc9-459e-943d-134a67d11018"]
+---
+time 1660226386
+new [description:"Custom Template Layout for Front-End Web Developer cover letter" due:"1660338000" entry:"1660226386" modified:"1660226386" project:"Cover-Letters" status:"pending" uuid:"422a8842-ce52-49b0-bb74-0f18b4a6b570"]
+---
+time 1660226426
+new [description:"Custom Template layout for Technical Writing cover letter" due:"1660338000" entry:"1660226426" modified:"1660226426" project:"Cover-Letters" status:"pending" uuid:"8dabc555-a527-4d9e-a49b-8da727d635af"]
+---
+time 1660226452
+new [description:"Custom Template layout for Linux System Administrator jobs cover letter" due:"1660338000" entry:"1660226452" modified:"1660226452" project:"Cover-Letters" status:"pending" uuid:"a9a09fd6-119f-494f-9084-1c561baf215d"]
+---
+time 1660226466
+new [description:"Custom Template layout for Digital Marketing jobs cover letter" due:"1660338000" entry:"1660226466" modified:"1660226466" project:"Cover-Letters" status:"pending" uuid:"862563ff-50d7-4fc1-a1b5-9ae8b8381465"]
+---
+time 1660226486
+new [description:"Custom Template layout for Customer Service jobs cover letter" due:"1660338000" entry:"1660226486" modified:"1660226486" project:"Cover-Letters" status:"pending" uuid:"b7cef6c8-4e3c-456c-b5de-8ff26df63e83"]
+---
+time 1660226535
+new [description:"Custom Template layout for Cloud Engineer jobs cover letter" due:"1660338000" entry:"1660226535" modified:"1660226535" project:"Cover-Letters" status:"pending" uuid:"0479e5b6-d88a-485d-b525-1c66da7b7a04"]
+---
+time 1660226680
+new [description:"Design and upload a custom email signature to improve SEO" due:"1660338000" entry:"1660226680" modified:"1660226680" project:"Email" status:"pending" uuid:"4bd068bb-c770-4405-ba3b-c10c6e884fd0"]
+---
+time 1660243729
+new [description:"create a proper email response quick messages ajshjdajsd" due:"1660338000" entry:"1660243729" modified:"1660243729" project:"email" status:"pending" uuid:"6faaebe5-7c12-4d2a-aeb3-e3cdb8d9b2d5"]
+---
+time 1660295500
+new [description:"Send emails to all clients" due:"1660510800" entry:"1660295500" modified:"1660295500" project:"email" status:"pending" uuid:"7bb7cb8d-c7c7-4dc2-8800-cd164fc948ec"]
+---
+time 1660298049
+old [description:"Read Github documents on dotfiles" entry:"1660202982" modified:"1660202982" project:"Archlinux" status:"pending" uuid:"82e23140-bfef-4621-83d1-097f70dc43a6"]
+new [annotation_1660298046:"all" description:"Read Github documents on dotfiles" end:"1660298046" entry:"1660202982" modified:"1660298049" project:"Archlinux" status:"deleted" uuid:"82e23140-bfef-4621-83d1-097f70dc43a6"]
+---
+time 1660298049
+old [description:"Organize the dotfiles on the local workstation" entry:"1660203017" modified:"1660203017" project:"Archlinux" status:"pending" uuid:"9766b343-3297-4f07-a573-3219f7b29ab3"]
+new [annotation_1660298049:"all" description:"Organize the dotfiles on the local workstation" end:"1660298049" entry:"1660203017" modified:"1660298049" project:"Archlinux" status:"deleted" uuid:"9766b343-3297-4f07-a573-3219f7b29ab3"]
+---
+time 1660298049
+old [description:"Add the dotfiles to the appropraite Github Repository" entry:"1660203042" modified:"1660203042" project:"Archlinux" status:"pending" uuid:"84408a13-27be-4481-9fcc-94c7e10eeac6"]
+new [annotation_1660298049:"all" description:"Add the dotfiles to the appropraite Github Repository" end:"1660298049" entry:"1660203042" modified:"1660298049" project:"Archlinux" status:"deleted" uuid:"84408a13-27be-4481-9fcc-94c7e10eeac6"]
+---
+time 1660298049
+old [description:"Organize all browser bookmarks" entry:"1660203102" modified:"1660203102" project:"Archlinux" status:"pending" uuid:"887732eb-e5a5-4d62-8b57-dbe42d046ffa"]
+new [annotation_1660298049:"all" description:"Organize all browser bookmarks" end:"1660298049" entry:"1660203102" modified:"1660298049" project:"Archlinux" status:"deleted" uuid:"887732eb-e5a5-4d62-8b57-dbe42d046ffa"]
+---
+time 1660298049
+old [description:"Read on the specifics of the btrfs filesystem" entry:"1660203159" modified:"1660203159" project:"Archlinux" status:"pending" uuid:"b8eb8dd1-e098-4c8a-ab12-f80115d315d5"]
+new [annotation_1660298049:"all" description:"Read on the specifics of the btrfs filesystem" end:"1660298049" entry:"1660203159" modified:"1660298049" project:"Archlinux" status:"deleted" uuid:"b8eb8dd1-e098-4c8a-ab12-f80115d315d5"]
+---
+time 1660298049
+old [description:"Understand btrfs snapshots for file recoveries" entry:"1660203179" modified:"1660203179" project:"Archlinux" status:"pending" uuid:"f8b11f0b-52f5-4c11-a91c-d87087604c1b"]
+new [annotation_1660298049:"all" description:"Understand btrfs snapshots for file recoveries" end:"1660298049" entry:"1660203179" modified:"1660298049" project:"Archlinux" status:"deleted" uuid:"f8b11f0b-52f5-4c11-a91c-d87087604c1b"]
+---
+time 1660298049
+old [description:"Format the workstation" due:"1660338000" entry:"1660203243" modified:"1660203283" project:"Archlinux" status:"pending" uuid:"93c2a46e-3c12-4eed-b9fb-1359393835e1"]
+new [annotation_1660298049:"all" description:"Format the workstation" due:"1660338000" end:"1660298049" entry:"1660203243" modified:"1660298049" project:"Archlinux" status:"deleted" uuid:"93c2a46e-3c12-4eed-b9fb-1359393835e1"]
+---
+time 1660298049
+old [description:"Pay the Rent" due:"1662325200" entry:"1660203338" modified:"1660203338" project:"Expense" status:"pending" uuid:"6399623d-5bc8-4b21-ab7f-c74bca08009b"]
+new [annotation_1660298049:"all" description:"Pay the Rent" due:"1662325200" end:"1660298049" entry:"1660203338" modified:"1660298049" project:"Expense" status:"deleted" uuid:"6399623d-5bc8-4b21-ab7f-c74bca08009b"]
+---
+time 1660298049
+old [description:"Write up and Design a Cover Letter in Latex" due:"1660338000" entry:"1660226317" modified:"1660226317" project:"Cover-Letters" status:"pending" uuid:"1aefbd5a-ecc9-459e-943d-134a67d11018"]
+new [annotation_1660298049:"all" description:"Write up and Design a Cover Letter in Latex" due:"1660338000" end:"1660298049" entry:"1660226317" modified:"1660298049" project:"Cover-Letters" status:"deleted" uuid:"1aefbd5a-ecc9-459e-943d-134a67d11018"]
+---
+time 1660298049
+old [description:"Custom Template Layout for Front-End Web Developer cover letter" due:"1660338000" entry:"1660226386" modified:"1660226386" project:"Cover-Letters" status:"pending" uuid:"422a8842-ce52-49b0-bb74-0f18b4a6b570"]
+new [annotation_1660298049:"all" description:"Custom Template Layout for Front-End Web Developer cover letter" due:"1660338000" end:"1660298049" entry:"1660226386" modified:"1660298049" project:"Cover-Letters" status:"deleted" uuid:"422a8842-ce52-49b0-bb74-0f18b4a6b570"]
+---
+time 1660298049
+old [description:"Custom Template layout for Technical Writing cover letter" due:"1660338000" entry:"1660226426" modified:"1660226426" project:"Cover-Letters" status:"pending" uuid:"8dabc555-a527-4d9e-a49b-8da727d635af"]
+new [annotation_1660298049:"all" description:"Custom Template layout for Technical Writing cover letter" due:"1660338000" end:"1660298049" entry:"1660226426" modified:"1660298049" project:"Cover-Letters" status:"deleted" uuid:"8dabc555-a527-4d9e-a49b-8da727d635af"]
+---
+time 1660298049
+old [description:"Custom Template layout for Linux System Administrator jobs cover letter" due:"1660338000" entry:"1660226452" modified:"1660226452" project:"Cover-Letters" status:"pending" uuid:"a9a09fd6-119f-494f-9084-1c561baf215d"]
+new [annotation_1660298049:"all" description:"Custom Template layout for Linux System Administrator jobs cover letter" due:"1660338000" end:"1660298049" entry:"1660226452" modified:"1660298049" project:"Cover-Letters" status:"deleted" uuid:"a9a09fd6-119f-494f-9084-1c561baf215d"]
+---
+time 1660298049
+old [description:"Custom Template layout for Digital Marketing jobs cover letter" due:"1660338000" entry:"1660226466" modified:"1660226466" project:"Cover-Letters" status:"pending" uuid:"862563ff-50d7-4fc1-a1b5-9ae8b8381465"]
+new [annotation_1660298049:"all" description:"Custom Template layout for Digital Marketing jobs cover letter" due:"1660338000" end:"1660298049" entry:"1660226466" modified:"1660298049" project:"Cover-Letters" status:"deleted" uuid:"862563ff-50d7-4fc1-a1b5-9ae8b8381465"]
+---
+time 1660298049
+old [description:"Custom Template layout for Customer Service jobs cover letter" due:"1660338000" entry:"1660226486" modified:"1660226486" project:"Cover-Letters" status:"pending" uuid:"b7cef6c8-4e3c-456c-b5de-8ff26df63e83"]
+new [annotation_1660298049:"all" description:"Custom Template layout for Customer Service jobs cover letter" due:"1660338000" end:"1660298049" entry:"1660226486" modified:"1660298049" project:"Cover-Letters" status:"deleted" uuid:"b7cef6c8-4e3c-456c-b5de-8ff26df63e83"]
+---
+time 1660298049
+old [description:"Custom Template layout for Cloud Engineer jobs cover letter" due:"1660338000" entry:"1660226535" modified:"1660226535" project:"Cover-Letters" status:"pending" uuid:"0479e5b6-d88a-485d-b525-1c66da7b7a04"]
+new [annotation_1660298049:"all" description:"Custom Template layout for Cloud Engineer jobs cover letter" due:"1660338000" end:"1660298049" entry:"1660226535" modified:"1660298049" project:"Cover-Letters" status:"deleted" uuid:"0479e5b6-d88a-485d-b525-1c66da7b7a04"]
+---
+time 1660298049
+old [description:"Design and upload a custom email signature to improve SEO" due:"1660338000" entry:"1660226680" modified:"1660226680" project:"Email" status:"pending" uuid:"4bd068bb-c770-4405-ba3b-c10c6e884fd0"]
+new [annotation_1660298049:"all" description:"Design and upload a custom email signature to improve SEO" due:"1660338000" end:"1660298049" entry:"1660226680" modified:"1660298049" project:"Email" status:"deleted" uuid:"4bd068bb-c770-4405-ba3b-c10c6e884fd0"]
+---
+time 1660298049
+old [description:"create a proper email response quick messages ajshjdajsd" due:"1660338000" entry:"1660243729" modified:"1660243729" project:"email" status:"pending" uuid:"6faaebe5-7c12-4d2a-aeb3-e3cdb8d9b2d5"]
+new [annotation_1660298049:"all" description:"create a proper email response quick messages ajshjdajsd" due:"1660338000" end:"1660298049" entry:"1660243729" modified:"1660298049" project:"email" status:"deleted" uuid:"6faaebe5-7c12-4d2a-aeb3-e3cdb8d9b2d5"]
+---
+time 1660298049
+old [description:"Send emails to all clients" due:"1660510800" entry:"1660295500" modified:"1660295500" project:"email" status:"pending" uuid:"7bb7cb8d-c7c7-4dc2-8800-cd164fc948ec"]
+new [annotation_1660298049:"all" description:"Send emails to all clients" due:"1660510800" end:"1660298049" entry:"1660295500" modified:"1660298049" project:"email" status:"deleted" uuid:"7bb7cb8d-c7c7-4dc2-8800-cd164fc948ec"]
+---
+time 1660298200
+new [description:"create the default layout for the cover-letter using latex" due:"1660424400" entry:"1660298200" modified:"1660298200" project:"cover-letter" status:"pending" uuid:"d8b9497c-6358-4eda-ac08-40053611c167"]
+---
+time 1660298274
+new [description:"send out diffrent variations of my cover-letter to all my relatives and friends" due:"1660424400" entry:"1660298274" modified:"1660298274" project:"cover-letter" status:"pending" uuid:"3d107d76-dda8-4e7b-a945-23e0afe5c581"]
+---
+time 1660298378
+new [description:"create a list of all possible fields that you can work within the web-development industry" due:"1660424400" entry:"1660298378" modified:"1660298378" project:"companies" status:"pending" uuid:"eff988fa-630e-4e61-bcf6-825989471a79"]
+---
+time 1660298502
+new [description:"create a personalized email signature for ericmosesngigi@gmail.com and upload the latest pictures" due:"1660424400" entry:"1660298502" modified:"1660298502" project:"email" status:"pending" uuid:"80f34e80-405c-4735-8a44-31612a3fe6a8"]
+---
+time 1660299324
+new [description:"create an email list for my potential customers" due:"1660424400" entry:"1660299324" modified:"1660299324" project:"email" status:"pending" uuid:"04b01bf0-fd14-4643-bc8e-7e80765641b5"]
+---
+time 1660300105
+new [description:"create and design a single-page react website portfolio" entry:"1660300105" modified:"1660300105" project:"portfolio" status:"pending" uuid:"e83b633d-4989-4d97-ba99-509b3ff8f880"]
+---
+time 1660300179
+old [description:"create and design a single-page react website portfolio" entry:"1660300105" modified:"1660300105" project:"portfolio" status:"pending" uuid:"e83b633d-4989-4d97-ba99-509b3ff8f880"]
+new [description:"create and design a single-page react website portfolio" due:"1660904979" entry:"1660300105" modified:"1660300179" project:"portfolio" status:"pending" uuid:"e83b633d-4989-4d97-ba99-509b3ff8f880"]
+---
+time 1660300291
+new [description:"write atleast 3 articles and post them on the personal website and hashnode" due:"1660905091" entry:"1660300291" modified:"1660300291" project:"website" status:"pending" uuid:"45d79d2f-7676-491c-858f-504c50a0fffd"]
+---
+time 1660300391
+new [description:"integrate best seo practices on the website to improve the google search index" due:"1660510800" entry:"1660300391" modified:"1660300391" project:"website" status:"pending" uuid:"c413e802-8347-4af2-86b4-3a24f3beb785"]
+---
+time 1660300529
+new [description:"read on the monolithic vs microservices website architecture" due:"1660510800" entry:"1660300529" modified:"1660300529" project:"website" status:"pending" uuid:"e5cff96d-0d73-49c0-af01-a51b6d01947e"]
+---
+time 1660300576
+new [description:"read on the google app engine application platform" due:"1660510800" entry:"1660300576" modified:"1660300576" project:"website" status:"pending" uuid:"0903f23f-a315-4d1a-a527-419075a5f7ad"]
+---
+time 1660332020
+new [description:"add a personalized context menu item to enhance video downloads" due:"1660424400" entry:"1660332020" modified:"1660332020" project:"firefox" status:"pending" uuid:"5d626d01-1c1e-474b-b46d-d80b0ec23b88"]
+---

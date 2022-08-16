@@ -1,0 +1,12 @@
+# YouTube-dl configuration settings
+
+--ignore-errors
+--no-playlist
+
+#Video Save Location
+
+-o "/home/eric/YouTube/%(uploader)s/%(playlist)s/%(upload_date)s - %(title)s.%(ext)s"
+
+#Video Preferences
+
+-f 137+140/22+140/136+140/135+140/133+140/160+140

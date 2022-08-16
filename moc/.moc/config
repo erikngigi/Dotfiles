@@ -1,0 +1,4 @@
+Theme = 30equals
+Sort = FileName
+#Layout
+Layout1 = directory(0,0,100%,100%)
