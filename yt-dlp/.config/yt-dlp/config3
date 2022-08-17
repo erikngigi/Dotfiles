@@ -6,7 +6,7 @@
 
 #Video Save Location
 
--o "/home/eric/YouTube/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
+-o "/home/eric/Media/YouTube/YouTube-Audio/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
 
 #Video Preferences
 
