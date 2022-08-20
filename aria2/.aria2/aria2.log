@@ -155,3 +155,9 @@ Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www69.uptobox.com/d
 Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www69.uptobox.com/dl/_Q_ZSDU7FL2Y24PBwJafuDCvTGohYniqY9wIp1AkQBvSWRg1VI-XHjA7XqpLIG5hn1jtL4wXpCgF07OVp2fVGhmvEXA3YeSTRNdMOvCohh8nQOxsED-cLaKNMXaqOFFFeQm4HF-kFyrdhARn_Uf4Og/Once.Upon.a.Time.in.Hollywood.2019.1080p.BluRay.x264.6CH-Pahe.in.mkv
   -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
 2022-08-14 16:39:19.742108 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Aria2/Once.Upon.a.Time.in.Hollywood.2019.1080p.BluRay.x264.6CH-Pahe.in.mkv
+2022-08-19 09:01:52.364390 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-08-19 09:01:53.088012 [NOTICE] [HttpResponse.cc:168] CUID#7 - Redirecting to https://www1354.ff-03.com/token=cRdJgTWdFMucnBu0nOCR6w/1660903271/105.163.0.0/203/e/16/de4ae47ebfc3bd936f10c4f2993fc16e-1080p.mp4
+2022-08-19 09:01:55.150497 [NOTICE] [HttpResponse.cc:168] CUID#8 - Redirecting to https://www1354.ff-03.com/token=cRdJgTWdFMucnBu0nOCR6w/1660903271/105.163.0.0/203/e/16/de4ae47ebfc3bd936f10c4f2993fc16e-1080p.mp4
+2022-08-19 09:01:55.498506 [NOTICE] [HttpResponse.cc:168] CUID#9 - Redirecting to https://www1354.ff-03.com/token=cRdJgTWdFMucnBu0nOCR6w/1660903271/105.163.0.0/203/e/16/de4ae47ebfc3bd936f10c4f2993fc16e-1080p.mp4
+2022-08-19 09:01:55.520063 [NOTICE] [HttpResponse.cc:168] CUID#10 - Redirecting to https://www1354.ff-03.com/token=cRdJgTWdFMucnBu0nOCR6w/1660903271/105.163.0.0/203/e/16/de4ae47ebfc3bd936f10c4f2993fc16e-1080p.mp4
+2022-08-19 09:08:45.919640 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/de4ae47ebfc3bd936f10c4f2993fc16e-1080p.mp4
