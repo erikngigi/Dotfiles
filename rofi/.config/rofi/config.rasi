@@ -1,8 +1,10 @@
 configuration {
-  font: "JetBrainsMono Nerd Font 10.5";
+  font: "JetBrainsMono Nerd Font 11";
   terminal: "alacritty";
   hide-scrollbar: true;
+  transparency: false;
   }
 //@theme "/usr/share/rofi/themes/android_notification.rasi"
 //@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
-@theme "/usr/share/rofi/themes/glue_pro_blue.rasi"
+//@theme "/usr/share/rofi/themes/glue_pro_blue.rasi"
+@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"

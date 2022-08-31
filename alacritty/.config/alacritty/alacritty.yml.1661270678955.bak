@@ -11,10 +11,10 @@ env:
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
   TERM: xterm-256color
-  # WINIT_X11_SCALE_FACTOR: "1"
+  WINIT_X11_SCALE_FACTOR: "1"
 
 window:
-  # opacity: 0.95
+  opacity: 0.8
   dynamic_title: true
   # Window dimensions (changes require restart)
   #
@@ -69,8 +69,8 @@ scrolling:
 # Font configuration
 font:
   normal:
-    family: JetBrains Mono NL
-    style: Medium
+    family: JetBrains Mono
+    style: Regular
     # bold:
     # family: JetbrainsMono Nerd Font Mono
     # style: Bold
@@ -99,7 +99,7 @@ font:
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
-    x: -1 # For letter spacing
+    x: 0 # For letter spacing
     y: 0 # For line spacing
 
   # Glyph offset determines the locations of the glyphs within their cells with
@@ -114,35 +114,32 @@ draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night Bright)
 colors:
-  # Default colors
+  name: Epiphany
+  author: ""
   primary:
-    background: '#000000'
-    foreground: '#ffffff'
+    background: "#000000"
+    foreground: "#ffffff"
   cursor:
-    text: '#F81CE5'
-    cursor: '#ffffff'
-
-  # Normal colors
+    text: "#000000"
+    cursor: "#ffffff"
   normal:
-    black: '#000000'
-    red: '#fe0100'
-    green: '#33ff00'
-    yellow: '#feff00'
-    blue: '#0066ff'
-    magenta: '#cc00ff'
-    cyan: '#00ffff'
-    white: '#d0d0d0'
-
-  # Bright colors
+    black: "#565656"
+    red: "#ac4f4f"
+    green: "#88ab77"
+    yellow: "#d0d9ad"
+    blue: "#677088"
+    magenta: "#cdcdb4"
+    cyan: "#445362"
+    white: "#ffffff"
   bright:
-    black: '#808080'
-    red: '#fe0100'
-    green: '#33ff00'
-    yellow: '#feff00'
-    blue: '#0066ff'
-    magenta: '#cc00ff'
-    cyan: '#00ffff'
-    white: '#FFFFFF'
+    black: "#656565"
+    red: "#e85555"
+    green: "#8ccd6c"
+    yellow: "#c5d67d"
+    blue: "#647396"
+    magenta: "#cdb4c9"
+    cyan: "#505b6c"
+    white: "#c0c0c0"
 # Visual Bell
 #
 # Any time the BEL code is received, Alacritty "rings" the visual bell. Once
@@ -512,5 +509,5 @@ debug:
 
   # Print all received window events.
   print_events: false
-theme: Hyper
+theme: Epiphany
 vents: false
