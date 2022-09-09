@@ -20,6 +20,7 @@ zle_highlight=('paste:none')
 unsetopt BEEP
 
 # completions
+autoload bashcompinit && bashcompinit
 autoload -Uz compinit
 zstyle ':completion:*' menu select
 # zstyle ':completion::complete:lsof:*' menu yes select
@@ -125,3 +126,8 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ]; then
   [ -z "${TMUX}" ] && { tmux || tmux; } >/dev/null 2>&1
 fi
+
+# aws completions
+# complete -C '/usr/bin/aws_completer' aws
+
+# awsenv() { eval "$(/home/eric/.scripts/aws/awsenv.sh $@)" }

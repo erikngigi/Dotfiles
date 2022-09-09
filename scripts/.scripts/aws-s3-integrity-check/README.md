@@ -1,4 +1,4 @@
-# aws-s3-integrity-check
+# aws-s3-upload-log
 
 Bash script to check the integrity of a set of local files uploaded into an AWS S3 bucket.
 
@@ -17,12 +17,6 @@ Default region name [None]: your_default_region_name
 Default output format [None]: json 
 ```
 
-2. Synchronize your local folder with your AWS bucket. For this purpouse, you may want to use the AWS CLI **sync** command as follows (we'll made use from the example below later in this file):
-
-```sh
-> aws s3 sync /data/nucCyt/raw_data s3://nuccyt 
-```
-
 ## Description
 
 Considering that your local directory path structure is the same one than the existing on our S3 bucket (please, check the 'Prerequisites' section above) **aws_check_integrity.sh** script will:
@@ -33,6 +27,8 @@ Considering that your local directory path structure is the same one than the ex
 
    * If the file size is smaller than 8MG, it will generate a simple MD5 digest value.
 
+   * If the file size is bigger than 8MG, it will make a request to a [s3md5](https://github.com/antespi/s3md5) function (author: [Antonio Espinosa](https://github.com/antespi)) which will apply the same algorithm as AWS does: it will split the file into 8MG little parts, generate the MD5 hash of each little part and generate the final MD5 digest number from the set of individual MD5 hashes.
+
 3. Retrieve the ETag value from the same file stored on the S3 bucket.
 
 4. Compare the retrieved ETag value with the one the script has just generated.
@@ -42,32 +38,82 @@ Considering that your local directory path structure is the same one than the ex
 
 ## Usage
 
-1. Grant execution access to he s3md5 script file.
+Export the following environmental variables to either your `.bashrc` or `.zshrc` file to ensure that aws cli works with the local profile. 
+
+1. Ensure you have set the correct profile name. Check `$HOME/.aws.config` for the profile name.
+
+Display the profile name
+``````
+cat .aws/config
+``````
+
+Export the profile name. 
+``````
+export AWS_PROFILE='default'
+``````
+2. Export the `aws-check-status.sh` script
+``````
+export AWS_STATUS=$HOME/{local path to the script}  
+``````
++ Example: `export AWS_STATUS=$HOME/.scripts/aws-s3-scripts/aws-check-status.sh`
+
+3. Export the `aws s3 synchronized folder`
+
+``````
+export AWS_BACKUP=$HOME/{path to the folder}
+``````
+
++ Example: `export AWS_BACKUP=$HOME/Git/Development/Clients/ctgreno/05-09-2022/uploads/`
+
+4. Add the name of the s3 bucket.
+
+``````
+export AWS_BUCKET='name-of-the-bucket'
+``````
++ Example: `export AWS_BUCKET='ericngigi-test'`
+
+``````
+export AWS_SYNC="$AWS_STATUS $AWS_BACKUP $AWS_BUCKET /"
+``````
+
+6. Add the path of where the logs will be stored. 
+
+``````
+export AWS_LOGS=$HOME/{local path to where the logs will be saved}
+``````
+
++ Example: `export AWS_LOGS=$HOME/Git/Development/Clients/ctgreno/05-09-2022/logs/upload-log`
+
+  - `upload-log` generic name tag for each log file. The user can change it to whatever they want. 
+
+7. After making the changes ensure that you source your `bashrc` or `zshrc` file
+
++ For bash shell
+``````
+source .bashrc
+``````
++ For zsh shell
+``````
+source .zshrc
+``````
+---
+
+### Example
+
 ```sh
-> chmod 755 ./s3md5/s3md5
-```
-```
-2. The *aws-s3-integrity-check* folder should look similar to the following:
-```sh
-total 16
--rw-r--r-- 1 your_user your_group 3573 date README.md
--rwxr-xr-x 1 your_user your_group 3301 date aws_check_integrity.sh
-drwxr-xr-x 2 your_user your_group 4096 date s3md5
-```
-6. Execute the script 'aws_check_integrity.sh' following the instructions below:
-```
-Usage : aws_check_integrity.sh <local_path> <bucket_name> <bucket_folder>
-
-- local_path: local path of our server where all previously uploaded files are currently stored. For example: /data/nucCyt/raw_data/. 
-
-- bucket_name: the name of the S3 bucket we want to check. For example: nuccyt. 
-
-- bucket_folder: the name of the root folder on the S3 bucket. For example: raw_data/. If there is not any folder in the root, this parameter will be a slash (/) indicating the root path. 
+> aws-s3-upload-log.sh
 ```
 
+## Supported platforms
 
-## Example
+This script has been successfully tested on:
 
-```sh
-> aws_check_integrity.sh /data/nucCyt/raw_data/ nuccyt raw_data/
-```
+* ArchLinux 51.15.64-1 LTS
+
+## AUTHOR
+
+Copyright (C) 2022<br />
+[Eric Ngigi](https://github.com/EricNgigi)<br />
+Email : ericmosesngigi@gmail.com<br />
+Web   : [EricNgigi](https://erikngigi.github.io)
+

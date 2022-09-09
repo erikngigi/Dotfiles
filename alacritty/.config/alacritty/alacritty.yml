@@ -11,18 +11,16 @@ env:
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
   TERM: xterm-256color
-  # WINIT_X11_SCALE_FACTOR: "1"
 
 window:
-  # opacity: 0.95
   dynamic_title: true
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
-  #dimensions:
-  #  columns: 0
-  #  lines: 0
+  dimensions:
+   columns: 80
+   lines: 24
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
@@ -35,11 +33,11 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 0
-    y: 0
+    x: 3
+    y: 3
 
   # Spread additional padding evenly around the terminal content.
-  dynamic_padding: false
+  dynamic_padding: true
 
   # Window title
   title: Alacritty
@@ -60,7 +58,7 @@ window:
 scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
-  history: 10000
+  history: 5000
 
   # Number of lines the viewport will move for every line scrolled when
   # scrollback is enabled (history > 0).
@@ -69,29 +67,48 @@ scrolling:
 # Font configuration
 font:
   normal:
-    family: JetBrains Mono NL
-    style: Medium
-    # bold:
-    # family: JetbrainsMono Nerd Font Mono
-    # style: Bold
+    # family: Monaco
+    family: JetBrainsMono Nerd Font
+    # family: Fira Code
+    # family: Source Code Pro
+    style: Regular
+
+  bold:
+    # family: JetBrains Mono
+    # family: Monaco
+    family: JetBrainsMono Nerd Font
+    # family: JetBrains Mono NL
+    # family: Fira Code
+    # family: Source Code Pro
+    style: Bold
+
     # Italic font face
-    # italic:
+  italic:
     # Font family
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    # family: JetbrainsMono Nerd Font Mono
+    # family: JetBrains Mono
+    family: JetBrainsMono Nerd Font
+    # family: Monaco
+    # family: JetBrains Mono NL
+    # family: Fira Code
+    # family: Source Code Pro
     # The `style` can be specified to pick a specific face.
-    # style: Meduim Italic
+    style: Italic
     # Bold italic font face
-    #bold_italic:
+  bold_italic:
     # Font family
-    #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    # family: JetBrains Mono
+    family: JetBrainsMono Nerd Font
+    # family: Monaco
+    # family: JetBrains Mono NL
+    # family: Fira Code
+    # family: Source Code Pro
     # The `style` can be specified to pick a specific face.
-    #style: Bold Italic
+    style: Bold Italic
 
   # Point size
   size: 14
@@ -100,7 +117,7 @@ font:
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: -1 # For letter spacing
-    y: 0 # For line spacing
+    y: 0  # For line spacing
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,

@@ -36,17 +36,16 @@ else
 	aws_base_folder="$3"
 fi
 
-
 ########################
 ## Create log file
 ########################
 
-if [ ! -d ./Logs ]; then
-  mkdir -p ./Logs;
+if [ ! -d $AWS_LOGS ]; then
+  mkdir -p $AWS_LOGS;
 fi
 
-log_file=./Logs/S3_integrity_log
-current_time=$(date "+%Y.%m.%d-%H.%M.%S")
+log_file=$AWS_LOGS
+current_time=$(date "+%Y.%m.%d-%H.%M")
 log_file=$log_file.$current_time.$2.log
 echo "Log filename: " "$log_file"
 
@@ -80,7 +79,7 @@ function upload_s3
 			# Remove the base folder from the local file path to have the AWS path corresponding to the current local file
 			aws_file_path=${i#"$base_folder"}
 
-			## Remove the first first "/" character if it exists
+			## Remove the first "/" character if it exists
 			if [[ $aws_file_path == /* ]]; then
 				aws_file_path=${aws_file_path#"/"}
 			fi

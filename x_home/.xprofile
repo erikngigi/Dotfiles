@@ -1,5 +1,5 @@
 # Screen Layout Script
-/home/eric/.screenlayout/screenlayout2.sh &
+/home/eric/.screenlayout/vga-only-screen-layout.sh &
 
 # Dunstify 
 killall -q dunst; dunst &
