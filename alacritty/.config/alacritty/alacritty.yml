@@ -68,18 +68,17 @@ scrolling:
 font:
   normal:
     # family: Monaco
+    # family: Inconsolata
     family: JetBrainsMono Nerd Font
-    # family: Fira Code
-    # family: Source Code Pro
+    # family: UbuntuMono Nerd Font Mono
     style: Regular
 
   bold:
     # family: JetBrains Mono
     # family: Monaco
+    # family: Inconsolata
     family: JetBrainsMono Nerd Font
-    # family: JetBrains Mono NL
-    # family: Fira Code
-    # family: Source Code Pro
+    # family: UbuntuMono Nerd Font Mono
     style: Bold
 
     # Italic font face
@@ -90,10 +89,9 @@ font:
     # value specified for the normal font.
     # family: JetBrains Mono
     family: JetBrainsMono Nerd Font
+    # family: UbuntuMono Nerd Font Mono
     # family: Monaco
-    # family: JetBrains Mono NL
-    # family: Fira Code
-    # family: Source Code Pro
+    # family: Inconsolata
     # The `style` can be specified to pick a specific face.
     style: Italic
     # Bold italic font face
@@ -104,9 +102,8 @@ font:
     # family: JetBrains Mono
     family: JetBrainsMono Nerd Font
     # family: Monaco
-    # family: JetBrains Mono NL
-    # family: Fira Code
-    # family: Source Code Pro
+    # family: Inconsolata
+    # family: UbuntuMono Nerd Font Mono
     # The `style` can be specified to pick a specific face.
     style: Bold Italic
 
@@ -116,8 +113,8 @@ font:
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
-    x: -1 # For letter spacing
-    y: 0  # For line spacing
+    x: 0   # For letter spacing
+    y: 0    # For line spacing
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,

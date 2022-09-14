@@ -31,8 +31,8 @@ alias mv='advmv -gu'
 #node-versions
 alias ns='~/.scripts/node/node-switch.sh'
 
-#eisenhower
-# alias te='~/.scripts/taskwarrior/eisenhower.sh'
+#anime-cli
+alias anime-cli='anipy-cli -d -o -q 1080'
 
 #xrandr brightness
 alias br='xrandr --output VGA-0 --brightness '
@@ -46,7 +46,9 @@ alias set-br='doas set-brightness.sh'
 
 # neovim
 alias nv='nvim'
-alias Nv='sudo nvim'
+alias Nv='doas nvim'
+alias lv='lvim'
+alias Lv='doas lvim'
 
 #feh
 alias feh-display='feh -d -. Wallpapers'
@@ -100,4 +102,4 @@ alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 alias m="git checkout master"
 alias s="git checkout stable"
 
-alias black-clover="mpv Media/Anime/Black\ Clover\ Season\ 3"
+alias black-clover="mpv Media/Anime/Shows/Black\ Clover\ Season\ 4"

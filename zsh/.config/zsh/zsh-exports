@@ -32,7 +32,7 @@ export NNN_PLUG='r:renamer'
 # export NNN_COLORS='#27272727'
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
-export NNN_BMS="a:$HOME/Media/Anime;d:$HOME/Media/Aria;y:$HOME/Media/YouTube"
+export NNN_BMS="a:$HOME/Media/Anime;d:$HOME/Media/Aria;m:$HOME/Media/Music;y:$HOME/Media/YouTube"
 export NNN_TRASH=1
 
 #AWS_EXPORTS
