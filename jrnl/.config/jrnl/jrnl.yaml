@@ -5,12 +5,12 @@ colors:
   title: none
 default_hour: 9
 default_minute: 0
-editor: nvim
+editor: lvim
 encrypt: false
 highlight: true
 indent_character: '|'
 journals:
-  default: /home/eric/Journal/journal.txt
+  default: /home/eric/Git/Journal/journal.txt
 linewrap: 79
 tagsymbols: '#@'
 template: false

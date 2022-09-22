@@ -254,3 +254,60 @@ Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www72.uptobox.com/d
 2022-09-13 13:00:49.812044 [NOTICE] [HttpResponse.cc:168] CUID#10 - Redirecting to https://www1799.ff-04.com/token=eNtBFC6g5BHUiuTmQ7Y35w/1663077499/105.163.0.0/173/7/cc/b399724977b3bcab4d7b72a71d9f4cc7-1080p.mp4
 2022-09-13 13:02:36.240783 [NOTICE] [HttpResponse.cc:168] CUID#7 - Redirecting to https://www1799.ff-04.com/token=eNtBFC6g5BHUiuTmQ7Y35w/1663077499/105.163.0.0/173/7/cc/b399724977b3bcab4d7b72a71d9f4cc7-1080p.mp4
 2022-09-13 13:09:22.994463 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/b399724977b3bcab4d7b72a71d9f4cc7-1080p.mp4
+2022-09-18 15:28:08.647326 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-09-18 15:28:10.459817 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-09-18 15:28:10.493814 [ERROR] [AbstractCommand.cc:349] CUID#8 - Download aborted. URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-09-18 15:28:10.542324 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-09-18 16:31:21.949695 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-09-18 16:31:23.278080 [ERROR] [AbstractCommand.cc:349] CUID#7 - Download aborted. URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=428
+2022-09-18 16:31:23.278279 [NOTICE] [RequestGroupMan.cc:424] Download GID#c4f3e155fca481cc not complete: 
+2022-09-18 16:33:05.795773 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-09-18 16:33:06.993913 [ERROR] [AbstractCommand.cc:349] CUID#7 - Download aborted. URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=428
+2022-09-18 16:33:06.994784 [NOTICE] [RequestGroupMan.cc:424] Download GID#5cab87f79ef21e72 not complete: 
+2022-09-18 16:33:23.083557 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-09-18 16:33:24.336366 [ERROR] [AbstractCommand.cc:349] CUID#7 - Download aborted. URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=428
+2022-09-18 16:33:24.337028 [NOTICE] [RequestGroupMan.cc:424] Download GID#2d6d7a7dc856c0d7 not complete: 
+2022-09-18 16:34:11.300223 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-09-18 16:34:12.660000 [ERROR] [AbstractCommand.cc:349] CUID#7 - Download aborted. URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=428
+2022-09-18 16:34:12.660377 [NOTICE] [RequestGroupMan.cc:424] Download GID#c7e7df9e3547aeaf not complete: 
+2022-09-18 16:34:18.659959 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-09-18 16:34:19.967426 [ERROR] [AbstractCommand.cc:349] CUID#7 - Download aborted. URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=428
+2022-09-18 16:34:19.967715 [NOTICE] [RequestGroupMan.cc:424] Download GID#e780d8d2844f383a not complete: 
+2022-09-18 16:34:54.959097 [NOTICE] [Context.cc:310] Downloading 2 item(s)
+2022-09-18 16:34:56.399647 [ERROR] [AbstractCommand.cc:349] CUID#7 - Download aborted. URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=428
+2022-09-18 16:34:56.399938 [NOTICE] [RequestGroupMan.cc:424] Download GID#42902569c8c249f0 not complete: 
+2022-09-18 16:34:56.781327 [ERROR] [AbstractCommand.cc:349] CUID#8 - Download aborted. URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www106.uptobox.com/dl/LJwE-m8MB0M-Gl5rPevyCIRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4kIH2R5qI0Ot6kxnV-VIYHHzgZ1nGFJ1f_fDjUWr4DnVqKcPWUzu_ckmitq6Q6gl5xgpwhyrpYnotPHecbA17zA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=428
+2022-09-18 16:34:56.781630 [NOTICE] [RequestGroupMan.cc:424] Download GID#d0c29d149c516195 not complete: 
+2022-09-18 16:37:40.906457 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-09-18 16:37:42.976310 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www106.uptobox.com/dl/_NKCOxao3po1wIACg_0rwYRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4321pXMnrgjRclgjucFMLdRV0JlcJJAzTl8gtrcoih8b_HWTCN8EBxpaeoKJEnHoHkKxdTXDKkU4wK828iC6AkA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www106.uptobox.com/dl/_NKCOxao3po1wIACg_0rwYRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4321pXMnrgjRclgjucFMLdRV0JlcJJAzTl8gtrcoih8b_HWTCN8EBxpaeoKJEnHoHkKxdTXDKkU4wK828iC6AkA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-09-18 16:37:43.158660 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www106.uptobox.com/dl/_NKCOxao3po1wIACg_0rwYRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4321pXMnrgjRclgjucFMLdRV0JlcJJAzTl8gtrcoih8b_HWTCN8EBxpaeoKJEnHoHkKxdTXDKkU4wK828iC6AkA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www106.uptobox.com/dl/_NKCOxao3po1wIACg_0rwYRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4321pXMnrgjRclgjucFMLdRV0JlcJJAzTl8gtrcoih8b_HWTCN8EBxpaeoKJEnHoHkKxdTXDKkU4wK828iC6AkA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-09-18 16:37:43.651644 [ERROR] [AbstractCommand.cc:349] CUID#12 - Download aborted. URI=https://www106.uptobox.com/dl/_NKCOxao3po1wIACg_0rwYRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4321pXMnrgjRclgjucFMLdRV0JlcJJAzTl8gtrcoih8b_HWTCN8EBxpaeoKJEnHoHkKxdTXDKkU4wK828iC6AkA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www106.uptobox.com/dl/_NKCOxao3po1wIACg_0rwYRSlDFWXPGcBCVPUeGUMgTj0y3086Dyof9iuhqXL_u4321pXMnrgjRclgjucFMLdRV0JlcJJAzTl8gtrcoih8b_HWTCN8EBxpaeoKJEnHoHkKxdTXDKkU4wK828iC6AkA/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD%2B5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-09-18 16:37:51.421630 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-09-18 16:49:44.907385 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD+5.1-Pahe.in.mkv
+2022-09-18 16:49:44.917278 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
