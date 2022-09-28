@@ -311,3 +311,16 @@ Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www106.uptobox.com/
 2022-09-18 16:37:51.421630 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
 2022-09-18 16:49:44.907385 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/Taxi.Driver.1976.1080p.UHD.BluRay.x264.DD+5.1-Pahe.in.mkv
 2022-09-18 16:49:44.917278 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-09-24 15:34:45.124293 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-09-24 15:34:46.658801 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www77.uptobox.com/dl/mDMtbBdl5x22jUs0FKNt9kFmD3p5GfeaCd05cGnGBDMd-vM-mA3SxrvGdo62qV1XFOMW6i2SFb9PLqTdHAoilA0LPHfX387ohkDxQNV-iDxcTzYFzXFBeaMJfTj1m9SewKC43riTxKa1RI7gncV8BA/Leon.The.Professional.1994.EXTENDED.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www77.uptobox.com/dl/mDMtbBdl5x22jUs0FKNt9kFmD3p5GfeaCd05cGnGBDMd-vM-mA3SxrvGdo62qV1XFOMW6i2SFb9PLqTdHAoilA0LPHfX387ohkDxQNV-iDxcTzYFzXFBeaMJfTj1m9SewKC43riTxKa1RI7gncV8BA/Leon.The.Professional.1994.EXTENDED.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-09-24 15:34:46.688536 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www77.uptobox.com/dl/mDMtbBdl5x22jUs0FKNt9kFmD3p5GfeaCd05cGnGBDMd-vM-mA3SxrvGdo62qV1XFOMW6i2SFb9PLqTdHAoilA0LPHfX387ohkDxQNV-iDxcTzYFzXFBeaMJfTj1m9SewKC43riTxKa1RI7gncV8BA/Leon.The.Professional.1994.EXTENDED.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www77.uptobox.com/dl/mDMtbBdl5x22jUs0FKNt9kFmD3p5GfeaCd05cGnGBDMd-vM-mA3SxrvGdo62qV1XFOMW6i2SFb9PLqTdHAoilA0LPHfX387ohkDxQNV-iDxcTzYFzXFBeaMJfTj1m9SewKC43riTxKa1RI7gncV8BA/Leon.The.Professional.1994.EXTENDED.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-09-24 15:34:46.848177 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www77.uptobox.com/dl/mDMtbBdl5x22jUs0FKNt9kFmD3p5GfeaCd05cGnGBDMd-vM-mA3SxrvGdo62qV1XFOMW6i2SFb9PLqTdHAoilA0LPHfX387ohkDxQNV-iDxcTzYFzXFBeaMJfTj1m9SewKC43riTxKa1RI7gncV8BA/Leon.The.Professional.1994.EXTENDED.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www77.uptobox.com/dl/mDMtbBdl5x22jUs0FKNt9kFmD3p5GfeaCd05cGnGBDMd-vM-mA3SxrvGdo62qV1XFOMW6i2SFb9PLqTdHAoilA0LPHfX387ohkDxQNV-iDxcTzYFzXFBeaMJfTj1m9SewKC43riTxKa1RI7gncV8BA/Leon.The.Professional.1994.EXTENDED.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-09-24 15:34:55.380468 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-09-24 16:42:50.897333 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/Leon.The.Professional.1994.EXTENDED.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+2022-09-24 16:42:50.909530 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.

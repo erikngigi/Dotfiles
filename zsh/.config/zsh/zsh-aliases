@@ -21,7 +21,9 @@ alias refresh='doas pacman -Syyy'
 alias upgrade='doas pacman -Syu'
 
 # Sudo
-alias sudo='nocorrect sudo -E'
+# alias sudo='nocorrect sudo -E'
+alias sudo='doas'
+alias sudoedit='doas rnano'
 
 # confirm before overwriting something
 alias rm='rm -i'

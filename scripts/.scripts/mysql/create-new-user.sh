@@ -5,7 +5,6 @@ read -p "Enter Database Name : " dbname
 
 #checking if database exist
 mysql -Bse "USE $dbname" 2> /dev/null
-# mysqlshow "USE $dbname" 2> /dev/null
 
 #if database exist:
 if [ $? -eq 0 ]; then
@@ -49,6 +48,4 @@ echo "The Database: $dbname does not exist, please specify a database that exist
 
 fi
 
-# htpasswd = "$HOME/youtube.txt"
-
-echo "$username"
+echo "$username" >> "/tmp/password.txt"

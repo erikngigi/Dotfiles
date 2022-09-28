@@ -33,8 +33,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 3
-    y: 3
+    x: 2
+    y: 2
 
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: true
@@ -68,18 +68,22 @@ scrolling:
 font:
   normal:
     family: JetBrainsMono Nerd Font
+    # family: Monaco
     style: Regular
 
   bold:
     family: JetBrainsMono Nerd Font
-    style: Regular
+    # family: Monaco
+    style: Bold
 
   italic:
     family: JetBrainsMono Nerd Font
+    # family: Monaco
     style: Italic
 
   bold_italic:
     family: JetBrainsMono Nerd Font
+    # family: Monaco
     style: Bold Italic
 
   # Point size
@@ -88,7 +92,7 @@ font:
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
-    x: 0  # For letter spacing
+    x: -1  # For letter spacing
     y: 0   # For line spacing
 
   # Glyph offset determines the locations of the glyphs within their cells with
