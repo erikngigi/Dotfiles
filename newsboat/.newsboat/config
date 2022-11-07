@@ -1,2 +1,2 @@
-auto-reload no
+auto-reload yes
 browser "brave %u"

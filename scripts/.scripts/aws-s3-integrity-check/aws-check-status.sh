@@ -1,7 +1,7 @@
 #!/bin/bash
-#echo "First arg: $1 <local_path>"
-#echo "Second arg: $2 <bucket_name>"
-#echo "Third arg: $3 <bucket_folder>"
+# echo "First arg: $1 <local_path>"
+# echo "Second arg: $2 <bucket_name>"
+# echo "Third arg: $3 <bucket_folder>"
 
 #########################
 ## Prerrequisites
@@ -13,11 +13,17 @@
 #########################
 ## Receive parameters
 #########################
+DIRECTORY="$HOME/Git/Development/Clients/ctgreno/05-09-2022-test-01/uploads"
+BUCKET="ericngigi-test"
+LOG_FILE="$HOME/Git/Development/Clients/ctgreno/05-09-2022-test-01/logs"
+# Sync to AWS S3
 
-if [ $# -ne  3 ]; then
+aws s3 sync "$DIRECTORY" s3://"$BUCKET"
+
+if [ $# -ne  3 ]; then # ($#) number of arguments passed via the commandline. (-ne) Integer1 is not equal Integer2. 
 	printf "\n"
 	echo "ERROR: Please pass arguments."
-	printf "Usage :\n aws_check_integrity.sh <local_path> <bucket_name> <bucket_folder>\n\t- local_path: local path where all files, previously uploaded on AWS, are currently stored. For example: /data/nucCyt/raw_data/.\n\t- bucket_name: the name of the S3 bucket we want to check. For example: nuccyt.\n\t- bucket_folder: the name of the root folder on the S3 bucket. For example raw_data. In case there is not any folder in the root, this parameter will be a slash (/) indicating the root path. Example, raw_data/.\n\n"
+	printf "Usage :\n aws_check_integrity.sh <local_path> <bucket_name> <bucket_folder>\n\t- local_path: local path where all files, previously uploaded on AWS, are currently stored. For example: /data/nucCyt/raw_data/.\n\t- bucket_name: the name of the S3 bucket we want to check. For example: nuccyt.\n\t- bucket_folder: the name of the root folder on the S3 bucket. \n\t ie For example raw_data. In case there is not any folder in the root, this parameter will be a slash (/) indicating the root path. Example, raw_data/.\n\n"
 	exit -1
 elif [ ! -d "$1" ]; then
 	printf "\n"
@@ -40,21 +46,24 @@ fi
 ## Create log file
 ########################
 
-if [ ! -d $AWS_LOGS ]; then
-  mkdir -p $AWS_LOGS;
+if [ ! -d $LOG_FILE ]; then
+  mkdir -p $LOG_FILE;
 fi
 
-log_file=$AWS_LOGS
+log_file=$LOG_FILE
 current_time=$(date "+%Y.%m.%d-%H.%M")
 log_file=$log_file.$current_time.$2.log
 echo "Log filename: " "$log_file"
 
-
 ########################
 ## Main function
 ########################
+function aws_sync()
+{
+  aws s3 sync "$DIRECTORY" s3://"$BUCKET"
+}
 
-function upload_s3
+function upload_s3() 
 {
 	# Receive parameters
 	local_folder="$1"
@@ -118,5 +127,26 @@ function upload_s3
 	done
 }
 
+watch_upload() {
+	inotifywait -mr "${DIRECTORY}" -e create -e delete -e move -e modify --format '%w%f %e' | \
+	while read -r file _ ; do
+		# ignore sqlite tmp files
+		if [[ "${file}" =~ \.db-(journal|wal|shm)$ ]]; then
+			continue
+		fi
+		# sleeping before execution to accumulate any other file changes...
+		sleep 1
+    timeout 2
+    aws_sync
+	done
+}
+
+exitscript () {
+  kill -SIGINT $$
+}
+
 ## Request the function
 upload_s3 "$1"
+watch_upload
+ps -f
+exitscript

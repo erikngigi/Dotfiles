@@ -1,8 +1,14 @@
 # Screen Layout Script
-/home/eric/.screenlayout/vga-only-screen-layout.sh &
+$HOME/.screenlayout/vga-only-screen-layout.sh &
 
 # Dunstify 
-killall -q dunst; dunst &
+pkill -9 dunst; dunst &
 
 # Network-Manager Applet
 nm-applet --indicator &
+
+# Chromium
+$HOME/.scripts/autostart/brave.sh &
+
+# Thunderbird
+$HOME/.scripts/autostart/thunderbird.sh &

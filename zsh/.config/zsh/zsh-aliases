@@ -30,6 +30,9 @@ alias rm='rm -i'
 alias cp='advcp -gu'
 alias mv='advmv -gu'
 
+# bat
+alias cat='bat'
+
 #node-versions
 alias ns='~/.scripts/node/node-switch.sh'
 
@@ -38,6 +41,9 @@ alias anime-cli='anipy-cli -d -o -q 1080'
 
 #xrandr brightness
 alias br='xrandr --output VGA-0 --brightness '
+
+#xsel
+alias xsel-copy='xsel --clipboard'
 
 # nnn
 alias n='nnn -dr'
@@ -59,8 +65,8 @@ alias feh-display='feh -d -. Wallpapers'
 alias gcl='git clone'
 
 # Vanaheim HDD
-alias vanaheim='doas mount /dev/sdb1 /mnt/Vanaheim'
-alias uvanaheim='doas umount /dev/sdb1 /mnt/Vanaheim'
+alias vanaheim='doas mount /dev/sdb1 /home/eric/Yggdrasil'
+alias uvanaheim='doas umount /dev/sdb1 /home/eric/Yggdrasil'
 
 # Youtube
 alias yt='yt-dlp --config-location /home/eric/.config/yt-dlp/config'
@@ -68,6 +74,7 @@ alias ytp='yt-dlp --config-location /home/eric/.config/yt-dlp/config1'
 alias yta='yt-dlp --config-location /home/eric/.config/yt-dlp/config3'
 alias ytpa='yt-dlp --config-location /home/eric/.config/yt-dlp/config4'
 alias clear-yt='echo -n "" > /home/eric/youtube.txt'
+alias ytfzf='ytfzf --sort-by=upload_date'
 
 #Aria
 alias clear-aria='echo -n "" > /home/eric/.aria2/input.conf'

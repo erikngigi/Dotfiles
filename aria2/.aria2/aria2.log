@@ -324,3 +324,231 @@ Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www77.uptobox.com/d
 2022-09-24 15:34:55.380468 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
 2022-09-24 16:42:50.897333 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/Leon.The.Professional.1994.EXTENDED.REMASTERED.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
 2022-09-24 16:42:50.909530 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-03 09:13:20.358244 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-10-03 09:13:30.444546 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-03 09:13:59.885730 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/Nemeth, E._ Snyder, G._ Hein, T.R._ Whaley, B._ Mackin, D. - UNIX and Linux System Administration Handbook-Pearson (2017).epub
+2022-10-03 09:13:59.901833 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-04 13:28:20.087078 [NOTICE] [Context.cc:310] Downloading 6 item(s)
+2022-10-04 13:28:21.588531 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/wallpapersden.com_naruto-uzumaki-x-sasuke-uchiha-hd_3840x2160.jpg
+2022-10-04 13:28:23.969682 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/wallpapersden.com_naruto-uzumaki-4k-minimal-art_3840x2160.jpg
+2022-10-04 13:28:24.582515 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/wallpapersden.com_itachi-uchiha-cool-naruto-hd-art_3840x2160.jpg
+2022-10-04 13:28:25.310976 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/wallpapersden.com_kakashi-hatake-hd-naruto-dark-black-art_3840x2160.jpg
+2022-10-04 13:28:25.878631 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/wallpapersden.com_itachi-uchiha-naruto-hd-dark_3840x2160.jpg
+2022-10-04 13:28:27.149506 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/wallpapersden.com_itachi-vs-sasuke-4k-naruto_3840x2160.jpg
+2022-10-04 13:28:27.183472 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-10 11:01:51.871473 [NOTICE] [Context.cc:310] Downloading 2 item(s)
+2022-10-10 11:01:52.608576 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/archlinux-2022.10.01-x86_64.iso.sig
+2022-10-10 11:02:01.969778 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-10 12:12:32.666308 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/archlinux-2022.10.01-x86_64.iso
+2022-10-10 12:12:32.679815 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-10 15:41:24.249088 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-10-10 15:41:25.835302 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-10 15:41:25.842704 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-10 15:41:25.895679 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-10 16:15:06.741216 [NOTICE] [DownloadEngine.cc:255] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.
+2022-10-10 16:15:06.741887 [NOTICE] [RequestGroupMan.cc:424] Download GID#5a4d83d9ce3af278 not complete: /home/eric/Media/Aria/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+2022-10-10 16:15:15.028346 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-10-10 16:15:16.116940 [ERROR] [AbstractCommand.cc:349] CUID#8 - Download aborted. URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=428
+2022-10-10 16:15:16.117330 [NOTICE] [RequestGroupMan.cc:424] Download GID#63272c3b88e67a61 not complete: 
+2022-10-10 16:15:29.599863 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-10-10 16:15:30.739527 [ERROR] [AbstractCommand.cc:349] CUID#8 - Download aborted. URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=428
+2022-10-10 16:15:30.739779 [NOTICE] [RequestGroupMan.cc:424] Download GID#ea96054f43a31712 not complete: 
+2022-10-10 16:15:30.745265 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-10 16:15:36.755268 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-10-10 16:15:37.845505 [ERROR] [AbstractCommand.cc:349] CUID#8 - Download aborted. URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=428
+2022-10-10 16:15:37.845715 [NOTICE] [RequestGroupMan.cc:424] Download GID#6081723ee3dc177c not complete: 
+2022-10-10 16:15:37.850985 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-10 16:15:46.092396 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-10-10 16:15:47.188157 [ERROR] [AbstractCommand.cc:349] CUID#8 - Download aborted. URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=428
+2022-10-10 16:15:47.188369 [NOTICE] [RequestGroupMan.cc:424] Download GID#09c5c70c9d64d51a not complete: 
+2022-10-10 16:15:47.194892 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-10 16:15:55.932096 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-10-10 16:15:56.897758 [ERROR] [AbstractCommand.cc:349] CUID#8 - Download aborted. URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=428
+2022-10-10 16:15:56.898079 [NOTICE] [RequestGroupMan.cc:424] Download GID#bfd44a12eb0dd636 not complete: 
+2022-10-10 16:15:56.903424 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-10 16:22:16.198810 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-10-10 16:22:17.356774 [ERROR] [AbstractCommand.cc:349] CUID#8 - Download aborted. URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www37.uptobox.com/dl/h-zremBfOpMC5ec3dT-WCxMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEW-auDCaH6LJE1NGGStEnxxuaS7izsj0Q6GkiRsDJ-YWEoEqduDcloqzNcBsxPKXmWbdwQMVGp1olgOMF6wii1w/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=428
+2022-10-10 16:22:17.357121 [NOTICE] [RequestGroupMan.cc:424] Download GID#9ed8274870fe5bb3 not complete: 
+2022-10-10 16:22:17.363199 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-10 16:23:57.063549 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-10-10 16:23:58.967771 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www37.uptobox.com/dl/xxs_S16nDZtRKeFwMAlZKRMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEG--6bOTv1axrp8cXE26I0OQm86NNLKOzXbWO4UxLhLlTztErOaIUEs-SdzNA181Eug2RLrc-2pXvhsOIwSdKFw/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www37.uptobox.com/dl/xxs_S16nDZtRKeFwMAlZKRMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEG--6bOTv1axrp8cXE26I0OQm86NNLKOzXbWO4UxLhLlTztErOaIUEs-SdzNA181Eug2RLrc-2pXvhsOIwSdKFw/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-10 16:23:59.049760 [ERROR] [AbstractCommand.cc:349] CUID#12 - Download aborted. URI=https://www37.uptobox.com/dl/xxs_S16nDZtRKeFwMAlZKRMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEG--6bOTv1axrp8cXE26I0OQm86NNLKOzXbWO4UxLhLlTztErOaIUEs-SdzNA181Eug2RLrc-2pXvhsOIwSdKFw/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www37.uptobox.com/dl/xxs_S16nDZtRKeFwMAlZKRMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEG--6bOTv1axrp8cXE26I0OQm86NNLKOzXbWO4UxLhLlTztErOaIUEs-SdzNA181Eug2RLrc-2pXvhsOIwSdKFw/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-10 16:24:00.776194 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www37.uptobox.com/dl/xxs_S16nDZtRKeFwMAlZKRMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEG--6bOTv1axrp8cXE26I0OQm86NNLKOzXbWO4UxLhLlTztErOaIUEs-SdzNA181Eug2RLrc-2pXvhsOIwSdKFw/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www37.uptobox.com/dl/xxs_S16nDZtRKeFwMAlZKRMSjRLepcNreyOzzvTtt1DNi4GGS-MEg7rHs46zsQFEG--6bOTv1axrp8cXE26I0OQm86NNLKOzXbWO4UxLhLlTztErOaIUEs-SdzNA181Eug2RLrc-2pXvhsOIwSdKFw/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-10 16:24:07.924327 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-10 18:56:15.993305 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/Whiplash.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+2022-10-10 18:56:16.002564 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-11 15:39:05.033195 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-10-11 15:39:15.293269 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-11 15:43:26.371117 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/Evi Nemeth, Garth Snyder, Trent R. Hein, Ben Whaley, Dan Mackin - UNIX and Linux System Administration Handbook-Addison-Wesley (2017).pdf
+2022-10-11 15:43:26.381030 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-11 18:10:11.927576 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-10-11 18:10:13.573083 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www58.uptobox.com/dl/NW7M-X24PhmYuzVJFZ7_1XjXlYKbR2BiAuAyTTHjnGeoihY7XsbU472IIKpWkiBwm1AllzBz43kB2f5DeIgAzcg8WvUvqcfr7S6ax2vKz08AWg2HArjHBZe1wzQ_e7YQG7OHuf04WhglnIptWxOEHg/Full.Metal.Jacket.1987.1080p.UHD.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www58.uptobox.com/dl/NW7M-X24PhmYuzVJFZ7_1XjXlYKbR2BiAuAyTTHjnGeoihY7XsbU472IIKpWkiBwm1AllzBz43kB2f5DeIgAzcg8WvUvqcfr7S6ax2vKz08AWg2HArjHBZe1wzQ_e7YQG7OHuf04WhglnIptWxOEHg/Full.Metal.Jacket.1987.1080p.UHD.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-11 18:10:13.589101 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www58.uptobox.com/dl/NW7M-X24PhmYuzVJFZ7_1XjXlYKbR2BiAuAyTTHjnGeoihY7XsbU472IIKpWkiBwm1AllzBz43kB2f5DeIgAzcg8WvUvqcfr7S6ax2vKz08AWg2HArjHBZe1wzQ_e7YQG7OHuf04WhglnIptWxOEHg/Full.Metal.Jacket.1987.1080p.UHD.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www58.uptobox.com/dl/NW7M-X24PhmYuzVJFZ7_1XjXlYKbR2BiAuAyTTHjnGeoihY7XsbU472IIKpWkiBwm1AllzBz43kB2f5DeIgAzcg8WvUvqcfr7S6ax2vKz08AWg2HArjHBZe1wzQ_e7YQG7OHuf04WhglnIptWxOEHg/Full.Metal.Jacket.1987.1080p.UHD.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-11 18:10:13.620928 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www58.uptobox.com/dl/NW7M-X24PhmYuzVJFZ7_1XjXlYKbR2BiAuAyTTHjnGeoihY7XsbU472IIKpWkiBwm1AllzBz43kB2f5DeIgAzcg8WvUvqcfr7S6ax2vKz08AWg2HArjHBZe1wzQ_e7YQG7OHuf04WhglnIptWxOEHg/Full.Metal.Jacket.1987.1080p.UHD.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www58.uptobox.com/dl/NW7M-X24PhmYuzVJFZ7_1XjXlYKbR2BiAuAyTTHjnGeoihY7XsbU472IIKpWkiBwm1AllzBz43kB2f5DeIgAzcg8WvUvqcfr7S6ax2vKz08AWg2HArjHBZe1wzQ_e7YQG7OHuf04WhglnIptWxOEHg/Full.Metal.Jacket.1987.1080p.UHD.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-11 18:10:22.050669 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-11 20:19:22.711970 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/Full.Metal.Jacket.1987.1080p.UHD.BluRay.x264.DD5.1-Pahe.in.mkv
+2022-10-11 20:19:22.721828 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-17 12:55:13.220672 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-10-17 12:55:24.212165 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-17 12:56:31.759125 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/Nemeth, E._ Snyder, G._ Hein, T.R._ Whaley, B._ Mackin, D. - UNIX and Linux System Administration Handbook-Pearson (2017).epub
+2022-10-17 12:56:31.771112 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-19 19:31:58.768960 [NOTICE] [Context.cc:310] Downloading 5 item(s)
+2022-10-19 19:32:00.549246 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/7b8xzasjjo981.png
+2022-10-19 19:32:02.788710 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/yoknv9gqdnu61.png
+2022-10-19 19:32:03.171032 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/8iogdtvbj9a61.jpg
+2022-10-19 19:32:03.662537 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/a2bdpmkj03e91.jpg
+2022-10-19 19:32:04.157378 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/mvlwzayy6jp71.png
+2022-10-19 19:32:04.177624 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-22 10:15:25.878977 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-10-22 10:15:27.470544 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-22 10:15:27.577813 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-22 10:15:27.579389 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-22 10:15:35.979400 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-22 11:30:51.202989 [NOTICE] [DownloadEngine.cc:255] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.
+2022-10-22 11:30:51.275357 [NOTICE] [RequestGroupMan.cc:424] Download GID#b313603a32c47489 not complete: /home/eric/Media/Aria/Elvis.2022.1080p.UHD.BluRay.x264.DD+7.1-Pahe.in.mkv
+2022-10-22 11:30:51.289834 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-22 11:35:03.805882 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-10-22 11:35:07.338318 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-22 11:35:07.502655 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-22 11:35:07.976248 [ERROR] [AbstractCommand.cc:349] CUID#12 - Download aborted. URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-22 11:35:14.336988 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-22 12:37:02.699444 [NOTICE] [DownloadEngine.cc:255] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.
+2022-10-22 12:37:02.758647 [NOTICE] [RequestGroupMan.cc:424] Download GID#c4a37eb3e3f1b7fc not complete: /home/eric/Media/Aria/Elvis.2022.1080p.UHD.BluRay.x264.DD+7.1-Pahe.in.mkv
+2022-10-22 12:37:02.770099 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-22 13:11:20.862365 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-10-22 13:11:22.524172 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-22 13:11:22.611716 [ERROR] [AbstractCommand.cc:349] CUID#12 - Download aborted. URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-22 13:11:22.792738 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www50.uptobox.com/dl/aW31Aw77MPUGcww2QTpSf_nubest6kXmPjl3AaKq6HzMuBqdfMNKAMb8KktOJ4F6NQbXquYinEIhQ6ZgK3BX8vYXD4vreK5cnVrTVxBelVHa18oJ6DvXKTYgxZ_pQc9GSJabkQjkpfXSwpESyY9p9w/Elvis.2022.1080p.UHD.BluRay.x264.DD%2B7.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-10-22 13:11:31.060881 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-22 13:36:36.699399 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/Elvis.2022.1080p.UHD.BluRay.x264.DD+7.1-Pahe.in.mkv
+2022-10-22 13:36:36.715453 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-24 12:42:21.873374 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-10-24 12:42:31.947401 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-10-24 12:47:00.530063 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/P4-BMv2.pdf
+2022-10-24 12:47:00.554949 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-04 12:19:17.528018 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-11-04 12:19:19.120143 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www39.uptobox.com/dl/F73MzbdO3lx30qIWZYT0eNJ6lNxJ77tMY21uJsPvkgjJJAWR8kO6nF4DS2lckJggDk8HXsZTs4cYR40IZsM4gji37wJeS8OOWx04ANnN4P6tGxj0PG8rkZFD6ZQ8AXT5JDpRcbsH03dKgkWV3yHk_w/ouse.drag.s1.fhd.264-pahe.in.part1.rar
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www39.uptobox.com/dl/F73MzbdO3lx30qIWZYT0eNJ6lNxJ77tMY21uJsPvkgjJJAWR8kO6nF4DS2lckJggDk8HXsZTs4cYR40IZsM4gji37wJeS8OOWx04ANnN4P6tGxj0PG8rkZFD6ZQ8AXT5JDpRcbsH03dKgkWV3yHk_w/ouse.drag.s1.fhd.264-pahe.in.part1.rar
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-04 12:19:19.124229 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www39.uptobox.com/dl/F73MzbdO3lx30qIWZYT0eNJ6lNxJ77tMY21uJsPvkgjJJAWR8kO6nF4DS2lckJggDk8HXsZTs4cYR40IZsM4gji37wJeS8OOWx04ANnN4P6tGxj0PG8rkZFD6ZQ8AXT5JDpRcbsH03dKgkWV3yHk_w/ouse.drag.s1.fhd.264-pahe.in.part1.rar
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www39.uptobox.com/dl/F73MzbdO3lx30qIWZYT0eNJ6lNxJ77tMY21uJsPvkgjJJAWR8kO6nF4DS2lckJggDk8HXsZTs4cYR40IZsM4gji37wJeS8OOWx04ANnN4P6tGxj0PG8rkZFD6ZQ8AXT5JDpRcbsH03dKgkWV3yHk_w/ouse.drag.s1.fhd.264-pahe.in.part1.rar
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-04 12:19:19.165148 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www39.uptobox.com/dl/F73MzbdO3lx30qIWZYT0eNJ6lNxJ77tMY21uJsPvkgjJJAWR8kO6nF4DS2lckJggDk8HXsZTs4cYR40IZsM4gji37wJeS8OOWx04ANnN4P6tGxj0PG8rkZFD6ZQ8AXT5JDpRcbsH03dKgkWV3yHk_w/ouse.drag.s1.fhd.264-pahe.in.part1.rar
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www39.uptobox.com/dl/F73MzbdO3lx30qIWZYT0eNJ6lNxJ77tMY21uJsPvkgjJJAWR8kO6nF4DS2lckJggDk8HXsZTs4cYR40IZsM4gji37wJeS8OOWx04ANnN4P6tGxj0PG8rkZFD6ZQ8AXT5JDpRcbsH03dKgkWV3yHk_w/ouse.drag.s1.fhd.264-pahe.in.part1.rar
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-04 12:19:27.537707 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-04 16:24:39.390492 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/ouse.drag.s1.fhd.264-pahe.in.part1.rar
+2022-11-04 16:24:39.401396 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-05 10:29:01.031549 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-11-05 10:29:05.388102 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-05 10:29:05.431385 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-05 10:29:05.855580 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-05 10:29:11.052994 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-05 21:15:40.924599 [NOTICE] [DownloadEngine.cc:255] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.
+2022-11-05 21:15:40.925361 [NOTICE] [RequestGroupMan.cc:424] Download GID#c95f4c8a9fa5fdad not complete: /home/eric/Media/Aria/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+2022-11-05 21:15:40.929989 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-05 21:18:47.760950 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-11-05 21:18:49.392962 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-05 21:18:49.397285 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-05 21:18:49.405040 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-05 21:18:58.234527 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-05 21:24:00.179553 [NOTICE] [DownloadEngine.cc:255] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.
+2022-11-05 21:24:00.213237 [NOTICE] [RequestGroupMan.cc:424] Download GID#8a7a0bb2b052f747 not complete: /home/eric/Media/Aria/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+2022-11-05 21:24:00.224601 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-06 15:06:18.201602 [NOTICE] [Context.cc:310] Downloading 2 item(s)
+2022-11-06 15:06:21.208095 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www77.uptobox.com/dl/YL8zEvQyLFmJHqbJw_5k_OzDWbhmo1Ngo8sOzsVJ5IvowB0w32bP8tLROW67fDbMxUC2LAB75c490IRTSKtPSKzME41mRvYR68cMondkC8G8AiKHOUmlx8KecsVbfLqMncC-0Y6-CDQl_k7k5vDYIA/A.Beautiful.Mind.2001.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www77.uptobox.com/dl/YL8zEvQyLFmJHqbJw_5k_OzDWbhmo1Ngo8sOzsVJ5IvowB0w32bP8tLROW67fDbMxUC2LAB75c490IRTSKtPSKzME41mRvYR68cMondkC8G8AiKHOUmlx8KecsVbfLqMncC-0Y6-CDQl_k7k5vDYIA/A.Beautiful.Mind.2001.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-06 15:06:21.247189 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www77.uptobox.com/dl/YL8zEvQyLFmJHqbJw_5k_OzDWbhmo1Ngo8sOzsVJ5IvowB0w32bP8tLROW67fDbMxUC2LAB75c490IRTSKtPSKzME41mRvYR68cMondkC8G8AiKHOUmlx8KecsVbfLqMncC-0Y6-CDQl_k7k5vDYIA/A.Beautiful.Mind.2001.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www77.uptobox.com/dl/YL8zEvQyLFmJHqbJw_5k_OzDWbhmo1Ngo8sOzsVJ5IvowB0w32bP8tLROW67fDbMxUC2LAB75c490IRTSKtPSKzME41mRvYR68cMondkC8G8AiKHOUmlx8KecsVbfLqMncC-0Y6-CDQl_k7k5vDYIA/A.Beautiful.Mind.2001.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-06 15:06:21.250992 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www77.uptobox.com/dl/YL8zEvQyLFmJHqbJw_5k_OzDWbhmo1Ngo8sOzsVJ5IvowB0w32bP8tLROW67fDbMxUC2LAB75c490IRTSKtPSKzME41mRvYR68cMondkC8G8AiKHOUmlx8KecsVbfLqMncC-0Y6-CDQl_k7k5vDYIA/A.Beautiful.Mind.2001.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www77.uptobox.com/dl/YL8zEvQyLFmJHqbJw_5k_OzDWbhmo1Ngo8sOzsVJ5IvowB0w32bP8tLROW67fDbMxUC2LAB75c490IRTSKtPSKzME41mRvYR68cMondkC8G8AiKHOUmlx8KecsVbfLqMncC-0Y6-CDQl_k7k5vDYIA/A.Beautiful.Mind.2001.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-06 15:06:28.365814 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-06 15:06:55.850513 [NOTICE] [DownloadEngine.cc:255] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.
+2022-11-06 15:06:55.868788 [NOTICE] [RequestGroupMan.cc:424] Download GID#0d9de70a66138094 not complete: /home/eric/Media/Aria/A.Beautiful.Mind.2001.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+2022-11-06 15:06:55.881303 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-06 15:07:15.992291 [NOTICE] [Context.cc:310] Downloading 2 item(s)
+2022-11-06 15:07:19.926093 [ERROR] [AbstractCommand.cc:349] CUID#12 - Download aborted. URI=https://www77.uptobox.com/dl/YL8zEvQyLFmJHqbJw_5k_OzDWbhmo1Ngo8sOzsVJ5IvowB0w32bP8tLROW67fDbMxUC2LAB75c490IRTSKtPSKzME41mRvYR68cMondkC8G8AiKHOUmlx8KecsVbfLqMncC-0Y6-CDQl_k7k5vDYIA/A.Beautiful.Mind.2001.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www77.uptobox.com/dl/YL8zEvQyLFmJHqbJw_5k_OzDWbhmo1Ngo8sOzsVJ5IvowB0w32bP8tLROW67fDbMxUC2LAB75c490IRTSKtPSKzME41mRvYR68cMondkC8G8AiKHOUmlx8KecsVbfLqMncC-0Y6-CDQl_k7k5vDYIA/A.Beautiful.Mind.2001.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-06 15:07:19.927076 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www77.uptobox.com/dl/YL8zEvQyLFmJHqbJw_5k_OzDWbhmo1Ngo8sOzsVJ5IvowB0w32bP8tLROW67fDbMxUC2LAB75c490IRTSKtPSKzME41mRvYR68cMondkC8G8AiKHOUmlx8KecsVbfLqMncC-0Y6-CDQl_k7k5vDYIA/A.Beautiful.Mind.2001.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www77.uptobox.com/dl/YL8zEvQyLFmJHqbJw_5k_OzDWbhmo1Ngo8sOzsVJ5IvowB0w32bP8tLROW67fDbMxUC2LAB75c490IRTSKtPSKzME41mRvYR68cMondkC8G8AiKHOUmlx8KecsVbfLqMncC-0Y6-CDQl_k7k5vDYIA/A.Beautiful.Mind.2001.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-06 15:07:19.962361 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www77.uptobox.com/dl/YL8zEvQyLFmJHqbJw_5k_OzDWbhmo1Ngo8sOzsVJ5IvowB0w32bP8tLROW67fDbMxUC2LAB75c490IRTSKtPSKzME41mRvYR68cMondkC8G8AiKHOUmlx8KecsVbfLqMncC-0Y6-CDQl_k7k5vDYIA/A.Beautiful.Mind.2001.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www77.uptobox.com/dl/YL8zEvQyLFmJHqbJw_5k_OzDWbhmo1Ngo8sOzsVJ5IvowB0w32bP8tLROW67fDbMxUC2LAB75c490IRTSKtPSKzME41mRvYR68cMondkC8G8AiKHOUmlx8KecsVbfLqMncC-0Y6-CDQl_k7k5vDYIA/A.Beautiful.Mind.2001.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-06 15:07:26.102513 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-06 16:38:36.123505 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/A.Beautiful.Mind.2001.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+2022-11-06 16:38:37.678438 [ERROR] [AbstractCommand.cc:349] CUID#18 - Download aborted. URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-06 16:38:37.690605 [ERROR] [AbstractCommand.cc:349] CUID#19 - Download aborted. URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-06 16:38:37.705520 [ERROR] [AbstractCommand.cc:349] CUID#20 - Download aborted. URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www43.uptobox.com/dl/RKBDbMWOgPnOSA0RJC7-uM9dIRwZCY2VcKrsWv8fzDVEJ8KMd5_mIUETsp_z9eMbejFuAy5xwAW4jkN0sHIkF2ZoXfk0LdSJ4D5gStJyuei5DdlK5EvKJ4nPhhpZt8ws6l2c2esr0KFNaVeLcnlT5g/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-06 19:18:25.681344 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/ouse.drag.s1.fhd.264-pahe.in.part2.rar
+2022-11-06 19:18:25.702054 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.

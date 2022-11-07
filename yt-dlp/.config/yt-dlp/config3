@@ -2,16 +2,15 @@
 
 --ignore-errors
 --no-playlist
---limit-rate 900K
+--limit-rate 800K
 --write-thumbnail
 --write-subs
 --embed-subs
 --sub-format "srt"
 --sub-langs "en"
---vo-image-webp-quality=<100>
 
 #Video Save Location
 
--o "/home/eric/Media/YouTube/YouTube-Audio/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
+-o "/home/eric/Media/YouTube/Audios/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
 
 -f 140

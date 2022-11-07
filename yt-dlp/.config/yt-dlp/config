@@ -1,5 +1,5 @@
 # YouTube-dl configuration settings
---limit-rate 900K
+--limit-rate 500K
 # --ignore-errors
 --no-playlist
 # --write-subs
@@ -9,8 +9,8 @@
 
 #Video Save Location
 
--o "/home/eric/Media/YouTube/YouTube-Video/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
+-o "/home/eric/Media/YouTube/Videos/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
 
 #Video Preferences
 
--f 137+140/22+140/136+140/135+140/133+140/160+140 
+-f 137+140/22+140/136+140/135+140/133+140/160+140/mp4-1080p 

@@ -2,7 +2,7 @@
 
 --ignore-errors
 --no-playlist
---limit-rate 900K
+--limit-rate 800K
 --write-thumbnail
 --write-subs
 --embed-subs
@@ -11,7 +11,7 @@
 
 #Video Save Location
 
--o "/home/eric/Media/YouTube/YouTube-Audio/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s"
+-o "/home/eric/Media/YouTube/Audios/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s"
 
 #Video Preferences
 

@@ -2,11 +2,11 @@
 
 --ignore-errors
 --no-playlist
---limit-rate 900K
+--limit-rate 800K
 
 #Video Save Location
 
--o "/home/eric/Media/YouTube/YouTube-Video/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s"
+-o "/home/eric/Media/YouTube/Videos/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s"
 
 #Video Preferences
 

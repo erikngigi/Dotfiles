@@ -1,0 +1,18 @@
+#!/bin/bash
+
+pattern="www"
+
+total=0
+
+for f in *
+do
+  [ ! -f $f ] && continue
+
+  if grep $pattern $f > /dev/null
+  then
+    size=`cat $f | wc -c`
+    total=`expr $total + $size`
+  fi
+done
+
+echo Total size of all file containing $pattern is $total
