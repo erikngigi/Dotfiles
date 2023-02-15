@@ -13,15 +13,15 @@ env:
   TERM: xterm-256color
 
 window:
-  # opacity: 0.8
+  opacity: 1
   dynamic_title: true
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
-  dimensions:
-   columns: 80
-   lines: 24
+  # dimensions:
+  #  columns: 80
+  #  lines: 24
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
@@ -90,7 +90,9 @@ font:
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: -1     # For letter spacing
+    # x: 0     # For letter spacing
     y: 1      # For line spacing
+    # y: 0      # For line spacing
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,

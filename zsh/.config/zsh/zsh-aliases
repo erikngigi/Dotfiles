@@ -18,12 +18,12 @@ alias tmux-restart='tmux kill-server && tmux'
 
 # Pacman
 alias refresh='doas pacman -Syyy'
-alias upgrade='doas pacman -Syu'
+alias update='doas pacman -Syu'
 
 # Sudo
-# alias sudo='nocorrect sudo -E'
-alias sudo='doas'
-alias sudoedit='doas rnano'
+alias sudo='nocorrect sudo -E'
+# alias sudo='doas'
+# alias sudoedit='doas rnano'
 
 # confirm before overwriting something
 alias rm='rm -i'
@@ -53,10 +53,8 @@ alias N='doas nnn -drx'
 alias set-br='doas set-brightness.sh'
 
 # neovim
-alias nv='nvim'
-alias Nv='doas nvim'
-alias lv='lvim'
-alias Lv='doas lvim'
+alias nv='lvim'
+alias Nv='doas lvim'
 
 #feh
 alias feh-display='feh -d -. Wallpapers'
@@ -85,6 +83,7 @@ alias free='free -m' # show sizes in MB
 
 # ls
 alias ls='exa --long --tree --level=1'
+alias lt='exa --tree --level=2'
 
 # display off
 alias screenoff='xset dpms force off && betterlockscreen -l'
@@ -109,7 +108,10 @@ alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate ar
 alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 
 #Anime
-alias naruto="mpv $HOME/Media/Anime/Shows/Naruto"
+alias naruto="mpv $HOME/Media/Anime/Shows/Naruto\ Shippuden"
 
-#zathura
-alias z="zathura"
+# Hunter X Hunter
+alias hunter-x-hunter="mpv --sub-scale=1.2 $HOME/Media/Anime/Shows/Hunter\ X\ Hunter"
+
+# Boku No Hero Academia
+alias boku-no-hero="mpv $HOME/Media/Anime/Shows/Boku\ no\ Hero"

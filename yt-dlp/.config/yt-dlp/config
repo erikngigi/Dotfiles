@@ -1,5 +1,5 @@
 # YouTube-dl configuration settings
---limit-rate 500K
+--limit-rate 1500K
 # --ignore-errors
 --no-playlist
 # --write-subs

@@ -1,5 +1,6 @@
 # Screen Layout Script
 $HOME/.screenlayout/vga-only-screen-layout.sh &
+# $HOME/.screenlayout/ldvs-only.sh &
 
 # Dunstify 
 pkill -9 dunst; dunst &
@@ -8,7 +9,10 @@ pkill -9 dunst; dunst &
 nm-applet --indicator &
 
 # Chromium
-$HOME/.scripts/autostart/brave.sh &
+# $HOME/.scripts/autostart/brave.sh &
 
 # Thunderbird
-$HOME/.scripts/autostart/thunderbird.sh &
+# $HOME/.scripts/autostart/thunderbird.sh &
+
+# Firefox
+# $HOME/.scripts/autostart/firefox.sh &

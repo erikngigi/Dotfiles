@@ -552,3 +552,68 @@ Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www43.uptobox.com/d
   -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
 2022-11-06 19:18:25.681344 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/ouse.drag.s1.fhd.264-pahe.in.part2.rar
 2022-11-06 19:18:25.702054 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-10 08:31:32.450541 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-11-10 08:31:42.475050 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-10 09:11:19.892187 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/archlinux-2022.11.01-x86_64.iso
+2022-11-10 09:11:19.907001 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-10 11:49:51.312389 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-11-10 11:49:52.924539 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www50.uptobox.com/dl/6_UZvZvxbYUFoKn-IgKzayy8CzEfoaU6O3p6zUqM3dfg0ScHXCPhWU8uMOYmSHSS-2zTE5XpKsVZtHgn6bSY4wTmzdeYziKXTPASQ8W3RNT8LdpFY1Mmv6_lLKscSMHwVTXN-l2NgYEojnAG7P8jEg/All.Quiet.on.the.Western.Front.2022.1080p.NF.WEB-DL.x264.6CH-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www50.uptobox.com/dl/6_UZvZvxbYUFoKn-IgKzayy8CzEfoaU6O3p6zUqM3dfg0ScHXCPhWU8uMOYmSHSS-2zTE5XpKsVZtHgn6bSY4wTmzdeYziKXTPASQ8W3RNT8LdpFY1Mmv6_lLKscSMHwVTXN-l2NgYEojnAG7P8jEg/All.Quiet.on.the.Western.Front.2022.1080p.NF.WEB-DL.x264.6CH-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-10 11:49:52.954413 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www50.uptobox.com/dl/6_UZvZvxbYUFoKn-IgKzayy8CzEfoaU6O3p6zUqM3dfg0ScHXCPhWU8uMOYmSHSS-2zTE5XpKsVZtHgn6bSY4wTmzdeYziKXTPASQ8W3RNT8LdpFY1Mmv6_lLKscSMHwVTXN-l2NgYEojnAG7P8jEg/All.Quiet.on.the.Western.Front.2022.1080p.NF.WEB-DL.x264.6CH-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www50.uptobox.com/dl/6_UZvZvxbYUFoKn-IgKzayy8CzEfoaU6O3p6zUqM3dfg0ScHXCPhWU8uMOYmSHSS-2zTE5XpKsVZtHgn6bSY4wTmzdeYziKXTPASQ8W3RNT8LdpFY1Mmv6_lLKscSMHwVTXN-l2NgYEojnAG7P8jEg/All.Quiet.on.the.Western.Front.2022.1080p.NF.WEB-DL.x264.6CH-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-10 11:49:52.971824 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www50.uptobox.com/dl/6_UZvZvxbYUFoKn-IgKzayy8CzEfoaU6O3p6zUqM3dfg0ScHXCPhWU8uMOYmSHSS-2zTE5XpKsVZtHgn6bSY4wTmzdeYziKXTPASQ8W3RNT8LdpFY1Mmv6_lLKscSMHwVTXN-l2NgYEojnAG7P8jEg/All.Quiet.on.the.Western.Front.2022.1080p.NF.WEB-DL.x264.6CH-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www50.uptobox.com/dl/6_UZvZvxbYUFoKn-IgKzayy8CzEfoaU6O3p6zUqM3dfg0ScHXCPhWU8uMOYmSHSS-2zTE5XpKsVZtHgn6bSY4wTmzdeYziKXTPASQ8W3RNT8LdpFY1Mmv6_lLKscSMHwVTXN-l2NgYEojnAG7P8jEg/All.Quiet.on.the.Western.Front.2022.1080p.NF.WEB-DL.x264.6CH-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-10 11:50:01.415691 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-10 12:44:13.655569 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/All.Quiet.on.the.Western.Front.2022.1080p.NF.WEB-DL.x264.6CH-Pahe.in.mkv
+2022-11-10 12:44:13.668759 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-20 12:56:58.102603 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-11-20 12:57:00.188662 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www109.uptobox.com/dl/qR66ZLPo4Ge1HpLTMiQ-roK5GuPFLCoG6NWgpPFVkrzw9NMqNi2Yd-wrurZuV1Q7P4CZ4Oa9XyRVj7E9UiQvDJ4AXiel7JkspJPbp8wgZ-cPWmuusJT6hz2NjGTt5DG0vczcRpswjy4YcwUh84sJOw/The.Pursuit.of.Happyness.2006.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www109.uptobox.com/dl/qR66ZLPo4Ge1HpLTMiQ-roK5GuPFLCoG6NWgpPFVkrzw9NMqNi2Yd-wrurZuV1Q7P4CZ4Oa9XyRVj7E9UiQvDJ4AXiel7JkspJPbp8wgZ-cPWmuusJT6hz2NjGTt5DG0vczcRpswjy4YcwUh84sJOw/The.Pursuit.of.Happyness.2006.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-20 12:57:00.214037 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www109.uptobox.com/dl/qR66ZLPo4Ge1HpLTMiQ-roK5GuPFLCoG6NWgpPFVkrzw9NMqNi2Yd-wrurZuV1Q7P4CZ4Oa9XyRVj7E9UiQvDJ4AXiel7JkspJPbp8wgZ-cPWmuusJT6hz2NjGTt5DG0vczcRpswjy4YcwUh84sJOw/The.Pursuit.of.Happyness.2006.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www109.uptobox.com/dl/qR66ZLPo4Ge1HpLTMiQ-roK5GuPFLCoG6NWgpPFVkrzw9NMqNi2Yd-wrurZuV1Q7P4CZ4Oa9XyRVj7E9UiQvDJ4AXiel7JkspJPbp8wgZ-cPWmuusJT6hz2NjGTt5DG0vczcRpswjy4YcwUh84sJOw/The.Pursuit.of.Happyness.2006.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-20 12:57:00.249259 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www109.uptobox.com/dl/qR66ZLPo4Ge1HpLTMiQ-roK5GuPFLCoG6NWgpPFVkrzw9NMqNi2Yd-wrurZuV1Q7P4CZ4Oa9XyRVj7E9UiQvDJ4AXiel7JkspJPbp8wgZ-cPWmuusJT6hz2NjGTt5DG0vczcRpswjy4YcwUh84sJOw/The.Pursuit.of.Happyness.2006.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www109.uptobox.com/dl/qR66ZLPo4Ge1HpLTMiQ-roK5GuPFLCoG6NWgpPFVkrzw9NMqNi2Yd-wrurZuV1Q7P4CZ4Oa9XyRVj7E9UiQvDJ4AXiel7JkspJPbp8wgZ-cPWmuusJT6hz2NjGTt5DG0vczcRpswjy4YcwUh84sJOw/The.Pursuit.of.Happyness.2006.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-20 12:57:08.137817 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-20 15:31:47.437309 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/The.Pursuit.of.Happyness.2006.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+2022-11-20 15:31:47.448642 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-27 10:35:06.085312 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-11-27 10:35:09.759933 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www41.uptobox.com/dl/siyJX-rLRwOXsqTv33l19Zsy-jz2UsJ5qrwLkGMORvNVnsMaWaCbTXjw63jIo6XkzzwKsi6HbKCZX9MQM_bqmikD_JrejLbvG6lZt46R29Cu7l3YJ61qxI7LxqN4lNwqnT9E7UmHiGMPaTfP9H5x4Q/The.Theory.of.Everything.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www41.uptobox.com/dl/siyJX-rLRwOXsqTv33l19Zsy-jz2UsJ5qrwLkGMORvNVnsMaWaCbTXjw63jIo6XkzzwKsi6HbKCZX9MQM_bqmikD_JrejLbvG6lZt46R29Cu7l3YJ61qxI7LxqN4lNwqnT9E7UmHiGMPaTfP9H5x4Q/The.Theory.of.Everything.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-27 10:35:10.453265 [ERROR] [AbstractCommand.cc:349] CUID#11 - Download aborted. URI=https://www41.uptobox.com/dl/siyJX-rLRwOXsqTv33l19Zsy-jz2UsJ5qrwLkGMORvNVnsMaWaCbTXjw63jIo6XkzzwKsi6HbKCZX9MQM_bqmikD_JrejLbvG6lZt46R29Cu7l3YJ61qxI7LxqN4lNwqnT9E7UmHiGMPaTfP9H5x4Q/The.Theory.of.Everything.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www41.uptobox.com/dl/siyJX-rLRwOXsqTv33l19Zsy-jz2UsJ5qrwLkGMORvNVnsMaWaCbTXjw63jIo6XkzzwKsi6HbKCZX9MQM_bqmikD_JrejLbvG6lZt46R29Cu7l3YJ61qxI7LxqN4lNwqnT9E7UmHiGMPaTfP9H5x4Q/The.Theory.of.Everything.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-27 10:35:11.266763 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www41.uptobox.com/dl/siyJX-rLRwOXsqTv33l19Zsy-jz2UsJ5qrwLkGMORvNVnsMaWaCbTXjw63jIo6XkzzwKsi6HbKCZX9MQM_bqmikD_JrejLbvG6lZt46R29Cu7l3YJ61qxI7LxqN4lNwqnT9E7UmHiGMPaTfP9H5x4Q/The.Theory.of.Everything.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www41.uptobox.com/dl/siyJX-rLRwOXsqTv33l19Zsy-jz2UsJ5qrwLkGMORvNVnsMaWaCbTXjw63jIo6XkzzwKsi6HbKCZX9MQM_bqmikD_JrejLbvG6lZt46R29Cu7l3YJ61qxI7LxqN4lNwqnT9E7UmHiGMPaTfP9H5x4Q/The.Theory.of.Everything.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2022-11-27 10:35:16.167540 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-11-27 12:03:24.490125 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/The.Theory.of.Everything.2014.1080p.BluRay.x264.DD5.1-Pahe.in.mkv
+2022-11-27 12:03:24.501312 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-12-08 20:34:08.035039 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-12-08 20:34:18.051165 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-12-08 21:23:21.672937 [NOTICE] [DownloadEngine.cc:255] Shutdown sequence commencing... Press Ctrl-C again for emergency shutdown.
+2022-12-08 21:23:21.756635 [NOTICE] [RequestGroupMan.cc:424] Download GID#9018c8ee926a69e8 not complete: /home/eric/Media/Aria/Win10_22H2_English_x64.iso
+2022-12-08 21:23:21.789019 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-12-08 21:23:33.125126 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2022-12-08 21:23:43.136632 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2022-12-08 22:30:35.306116 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/Win10_22H2_English_x64.iso
+2022-12-08 22:30:35.324467 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2023-01-24 06:19:54.602075 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2023-01-24 06:20:04.618416 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2023-01-24 06:37:23.546180 [NOTICE] [DownloadEngine.cc:265] Emergency shutdown sequence commencing...
+2023-01-24 06:37:23.795796 [NOTICE] [RequestGroupMan.cc:424] Download GID#cbd53406fbc57a58 not complete: /home/eric/Media/Aria/archlinux-2023.01.01-x86_64.iso
+2023-01-24 06:37:23.845082 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2023-01-24 19:40:03.520496 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2023-01-24 19:40:13.567310 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2023-01-24 19:41:11.417581 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/archlinux-2023.01.01-x86_64.iso
+2023-01-24 19:41:11.432777 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2023-02-10 07:41:36.519290 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2023-02-10 07:41:46.531918 [NOTICE] [SaveSessionCommand.cc:81] Serialized session to '/home/eric/.aria2/aria2.session' successfully.
+2023-02-10 07:56:47.478895 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Media/Aria/archlinux-2023.02.01-x86_64.iso
+2023-02-10 07:56:47.496636 [NOTICE] [MultiUrlRequestInfo.cc:341] Serialized session to '/home/eric/.aria2/aria2.session' successfully.

@@ -1,8 +1,8 @@
 #!/bin/sh
 export ZDOTDIR=$HOME/.config/zsh
 HISTFILE=~/.zsh_history
-setopt appendhistory
-setopt EXTENDED_HISTORY
+# setopt appendhistory
+# setopt EXTENDED_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_ALL_DUPS
@@ -20,7 +20,7 @@ zle_highlight=('paste:none')
 unsetopt BEEP
 
 # completions
-autoload bashcompinit && bashcompinit
+# autoload bashcompinit && bashcompinit
 autoload -Uz compinit
 zstyle ':completion:*' menu select
 # zstyle ':completion::complete:lsof:*' menu yes select
@@ -79,12 +79,12 @@ autoload edit-command-line; zle -N edit-command-line
 # xset r rate 210 40
 
 # Environment variables set everywhere
-export EDITOR="nvim"
+export EDITOR="lvim"
 export TERMINAL="alacritty"
-export BROWSER="brave"
+export BROWSER="brave-bin"
 
 # For QT Themes
-export QT_QPA_PLATFORMTHEME=qt5ct
+# export QT_QPA_PLATFORMTHEME=qt5ct
 
 # remap caps to escape
 # setxkbmap -option caps:escape
@@ -97,8 +97,8 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 # export PS1="$(reset-cursor)$PS1"
 
 # vi mode
-bindkey -v
-export KEYTIMEOUT=1
+# bindkey -v
+# export KEYTIMEOUT=1
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {

@@ -3,7 +3,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 $HOME/.config/polybar/launch2.sh
 
-# bspc monitor LVDS -d 1 2 3
+# bspc monitor LVDS -d 1 2 3 4 5
 bspc monitor VGA-0 -d 1 2 3 4 5 
 
 ##--Global Settings--##
@@ -21,9 +21,9 @@ bspc config focus_follows_pointer true
 
 ##--Monitor and Desktop Settings--##
 bspc config top_padding 32
-bspc config bottom_padding 0
-bspc config left_padding 0
-bspc config right_padding 0
+bspc config bottom_padding 2
+bspc config left_padding 2
+bspc config right_padding 2
 bspc config border_width 2
 bspc config window_gap 12
 
@@ -31,10 +31,9 @@ bspc rule -a Zathura state=fullscreen
 bspc rule -a Atril state=fullscreen
 bspc rule -a mpv desktop=^1
 bspc rule -a Brave-browser desktop=^2
-bspc rule -a qutebrowser desktop=^2
+bspc rule -a firefoxdeveloperedition desktop=^2
 bspc rule -a qBittorrent desktop=^3
 bspc rule -a Clementine desktop=^3
 bspc rule -a TIPP10 desktop=^3
-bspc rule -a notion-app-enhanced desktop=^3
 bspc rule -a TelegramDesktop desktop=^3
 bspc rule -a thunderbird desktop=^4

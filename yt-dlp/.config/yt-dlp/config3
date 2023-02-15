@@ -2,7 +2,7 @@
 
 --ignore-errors
 --no-playlist
---limit-rate 800K
+--limit-rate 900K
 --write-thumbnail
 --write-subs
 --embed-subs

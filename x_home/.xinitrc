@@ -49,10 +49,9 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 # xprofile sourcing 
-[ -f /etc/xprofile ] && . /etc/xprofile
+# [ -f /etc/xprofile ] && . /etc/xprofile
 [ -f ~/.xprofile ] && . ~/.xprofile
 
 xsetroot -cursor_name left_ptr
-# picom --config /home/eric/.config/picom.conf &
 sh ~/.fehbg
 exec bspwm

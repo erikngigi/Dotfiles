@@ -1,5 +1,0 @@
-Eric:Ngigi:1257:Nairobi:00100
-Lenny:Kiruthu:1257:Nairobi:00100
-Samuel:Wanjiru:1298:Nairobi:09110
-Eric:Ngigi1:1234:Nairobi:Nyeri:00100
-Samuel:Waweru:1287:Nyeri:Nyeri:0912

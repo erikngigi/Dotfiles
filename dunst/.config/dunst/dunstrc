@@ -82,7 +82,7 @@
     # Set to 0 to disable.
     # A client can set the 'transient' hint to bypass this. See the rules
     # section for how to disable this if necessary
-    idle_threshold = 120
+    idle_threshold = 5
 
     ### Text ###
     font = JetBrains Mono Medium 10
@@ -134,7 +134,7 @@
     # Show age of message if message is older than show_age_threshold
     # seconds.
     # Set to -1 to disable.
-    show_age_threshold = 60
+    show_age_threshold = 30
 
     # Split notifications into multiple lines if they don't fit into
     # geometry.
@@ -278,7 +278,7 @@
     background = "#000080"
     foreground = "#ffffff"
     frame_color = "#000080"
-    timeout = 900
+    timeout = 30
     # Icon for notifications with low urgency, uncomment to enable
     icon = /home/eric/.config/dunst/normal.png
 
@@ -286,7 +286,7 @@
     background = "#000080"
     foreground = "#ffffff"
     frame_color = "#000080"
-    timeout = 900
+    timeout = 30
     # Icon for notifications with normal urgency, uncomment to enable
     icon = /home/eric/.config/dunst/normal.png
 
@@ -294,7 +294,7 @@
     background = "#900000"
     foreground = "#ffffff"
     frame_color = "#900000"
-    timeout = 900
+    timeout = 30
     # Icon for notifications with critical urgency, uncomment to enable
     icon = /home/eric/.config/dunst/critical.png
 
