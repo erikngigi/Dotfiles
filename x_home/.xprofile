@@ -3,10 +3,10 @@ $HOME/.screenlayout/vga-only-screen-layout.sh &
 # $HOME/.screenlayout/ldvs-only.sh &
 
 # Dunstify 
-pkill -9 dunst; dunst &
+# pkill -9 dunst; dunst &
 
 # Network-Manager Applet
-nm-applet --indicator &
+# nm-applet --indicator &
 
 # Chromium
 # $HOME/.scripts/autostart/brave.sh &
