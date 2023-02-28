@@ -6,7 +6,7 @@ $HOME/.screenlayout/vga-only-screen-layout.sh &
 # pkill -9 dunst; dunst &
 
 # Network-Manager Applet
-# nm-applet --indicator &
+nm-applet --indicator &
 
 # Chromium
 # $HOME/.scripts/autostart/brave.sh &

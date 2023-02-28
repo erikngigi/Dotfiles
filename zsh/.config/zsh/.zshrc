@@ -1,8 +1,8 @@
 #!/bin/sh
 export ZDOTDIR=$HOME/.config/zsh
 HISTFILE=~/.zsh_history
-# setopt appendhistory
-# setopt EXTENDED_HISTORY
+setopt appendhistory
+setopt EXTENDED_HISTORY
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_ALL_DUPS
@@ -13,7 +13,7 @@ setopt HIST_SAVE_NO_DUPS
 # some useful options (man zshoptions)
 setopt autocd extendedglob nomatch menucomplete
 setopt interactive_comments
-stty stop undef		# Disable ctrl-s to freeze terminal.
+# stty stop undef		# Disable ctrl-s to freeze terminal.
 zle_highlight=('paste:none')
 
 # beeping is annoying
@@ -54,16 +54,16 @@ zsh_add_plugin "hlissner/zsh-autopair"
 # More completions https://github.com/zsh-users/zsh-completions
 
 #Tmux colors
-if [ ! "$TMUX" = "" ]; then export TERM=xterm-256color; fi
+# if [ ! "$TMUX" = "" ]; then export TERM=xterm-256color; fi
 
 # FZF 
 # TODO update for mac
-[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
-[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
-[ -f /usr/share/doc/fzf/examples/completion.zsh ] && source /usr/share/doc/fzf/examples/completion.zsh
-[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[ -f $ZDOTDIR/completion/_fnm ] && fpath+="$ZDOTDIR/completion/"
+# [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
+# [ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+# [ -f /usr/share/doc/fzf/examples/completion.zsh ] && source /usr/share/doc/fzf/examples/completion.zsh
+# [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f $ZDOTDIR/completion/_fnm ] && fpath+="$ZDOTDIR/completion/"
 # export FZF_DEFAULT_COMMAND='rg --hidden -l ""'
 compinit
 
@@ -79,12 +79,12 @@ autoload edit-command-line; zle -N edit-command-line
 # xset r rate 210 40
 
 # Environment variables set everywhere
-export EDITOR="lvim"
+export EDITOR="nvim"
 export TERMINAL="alacritty"
 export BROWSER="brave-bin"
 
 # For QT Themes
-# export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_QPA_PLATFORMTHEME=qt5ct
 
 # remap caps to escape
 # setxkbmap -option caps:escape

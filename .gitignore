@@ -1,4 +1,11 @@
+# folders and sub-folders to ignore
+
 gh/
 gitconfig/
 ngrok/
 ssh/
+mpv/.config/mpv/watch_later/
+cargo/.config/cargo/registry/
+
+# file types to ignore
+*.bak

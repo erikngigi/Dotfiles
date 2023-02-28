@@ -17,8 +17,8 @@ alias fgrep='fgrep --color=auto'
 alias tmux-restart='tmux kill-server && tmux'
 
 # Pacman
-alias refresh='doas pacman -Syyy'
-alias update='doas pacman -Syu'
+alias refresh='sudo pacman -Syy'
+alias update='sudo pacman -Syu'
 
 # Sudo
 alias sudo='nocorrect sudo -E'
@@ -31,7 +31,7 @@ alias cp='advcp -gu'
 alias mv='advmv -gu'
 
 # bat
-alias cat='bat'
+# alias cat='bat'
 
 #node-versions
 alias ns='~/.scripts/node/node-switch.sh'
@@ -47,24 +47,26 @@ alias xsel-copy='xsel --clipboard'
 
 # nnn
 alias n='nnn -dr'
-alias N='doas nnn -drx'
+alias N='sudo nnn -drx'
 
 #brightness
-alias set-br='doas set-brightness.sh'
+alias set-br='sudo set-brightness.sh'
 
 # neovim
-alias nv='lvim'
-alias Nv='doas lvim'
+alias nv='nvim'
+alias Nv='sudo nvim'
 
 #feh
 alias feh-display='feh -d -. Wallpapers'
 
 # git
 alias gcl='git clone'
+alias gco='git checkout'
+alias gm='git merge'
 
 # Vanaheim HDD
-alias vanaheim='doas mount /dev/sdb1 /home/eric/Yggdrasil'
-alias uvanaheim='doas umount /dev/sdb1 /home/eric/Yggdrasil'
+alias vanaheim='sudo mount /dev/sdb1 /home/eric/Yggdrasil'
+alias uvanaheim='sudo umount /dev/sdb1 /home/eric/Yggdrasil'
 
 # Youtube
 alias yt='yt-dlp --config-location /home/eric/.config/yt-dlp/config'
@@ -87,7 +89,7 @@ alias lt='exa --tree --level=2'
 
 # display off
 alias screenoff='xset dpms force off && betterlockscreen -l'
-alias sleep='doas systemctl suspend && betterlockscreen -l'
+alias sleep='sudo systemctl suspend && betterlockscreen -l'
 
 # get top process eating memory
 alias psmem='ps auxf | sort -nr -k 4 | head -5'
@@ -107,11 +109,14 @@ alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate ar
 # systemd
 alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 
-#Anime
-alias naruto="mpv $HOME/Media/Anime/Shows/Naruto\ Shippuden"
+#Tv-Shows
+alias peaky-blinders="mpv $HOME/Tv-Shows/Peaky\ Blinders"
+# Anime Aliases
+# Boku No Hero Academia
+alias boku-no-hero="mpv $HOME/Anime/Shows/Boku\ no\ Hero"
 
 # Hunter X Hunter
-alias hunter-x-hunter="mpv --sub-scale=1.2 $HOME/Media/Anime/Shows/Hunter\ X\ Hunter"
+alias hunter-x-hunter="mpv --sub-scale=1.1 $HOME/Anime/Shows/Hunter\ X\ Hunter"
 
-# Boku No Hero Academia
-alias boku-no-hero="mpv $HOME/Media/Anime/Shows/Boku\ no\ Hero"
+# Naruto Shippuden
+alias naruto-shippuden="mpv $HOME/Anime/Shows/Naruto\ Shippuden"
