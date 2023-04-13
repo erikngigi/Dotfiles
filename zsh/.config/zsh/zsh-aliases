@@ -74,9 +74,18 @@ alias Nv='sudo nvim'
 alias feh-display='feh -d -.'
 
 # git
-alias gcl='git clone'
-alias gco='git checkout'
-alias gm='git merge'
+alias addup='git add -u'
+alias addall='git add .'
+alias branch='git branch'
+alias checkout='git checkout'
+alias clone='git clone'
+alias commit='git commit'
+alias fetch='git fetch'
+alias pull='git pull origin'
+alias push='git push origin'
+alias stat='git status'  # 'status' is protected name so using 'stat' instead
+alias tag='git tag'
+alias newtag='git tag -a'
 
 # Vanaheim HDD
 # alias vanaheim='sudo mount -t btrfs -o noatime,commit=120,compress=zstd,space_cache=v2 /dev/sdb1 /home/eric/Yggdrasil'
