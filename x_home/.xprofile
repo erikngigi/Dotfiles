@@ -6,13 +6,14 @@ $HOME/.screenlayout/vga-only-screen-layout.sh &
 # pkill -9 dunst; dunst &
 
 # Network-Manager Applet
-nm-applet --indicator &
+nm-applet &
 
-# Chromium
-# $HOME/.scripts/autostart/brave.sh &
+# Turn off DPMS
+xset s off &
+xset -dpms &
+
+# Brave Browser
+$HOME/.scripts/autostart/brave.sh &
 
 # Thunderbird
 # $HOME/.scripts/autostart/thunderbird.sh &
-
-# Firefox
-# $HOME/.scripts/autostart/firefox.sh &

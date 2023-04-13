@@ -13,32 +13,32 @@ env:
   TERM: xterm-256color
 
 window:
-  opacity: 0.8
-  dynamic_title: true
+  opacity: 1
+  # dynamic_title: true
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
   # dimensions:
-  #  columns: 80
-  #  lines: 24
+   # columns: 80
+   # lines: 24
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
-  position:
-    x: 1
-    y: 1
+  # position:
+  #   x: 1
+  #   y: 1
   # Window padding (changes require restart)
   #
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
-  padding:
-    x: 2
-    y: 2
+  # padding:
+    # x: 0
+    # y: 0
 
   # Spread additional padding evenly around the terminal content.
-  dynamic_padding: true
+  dynamic_padding: false
 
   # Window title
   title: Alacritty
@@ -69,18 +69,22 @@ scrolling:
 font:
   normal:
     family: JetBrains Mono Nerd Font
-    style: Medium
+    # family: Source Code Pro
+    style: Regular
 
   bold:
     family: JetBrains Mono Nerd Font
-    style: Bold
+    # family: Source Code Pro
+    style: SemiBold
 
   italic:
     family: JetBrains Mono Nerd Font
+    # family: Source Code Pro
     style: Medium Italic
 
   bold_italic:
     family: JetBrains Mono Nerd Font
+    # family: Source Code Pro
     style: Bold Italic
 
   # Point size
@@ -91,7 +95,7 @@ font:
   offset:
     x: -1 # For letter spacing
     # x: 0     # For letter spacing
-    y: 1 # For line spacing
+    y: 2 # For line spacing
     # y: 0      # For line spacing
 
   # Glyph offset determines the locations of the glyphs within their cells with

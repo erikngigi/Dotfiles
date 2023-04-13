@@ -20,7 +20,7 @@ zle_highlight=('paste:none')
 unsetopt BEEP
 
 # completions
-# autoload bashcompinit && bashcompinit
+autoload bashcompinit && bashcompinit
 autoload -Uz compinit
 zstyle ':completion:*' menu select
 # zstyle ':completion::complete:lsof:*' menu yes select
@@ -84,7 +84,7 @@ export TERMINAL="alacritty"
 export BROWSER="brave-bin"
 
 # For QT Themes
-export QT_QPA_PLATFORMTHEME=qt5ct
+# export QT_QPA_PLATFORMTHEME=qt5ct
 
 # remap caps to escape
 # setxkbmap -option caps:escape
@@ -130,4 +130,6 @@ fi
 # aws completions
 # complete -C '/usr/bin/aws_completer' aws
 
-# awsenv() { eval "$(/home/eric/.scripts/aws/awsenv.sh $@)" }
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
