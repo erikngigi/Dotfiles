@@ -51,7 +51,9 @@ However, most GUI applications (more specifically, any application that saves co
 
 Something like this in /etc/doas.conf should work well for both CLI and GUI applications:
 
+```
 permit nopass keepenv setenv { USER=eric HOME=/home/eric XAUTHORITY=/home/eric/.Xauthority } eric
+```
 
 ### Security Considerations
 
