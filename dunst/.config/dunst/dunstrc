@@ -29,7 +29,7 @@
     # the top and down respectively.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "0x0-40+30"
+    geometry = "0x0-80+40"
 
     # Show how many messages are currently hidden (because of geometry).
     indicate_hidden = yes
@@ -82,10 +82,10 @@
     # Set to 0 to disable.
     # A client can set the 'transient' hint to bypass this. See the rules
     # section for how to disable this if necessary
-    idle_threshold = 5
+    idle_threshold = 0
 
     ### Text ###
-    font = JetBrains Mono Medium 10
+    font = JetBrainsMono Nerd Medium 11
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -134,7 +134,7 @@
     # Show age of message if message is older than show_age_threshold
     # seconds.
     # Set to -1 to disable.
-    show_age_threshold = 30
+    show_age_threshold = -1
 
     # Split notifications into multiple lines if they don't fit into
     # geometry.
@@ -275,18 +275,18 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#000080"
+    background = "#0066ff"
     foreground = "#ffffff"
-    frame_color = "#000080"
-    timeout = 30
+    frame_color = "#0066ff"
+    timeout = 05
     # Icon for notifications with low urgency, uncomment to enable
     icon = /home/eric/.config/dunst/normal.png
 
 [urgency_normal]
-    background = "#000080"
+    background = "#0066ff"
     foreground = "#ffffff"
-    frame_color = "#000080"
-    timeout = 30
+    frame_color = "#ffffff"
+    timeout = 05
     # Icon for notifications with normal urgency, uncomment to enable
     icon = /home/eric/.config/dunst/normal.png
 
@@ -294,7 +294,7 @@
     background = "#900000"
     foreground = "#ffffff"
     frame_color = "#900000"
-    timeout = 30
+    timeout = 05
     # Icon for notifications with critical urgency, uncomment to enable
     icon = /home/eric/.config/dunst/critical.png
 
@@ -413,18 +413,4 @@
 #    appname = "some_volume_notifiers"
 #    set_stack_tag = "volume"
 #
-[thunderbird]
-  appname = Thunderbird
-  summary = "*"
-  urgency = critical
-  # script = /home/eric/.scripts/notifications/email_notification.sh
-  # background = "#900000"
-  # foreground = "#ffffff"
-  # frame_color = "#ff0000"
-
-[torrents]
-  appname = Torrent
-  summary = "*"
-  urgency = critical
-  # script = /home/eric/.scripts/notifications/download_notifications.sh
 # vim: ft=cfg

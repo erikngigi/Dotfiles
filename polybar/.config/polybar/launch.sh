@@ -10,5 +10,5 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 polybar eric &
 
 if [[ $(xrandr -q | grep 'VGA-0 connected') ]]; then
-  polybar eric1 &
+  polybar eric &
 fi

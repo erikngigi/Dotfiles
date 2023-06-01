@@ -6,6 +6,7 @@ ngrok/
 ssh/
 mpv/.config/mpv/watch_later/
 cargo/.config/cargo/registry/
+newboat/.newboat/cache.db
 
 # file types to ignore
 *.bak

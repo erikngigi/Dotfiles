@@ -11,24 +11,25 @@ env:
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
   TERM: xterm-256color
+  # WINIT_XII_SCALE_FACTOR: "1"
 
 window:
-  opacity: 1
+  opacity: 0.8
   dynamic_title: true
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
   dimensions:
-   columns: 80
-   lines: 24
+    columns: 80
+    lines: 24
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
   position:
-    x: 1
-    y: 1
+    x: 0
+    y: 0
   # Window padding (changes require restart)
   #
   # Blank space added around the window in pixels. This padding is scaled
@@ -38,7 +39,7 @@ window:
     y: 0
 
   # Spread additional padding evenly around the terminal content.
-  dynamic_padding: false
+  dynamic_padding: true
 
   # Window title
   title: Alacritty
@@ -68,32 +69,26 @@ scrolling:
 # Font configuration
 font:
   normal:
-    family: JetBrains Mono Nerd Font
-    # family: Source Code Pro
+    family: JetBrainsMono Nerd Font
     style: Regular
-
   bold:
-    family: JetBrains Mono Nerd Font
-    # family: Source Code Pro
+    family: JetBrainsMono Nerd Font
     style: SemiBold
-
   italic:
-    family: JetBrains Mono Nerd Font
-    # family: Source Code Pro
+    family: JetBrainsMono Nerd Font
     style: Medium Italic
-
   bold_italic:
-    family: JetBrains Mono Nerd Font
-    # family: Source Code Pro
+    family: JetBrainsMono Nerd Font
     style: Bold Italic
 
   # Point size
-  size: 16
+  # size: 12.0
+  size: 14.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
-    x: -2 # For letter spacing
+    x: -1 # For letter spacing
     # x: 0     # For letter spacing
     y: 0 # For line spacing
     # y: 0      # For line spacing

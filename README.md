@@ -58,3 +58,8 @@ permit nopass keepenv setenv { USER=eric HOME=/home/eric XAUTHORITY=/home/eric/.
 ### Security Considerations
 
 When granting administrative privileges to non-root users, it's important to carefully consider the security implications of each command specification in the doas configuration file. Be sure to thoroughly test and validate your configuration before deploying it in a production environment.
+
+### Add Graphic Drivers Support
+export LIBVA_DRIVER_NAME=radeonsi
+export VDPAU_DRIVER=radeonsi
+export VDPAU_LIBRARY=/usr/lib/libvdpau.so.1

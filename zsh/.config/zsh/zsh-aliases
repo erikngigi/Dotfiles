@@ -4,10 +4,10 @@ alias nvimrc='nvim ~/.config/nvim/'
 alias zshrc='nvim ~/.config/zsh/'
 
 # get fastest mirrors
-alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
-alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
-alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
-alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
+alias mirror="doas reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+alias mirrord="doas reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
+alias mirrors="doas reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
+alias mirrora="doas reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -25,19 +25,19 @@ alias lt='exa -aT --color=always --group-directories-first' # tree listing
 alias l.='exa -a | egrep "^\."'
 
 # pacman and yay
-alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
-alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update standard pkgs
+alias Pacman='doas pacman'
+alias pacsyu='doas pacman -Syu'                  # update only standard pkgs
+alias pacsyyu='doas pacman -Syyu'                # Refresh pkglist & update standard pkgs
 alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay)
 alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR pkgs (yay)
 alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
 alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
-alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
-alias cleanup='sudo pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
+alias unlock='doas rm /var/lib/pacman/db.lck'    # remove pacman lock
+alias cleanup='doas pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 
 # Sudo
-alias sudo='nocorrect sudo -E'
-# alias sudo='doas'
-# alias sudoedit='doas rnano'
+alias sudo='doas'
+alias sudoedit='doas nvim'
 
 # confirm before overwriting something
 alias rm='rm -i'
@@ -47,11 +47,15 @@ alias mv='advmv -gu'
 # bat
 alias cat='bat'
 
-#node-versions
-# alias ns='~/.scripts/node/node-switch.sh'
+#mpv
+alias mpv-nv="mpv --vid=no"
+alias mpv-720='mpv --ytdl-format="bestvideo[height<=?720][fps<=?30][vcodec^=avc1]+bestaudio/best"'
+alias mpv-1080='mpv --ytdl-format="bestvideo[height<=?1080][fps<=?30][vcodec^=avc1]+bestaudio/best"'
 
 #anime-cli
 alias anime-cli='anipy-cli -D -o -q 1080'
+
+alias ericngigi='cd $HOME/Projects/web-applications/ericngigi.com/'
 
 #xrandr brightness
 alias br='xrandr --output VGA-0 --brightness '
@@ -61,20 +65,20 @@ alias xsel-copy='xsel --clipboard'
 
 # nnn
 alias n='nnn -dr'
-alias N='sudo nnn -drx'
+alias N='doas nnn -drx'
 
 #brightness
-alias set-br='sudo set-brightness.sh'
+alias set-br='doas set-brightness.sh'
 
 # neovim
 alias nv='nvim'
-alias Nv='sudo nvim'
+alias Nv='doas nvim'
 
 #feh
 alias feh-display='feh -d -.'
 
 # git
-alias addup='git add -u'
+alias addup='git add'
 alias addall='git add .'
 alias branch='git branch'
 alias checkout='git checkout'
@@ -88,16 +92,15 @@ alias tag='git tag'
 alias newtag='git tag -a'
 
 # Vanaheim HDD
-# alias vanaheim='sudo mount -t btrfs -o noatime,commit=120,compress=zstd,space_cache=v2 /dev/sdb1 /home/eric/Yggdrasil'
-alias vanaheim='sudo mount -t btrfs /dev/sdb1 /home/eric/Yggdrasil'
-alias uvanaheim='sudo umount /dev/sdb1 /home/eric/Yggdrasil'
-# alias vanaheim='sudo mount -o noatime,commit=120,compress=zstd,space_cache,ssd,subvol=@,clear_cache /home/eric/Yggdrasil'
+alias vanaheim='doas mount -t btrfs /dev/sdb1 /home/eric/Yggdrasil'
+alias uvanaheim='doas umount /dev/sdb1 /home/eric/Yggdrasil'
 
 # Youtube
 alias yt='yt-dlp --config-location /home/eric/.config/yt-dlp/normal-config'
 alias ytp='yt-dlp --config-location /home/eric/.config/yt-dlp/playlist-config'
 alias yta='yt-dlp --config-location /home/eric/.config/yt-dlp/audio-config'
 alias clear-yt='echo -n "" > /home/eric/youtube.txt'
+alias clear-pl='echo -n "" > /home/eric/youtube.m3u'
 alias yt-download='yt -a /home/eric/youtube.txt'
 
 #Aria
@@ -109,7 +112,7 @@ alias free='free -m' # show sizes in MB
 
 # display off
 alias screenoff='xset dpms force off && betterlockscreen -l'
-alias sleep='sudo systemctl suspend && betterlockscreen -l'
+alias sleep='doas systemctl suspend && betterlockscreen -l'
 
 # get top process eating memory
 alias psmem='ps auxf | sort -nr -k 4 | head -5'
@@ -130,6 +133,7 @@ alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate ar
 alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 
 # Anime Aliases
+# ------------------------------------------------------------------------------------------------#
 # Boku No Hero Academia
 alias boku-no-hero="mpv $HOME/Anime/Shows/Boku\ no\ Hero"
 
@@ -139,6 +143,12 @@ alias hunter-x-hunter="mpv $HOME/Anime/Shows/Hunter\ X\ Hunter"
 # Naruto Shippuden
 alias naruto-shippuden="mpv $HOME/Anime/Shows/Naruto\ Shippuden"
 
+# JoJo
+alias jojo="mpv $HOME/Anime/Shows/JoJo\ no\ Kimyou\ na\ Bouken"
+
+# Other Aliases
 alias clear-buckets="aws s3 rm s3://b2voiprectest --recursive --endpoint-url=https://s3.us-west-000.backblazeb2.com --profile ericjohnson-backblaze-rw && aws s3 rm s3://voiprectest --recursive --endpoint-url=$BIFROST_ENDPOINT_URL --profile ericjohnson-bifrost-rw"
 
 alias colormysql=$(echo -e 'mysql --prompt="\x1B[31m\\u\x1B[34m@\x1B[32m\\h\x1B[0m:\x1B[36m\\d>\x1B[0m "')
+
+alias clear-ep="echo -n '' > /home/eric/Anime/epguides.txt"

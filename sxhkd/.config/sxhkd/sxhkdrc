@@ -20,7 +20,7 @@ super + x
 
 # open chromium
 super + shift + c
-    brave
+    chromium
 #
 # bspwm hotkeys
 #

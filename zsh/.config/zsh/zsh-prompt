@@ -33,7 +33,6 @@ zstyle ':vcs_info:git:*' formats " %{$fg[blue]%}(%{$fg[red]%}%m%u%c%{$fg[yellow]
 
 # format our main prompt for hostname current folder, and permissions.
 PROMPT="%R%{$fg[blue]%}[%{$fg_bold[white]%}%n%{$fg[red]%}@%{$fg_bold[white]%}%m%{$fg[blue]%}] %(?:%{$fg_bold[red]%}➜ :%{$fg_bold[green]%}➜ )%{$fg[cyan]%}%c%{$reset_color%}"
-# PROMPT="%{$fg[green]%}%n@%m %~ %{$reset_color%}%#> "
 PROMPT+="\$vcs_info_msg_0_ "
 # TODO look into this for more colors
 # https://stevelosh.com/blog/2010/02/my-extravagant-zsh-prompt/

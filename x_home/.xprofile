@@ -3,7 +3,7 @@ $HOME/.screenlayout/vga-only-screen-layout.sh &
 # $HOME/.screenlayout/ldvs-only.sh &
 
 # Dunstify 
-# pkill -9 dunst; dunst &
+pkill -9 dunst; dunst &
 
 # Network-Manager Applet
 nm-applet &
@@ -12,8 +12,8 @@ nm-applet &
 xset s off &
 xset -dpms &
 
-# Brave Browser
-$HOME/.scripts/autostart/brave.sh &
+# Chromium Browser
+# $HOME/.scripts/autostart/chromium.sh &
 
 # Thunderbird
 # $HOME/.scripts/autostart/thunderbird.sh &
