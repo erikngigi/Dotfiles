@@ -13,18 +13,14 @@ setopt HIST_SAVE_NO_DUPS
 # some useful options (man zshoptions)
 setopt autocd extendedglob nomatch menucomplete
 setopt interactive_comments
-# stty stop undef		# Disable ctrl-s to freeze terminal.
+stty stop undef		# Disable ctrl-s to freeze terminal.
 zle_highlight=('paste:none')
 
-# beeping is annoying
-unsetopt BEEP
-
 # completions
-autoload bashcompinit && bashcompinit
 autoload -Uz compinit
 zstyle ':completion:*' menu select
-# zstyle ':completion::complete:lsof:*' menu yes select
 zmodload zsh/complist
+
 # compinit
 _comp_options+=(globdots)		# Include hidden files.
 
@@ -40,35 +36,46 @@ autoload -Uz colors && colors
 source "$ZDOTDIR/zsh-functions"
 
 # Normal files to source
-zsh_add_file "zsh-exports"
-zsh_add_file "zsh-aliases"
-zsh_add_file "zsh-prompt"
+source "$ZDOTDIR/zsh-exports"
+source "$ZDOTDIR/zsh-aliases"
+source "$ZDOTDIR/zsh-prompt"
+# zsh_add_file "zsh-exports"
+# zsh_add_file "zsh-aliases"
+# zsh_add_file "zsh-prompt"
 
 # Plugins
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 zsh_add_plugin "hlissner/zsh-autopair"
 
+# FZF 
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
+[ -f $ZDOTDIR/completion/_fnm ] && fpath+="$ZDOTDIR/completion/"
+compinit
+
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
+# bindkey '^e' edit-command-line
 
 # Environment variables set everywhere
-export EDITOR="nvim"
+export EDITOR="lvim"
 export TERMINAL="alacritty"
-export BROWSER="chromium"
+export BROWSER="brave"
 
 # Change cursor shape for different vi modes.
-function zle-keymap-select {
-  if [[ ${KEYMAP} == vicmd ]] ||
-     [[ $1 = 'beam' ]]; then
-    echo -ne '\e[5 q'
-  elif [[ ${KEYMAP} == main ]] ||
-       [[ ${KEYMAP} == viins ]] ||
-       [[ ${KEYMAP} = '' ]] ||
-       [[ $1 = 'block' ]]; then
-    echo -ne '\e[1 q'
-  fi
-}
+# function zle-keymap-select {
+#   if [[ ${KEYMAP} == vicmd ]] ||
+#      [[ $1 = 'beam' ]]; then
+#     echo -ne '\e[5 q'
+#   elif [[ ${KEYMAP} == main ]] ||
+#        [[ ${KEYMAP} == viins ]] ||
+#        [[ ${KEYMAP} = '' ]] ||
+#        [[ $1 = 'block' ]]; then
+#     echo -ne '\e[1 q'
+#   fi
+# }
+
 zle -N zle-keymap-select
 zle-line-init() {
     zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)

@@ -1,6 +1,5 @@
 # Screen Layout Script
-$HOME/.screenlayout/vga-only-screen-layout.sh &
-# $HOME/.screenlayout/ldvs-only.sh &
+$HOME/.local/scripts/vga-layout.sh
 
 # Dunstify 
 pkill -9 dunst; dunst &
@@ -11,9 +10,3 @@ nm-applet &
 # Turn off DPMS
 xset s off &
 xset -dpms &
-
-# Chromium Browser
-# $HOME/.scripts/autostart/chromium.sh &
-
-# Thunderbird
-# $HOME/.scripts/autostart/thunderbird.sh &

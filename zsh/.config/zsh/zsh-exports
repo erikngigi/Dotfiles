@@ -1,31 +1,19 @@
 #!/bin/sh
-HISTSIZE=1000000
-SAVEHIST=1000000
+HISTSIZE=10000
+SAVEHIST=10000
 export TERM="xterm-256color"
 export PATH="$HOME/.local/bin":$PATH
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANWIDTH=999
-export NVIM=/usr/bin/nvim
+export GEM_HOME="usr/lib/ruby/gems"
+export PATH="$PATH:$GEM_HOME/bin"
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=/usr/bin/python3:$PATH
-export PATH=/usr/bin/aws_completer:$PATH
-export PATH=$HOME/go/bin:$PATH
-export PATH=$HOME/.scripts/aws:$PATH
-export PATH=$HOME/.scripts/autostart:$PATH
-export PATH=$HOME/.scripts/fps-detect:$PATH
-export PATH=$HOME/.scripts/pass-gen:$PATH
-export PATH=$HOME/.scripts/public-ip-address:$PATH
-export PATH=$HOME/.scripts/brave:$PATH
-export PATH=$HOME/.scripts/weather:$PATH
-export PATH=$HOME/.scripts/snap:$PATH
-export PATH=$HOME/.zshrc:$PATH
+export PATH=~/.npm-global/bin:$PATH
+export PATH=$HOME/.local/scripts:$PATH
 export NNN_PLUG='r:renamer'
+export NNN_TRASH=1
 export NNN_COLORS='#27272727'
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
 export NNN_BMS="a:$HOME/Anime;d:$HOME/Downloads;e:$HOME/Yggdrasil;m:$HOME/Music;t:$HOME/Torrents;w:$HOME/Projects/web-applications/ericngigi.com;y:$HOME/YouTube/Video"
-export NNN_TRASH=1
-
-# AWS endpoint urls
-# export BIFROST_ENDPOINT_URL="https://us1-dcs-s3.bifrostcloud.com"
-# export BACKBLAZE_ENDPOINT_URL="https://s3.us-west-000.backblazeb2.com"
