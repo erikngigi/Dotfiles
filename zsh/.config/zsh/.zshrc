@@ -39,9 +39,6 @@ source "$ZDOTDIR/zsh-functions"
 source "$ZDOTDIR/zsh-exports"
 source "$ZDOTDIR/zsh-aliases"
 source "$ZDOTDIR/zsh-prompt"
-# zsh_add_file "zsh-exports"
-# zsh_add_file "zsh-aliases"
-# zsh_add_file "zsh-prompt"
 
 # Plugins
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
@@ -64,17 +61,17 @@ export TERMINAL="alacritty"
 export BROWSER="brave"
 
 # Change cursor shape for different vi modes.
-# function zle-keymap-select {
-#   if [[ ${KEYMAP} == vicmd ]] ||
-#      [[ $1 = 'beam' ]]; then
-#     echo -ne '\e[5 q'
-#   elif [[ ${KEYMAP} == main ]] ||
-#        [[ ${KEYMAP} == viins ]] ||
-#        [[ ${KEYMAP} = '' ]] ||
-#        [[ $1 = 'block' ]]; then
-#     echo -ne '\e[1 q'
-#   fi
-# }
+function zle-keymap-select {
+  if [[ ${KEYMAP} == vicmd ]] ||
+     [[ $1 = 'beam' ]]; then
+    echo -ne '\e[5 q'
+  elif [[ ${KEYMAP} == main ]] ||
+       [[ ${KEYMAP} == viins ]] ||
+       [[ ${KEYMAP} = '' ]] ||
+       [[ $1 = 'block' ]]; then
+    echo -ne '\e[1 q'
+  fi
+}
 
 zle -N zle-keymap-select
 zle-line-init() {

@@ -1,0 +1,618 @@
+
+# 2023-03-27 12:16:55.200402
++select * from movies;
+
+# 2023-03-27 12:17:47.169577
++exit
+
+# 2023-03-27 12:25:10.568723
++select * from movies;
+
+# 2023-03-27 12:26:09.960978
++select
++*
++from
++movies;
+
+# 2023-03-27 12:26:18.002459
++exit
+
+# 2023-03-27 12:38:24.707338
++/dt;
+
+# 2023-03-27 12:38:58.850886
++\l
+
+# 2023-03-27 12:39:27.474801
++\dt+ movies
+
+# 2023-03-27 12:39:41.106609
++use movies;
+
+# 2023-03-27 12:40:36.186745
++use information_schema;
+
+# 2023-03-27 12:40:41.010817
++use movies;
+
+# 2023-03-27 12:41:49.858880
++\dt+ movies;
+
+# 2023-03-27 12:44:11.698859
++create table games (
++title varchar(50) not null,
++genre varchar(50) not null,
++game_release_year int(11) not null,
++primary key (title)
++);
+
+# 2023-03-27 12:44:19.458990
++\l
+
+# 2023-03-27 12:44:43.546516
++describe games;
+
+# 2023-03-27 12:44:58.554959
++\dt+ movies;
+
+# 2023-03-27 12:45:46.586936
++\dt
+
+# 2023-03-27 12:46:09.122976
++drop table movies;
+
+# 2023-03-27 12:46:25.731011
++create database games;
+
+# 2023-03-27 12:46:32.075067
++\dt
+
+# 2023-03-27 12:46:42.163149
++drop table games;
+
+# 2023-03-27 12:46:52.931055
++\u games
+
+# 2023-03-27 12:47:01.754895
++\dt
+
+# 2023-03-27 12:47:08.338404
++\dt+
+
+# 2023-03-27 12:47:15.474971
++\dt+ games;
+
+# 2023-03-27 12:47:55.499035
++\l
+
+# 2023-03-27 12:54:26.659358
++drop database games;
+
+# 2023-03-27 12:54:37.403447
++drop database movies;
+
+# 2023-03-27 12:54:42.483170
++\l
+
+# 2023-03-27 12:54:48.194193
++exit
+
+# 2023-03-27 13:52:08.068878
++\l
+
+# 2023-03-27 13:52:25.694106
++create database real_estate;
+
+# 2023-03-27 13:52:35.365917
++\u real_estate
+
+# 2023-03-27 13:52:45.605934
++CREATE TABLE houses (
++    id INT PRIMARY KEY,
++    address VARCHAR(255) NOT NULL,
++    city VARCHAR(255) NOT NULL,
++    state VARCHAR(255) NOT NULL,
++    country VARCHAR(255) NOT NULL DEFAULT 'USA',
++    zip_code VARCHAR(10) NOT NULL,
++    price DECIMAL(10,2) NOT NULL,
++    square_feet INT NOT NULL,
++    bedrooms INT NOT NULL,
++    bathrooms INT NOT NULL,
++    garage_spaces INT NOT NULL,
++    year_built INT NOT NULL,
++    latitude DECIMAL(10,6) NOT NULL,
++    longitude DECIMAL(10,6) NOT NULL
++);
+
+# 2023-03-27 13:52:52.317900
++\dt
+
+# 2023-03-27 13:53:00.318174
++\dt+ houses;
+
+# 2023-03-27 13:53:19.757927
++describe houses;
+
+# 2023-03-27 13:53:41.446051
++CREATE INDEX idx_houses_lat_long ON houses (latitude, longitude);
+
+# 2023-03-27 13:54:07.974090
++\t
+
+# 2023-03-27 13:54:32.800744
++\dt
+
+# 2023-03-27 13:55:14.294855
++\dt+ houses;
+
+# 2023-03-27 13:56:15.414085
++\dt
+
+# 2023-03-27 13:57:18.950145
++create index idx_houses_lat_long on houses;
+
+# 2023-03-27 13:57:36.118214
++create index idx_houses_lat_long on houses (latitude, longitude);
+
+# 2023-03-27 13:58:10.933591
++exit
+
+# 2023-03-27 13:58:55.054070
++\l
+
+# 2023-03-27 13:59:56.198195
++grant all privileges on real_estate to 'eric'@'localhost';
+
+# 2023-03-27 14:00:03.980957
++use real_estate;
+
+# 2023-03-27 14:00:07.350335
++grant all privileges on real_estate to 'eric'@'localhost';
+
+# 2023-03-27 14:00:11.142421
++exit
+
+# 2023-03-27 14:00:25.038604
++\u real_estate
+
+# 2023-03-27 14:00:32.502725
++create index idx_houses_lat_long on houses (latitude, longitude);
+
+# 2023-03-27 14:05:39.389163
++exit
+
+# 2023-03-27 14:06:20.765523
++show grants for 'eric'@'localhost';
+
+# 2023-03-27 14:06:39.574527
++show grants for 'root'@'localhost'
++;
+
+# 2023-03-27 14:06:56.926259
++grant all privileges on real_estate to 'eric'@'localhost';
+
+# 2023-03-27 14:07:04.998784
++exit
+
+# 2023-03-27 14:11:07.143071
++\u real_estate
+
+# 2023-03-27 14:11:37.310667
++grant all privileges on houses to 'eric'@'localhost';
+
+# 2023-03-27 14:11:43.926823
++exit
+
+# 2023-03-27 14:13:54.357559
++create index idx_houses_lat_long on houses (latitude, longitude);
+
+# 2023-03-27 14:14:01.182984
++use real_estate;
+
+# 2023-03-27 14:14:05.358939
++create index idx_houses_lat_long on houses (latitude, longitude);
+
+# 2023-03-27 14:19:36.431137
++INSERT INTO houses (id, address, city, state, zip_code, price, square_feet, bedrooms, bathrooms, garage_spaces, year_built, latitude, longitude)
++VALUES
++(1, '123 Main St', 'Los Angeles', 'California', '90001', 500000.00, 2000, 3, 2, 2, 1990, 34.0522, -118.2437),
++(2, '456 Oak Ln', 'New York', 'New York', '10001', 1000000.00, 3000, 4, 3, 3, 2000, 40.7128, -74.0060),
++(3, '789 Maple Dr', 'Chicago', 'Illinois', '60601', 750000.00, 2500, 3, 2, 2, 1985, 41.8781, -87.6298);
+
+# 2023-03-27 14:20:20.119035
++select * from houses where city = 'Los Angeles';
+
+# 2023-03-27 14:20:55.607081
++SELECT * FROM houses WHERE price BETWEEN 500000.00 AND 750000.00;
+
+# 2023-03-27 14:21:11.399156
++SELECT * FROM houses WHERE bedrooms = 3 AND bathrooms = 2;
+
+# 2023-03-27 14:22:27.023123
++describe houses;
+
+# 2023-03-27 14:22:41.206491
++select * from houses;
+
+# 2023-03-27 14:24:53.959159
++INSERT INTO houses (id, address, city, state, country, zip_code, price, square_feet, bedrooms, bathrooms, garage_spaces, year_built, latitude, longitude)
++VALUES
++(4, '234 Elm St', 'Toronto', 'Ontario', 'Canada', 'M4S 2Y2', 800000.00, 2200, 4, 3, 2, 1995, 43.6532, -79.3832),
++(5, '567 Cherry Ave', 'Vancouver', 'British Columbia', 'Canada', 'V5Y 2Z6', 1200000.00, 3000, 5, 4, 2, 2010, 49.2827, -123.1207),
++(6, '890 Cedar St', 'Houston', 'Texas', 'USA', '77002', 650000.00, 1800, 3, 2, 1, 2005, 29.7604, -95.3698),
++(7, '123 Pine St', 'Boston', 'Massachusetts', 'USA', '02108', 1500000.00, 3500, 6, 4, 3, 2015, 42.3601, -71.0589),
++(8, '456 Oak St', 'Miami', 'Florida', 'USA', '33125', 900000.00, 2800, 4, 3, 2, 2000, 25.7617, -80.1918),
++(9, '789 Maple St', 'San Francisco', 'California', 'USA', '94102', 2000000.00, 4000, 5, 5, 3, 2020, 37.7749, -122.4194),
++(10, '234 Oak St', 'Calgary', 'Alberta', 'Canada', 'T2P 3P4', 1000000.00, 2500, 4, 3, 2, 2010, 51.0447, -114.0719),
++(11, '567 Pine St', 'New Orleans', 'Louisiana', 'USA', '70112', 750000.00, 2000, 3, 2, 1, 1998, 29.9511, -90.0715),
++(12, '890 Elm St', 'Atlanta', 'Georgia', 'USA', '30301', 600000.00, 1800, 3, 2, 2, 2005, 33.7490, -84.3880),
++(13, '123 Cedar St', 'Philadelphia', 'Pennsylvania', 'USA', '19102', 1200000.00, 3500, 5, 4, 3, 2015, 39.9526, -75.1652),
++(14, '456 Maple St', 'Denver', 'Colorado', 'USA', '80202', 850000.00, 2500, 4, 3, 2, 2000, 39.7392, -104.9903),
++(15, '789 Elm St', 'Seattle', 'Washington', 'USA', '98101', 1800000.00, 4000, 6, 5, 3, 2020, 47.6062, -122.3321);
+
+# 2023-03-27 14:25:05.191382
++select * from houses;
+
+# 2023-03-27 14:27:34.591417
++INSERT INTO houses (id, address, city, state, country, zip_code, price, square_feet, bedrooms, bathrooms, garage_spaces, year_built, latitude, longitude)
++VALUES
++(16, '789 Center St', 'Dallas', 'Texas', 'USA', '75201', 850000.00, 2200, 3, 3, 2, 2008, 32.7767, -96.7970),
++(17, '456 High St', 'Toronto', 'Ontario', 'Canada', 'M5J 2G8', 1100000.00, 2800, 4, 3, 1, 2005, 43.6529, -79.3849),
++(18, '123 Main Blvd', 'Seattle', 'Washington', 'USA', '98109', 2000000.00, 4500, 5, 4, 3, 2015, 47.6205, -122.3493),
++(19, '890 Elmwood Rd', 'Boston', 'Massachusetts', 'USA', '02115', 1700000.00, 3800, 4, 4, 2, 2010, 42.3389, -71.0992),
++(20, '456 Garden Ave', 'Vancouver', 'British Columbia', 'Canada', 'V6T 1Z3', 1250000.00, 3200, 5, 3, 2, 2000, 49.2643, -123.2525);
+
+# 2023-03-27 14:27:40.783767
++select * from houses;
+
+# 2023-03-27 14:27:56.799094
++SELECT * FROM houses WHERE bedrooms = 3 AND bathrooms = 2;
+
+# 2023-03-27 14:28:29.967574
++SELECT *, SQRT(POW(69.1 * (latitude - <given_latitude>), 2) + POW(69.1 * (<given_longitude> - longitude) * COS(latitude / 57.3), 2)) AS distance
++FROM houses
++HAVING distance < <given_distance_in_miles>
++ORDER BY distance;
+
+# 2023-03-27 14:37:33.127830
++select * from houses;
+
+# 2023-03-27 14:39:47.119753
++describe houses;
+
+# 2023-03-27 14:42:05.663765
++select * from houses order by id asc;
+
+# 2023-03-27 14:42:14.855597
++select * from houses order by address asc;
+
+# 2023-03-27 14:42:55.272034
++select * from houses order by id asc;
+
+# 2023-03-27 16:45:34.085117
++exit
+
+# 2023-03-29 11:10:01.351122
++\u real_estate
+
+# 2023-03-29 11:10:08.695324
++\dt
+
+# 2023-03-29 11:10:18.327761
++describe houses;
+
+# 2023-03-29 11:12:32.455557
++select id, address from houses;
+
+# 2023-03-29 11:12:42.023705
++describe houses;
+
+# 2023-03-29 11:13:49.383896
++select id, address, city, state, country, zip_code, 
++price, bedrooms, bathrooms from houses;
+
+# 2023-03-29 11:38:41.424722
++exit
+
+# 2023-03-29 11:38:59.726027
++CREATE TABLE `programming_languages`
++(
++  `id`            INT(11) NOT NULL auto_increment ,
++  `name`          VARCHAR(255) NOT NULL ,
++  `released_year` INT NOT NULL ,
++  `githut_rank`   INT NULL ,
++  `pypl_rank`     INT NULL ,
++  `tiobe_rank`    INT NULL ,
++  `created_at`    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ,
++  `updated_at`    DATETIME on UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,
++  PRIMARY KEY (`id`),
++  UNIQUE `idx_name_unique` (`name`(255))
++)
++engine = innodb charset=utf8mb4 COLLATE utf8mb4_general_ci;
+
+# 2023-03-29 11:39:14.456948
++use real_estate
++;
+
+# 2023-03-29 11:39:17.377154
++CREATE TABLE `programming_languages`
++(
++  `id`            INT(11) NOT NULL auto_increment ,
++  `name`          VARCHAR(255) NOT NULL ,
++  `released_year` INT NOT NULL ,
++  `githut_rank`   INT NULL ,
++  `pypl_rank`     INT NULL ,
++  `tiobe_rank`    INT NULL ,
++  `created_at`    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ,
++  `updated_at`    DATETIME on UPDATE CURRENT_TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,
++  PRIMARY KEY (`id`),
++  UNIQUE `idx_name_unique` (`name`(255))
++)
++engine = innodb charset=utf8mb4 COLLATE utf8mb4_general_ci;
+
+# 2023-03-29 11:39:23.672284
++\dt
+
+# 2023-03-29 11:39:47.936609
++INSERT INTO programming_languages(id,name,released_year,githut_rank,pypl_rank,tiobe_rank) 
++VALUES 
++(1,'JavaScript',1995,1,3,7),
++(2,'Python',1991,2,1,3),
++(3,'Java',1995,3,2,2),
++(4,'TypeScript',2012,7,10,42),
++(5,'C#',2000,9,4,5),
++(6,'PHP',1995,8,6,8),
++(7,'C++',1985,5,5,4),
++(8,'C',1972,10,5,1),
++(9,'Ruby',1995,6,15,15),
++(10,'R',1993,33,7,9),
++(11,'Objective-C',1984,18,8,18),
++(12,'Swift',2015,16,9,13),
++(13,'Kotlin',2011,15,12,40),
++(14,'Go',2009,4,13,14),
++(15,'Rust',2010,14,16,26),
++(16,'Scala',2004,11,17,34);
+
+# 2023-03-29 11:39:56.784939
++describe programming_languages;
+
+# 2023-03-29 11:40:15.896280
++exit
+
+# 2023-03-29 16:43:49.190027
++\u real_estate
+
+# 2023-03-29 16:43:55.853453
++describe programming_languages;
+
+# 2023-03-29 16:44:10.261537
++\dt+ programming_languages;
+
+# 2023-03-29 17:10:50.708540
++\u real_estate
+
+# 2023-03-29 17:10:55.534624
++describe programming_languages;
+
+# 2023-03-29 17:11:10.606805
++select * from programming_languages;
+
+# 2023-03-29 17:13:47.790878
++exit
+
+# 2023-03-29 17:13:59.950546
++exit
+
+# 2023-03-30 12:07:14.998948
++create database pine_tours;
+
+# 2023-03-30 12:07:20.880104
++\u pine_tours
+
+# 2023-03-30 12:10:31.175920
++create table users (
++id integer primary key,
++first_name varchar(255) not null,
++last_name varchar(255) not null,
++country varchar(255) not null,
++country_code varchar(255) not null,
++email varchar(255) not null,
++password varchar(50) not null
++);
+
+# 2023-03-30 12:10:37.264434
++\dt
+
+# 2023-03-30 12:22:39.144182
++create table destinations (
++ id integer primary key,
++ destination varchar(255) not null,
++ country varchar(255) not null,
++ destination_description varchar(255) not null,
++ price int(10) not null,
++ image varchar(255) not null
++ );
+
+# 2023-03-30 12:22:49.799803
++\dt
+
+# 2023-03-30 14:47:23.257065
++create table bookings (
++id integer primary key,
++user_id INT(11) not null,
++destination_id INT(11) not null,
++start_date varchar(255) not null,
++end_date varchar(255) not null
++);
+
+# 2023-03-30 14:51:50.305111
++exit
+
+# 2023-04-04 15:39:33.760436
++\dt
+
+# 2023-04-04 15:39:41.251086
++\u pine_tours
+
+# 2023-04-04 15:39:47.201584
++\dt bookings
+
+# 2023-04-04 15:39:55.979049
++exit
+
+# 2023-04-24 11:29:54.495920
++\u
+
+# 2023-04-24 11:30:02.888945
++show databases;
+
+# 2023-04-24 11:30:07.936831
++exit
+
+# 2023-04-28 12:58:50.252924
++\dt
+
+# 2023-04-28 12:58:55.188267
++exit
+
+# 2023-04-28 16:36:27.565600
++\u pine_tours
+
+# 2023-04-28 16:36:33.036681
++\dt bookings
+
+# 2023-04-28 16:36:54.821491
++\u
+
+# 2023-04-28 16:37:04.693557
++\u real_estate
+
+# 2023-04-28 16:37:09.220391
++\dt
+
+# 2023-04-28 16:37:30.805023
++\u real_estate
+
+# 2023-04-28 16:38:30.324459
++EXIT
++;
+
+# 2023-05-19 09:40:37.940715
++\dt
+
+# 2023-05-19 09:40:42.840110
++\u
+
+# 2023-05-19 09:40:47.839987
++show databases;
+
+# 2023-05-19 09:40:52.464183
++exit
+
+# 2023-05-19 09:41:06.572964
++show databases;
+
+# 2023-05-19 09:41:27.479905
++CREATE DATABASE store;
+
+# 2023-05-19 09:42:21.240030
++GRANT ALL PRIVILEGES ON store.* TO "ericngigi"@"localhost" IDENTIFIED BY "store123";
+
+# 2023-05-19 09:42:33.359969
++FLUSH PRIVILEGES;
+
+# 2023-05-19 09:42:39.368230
++EXIT
++;
+
+# 2023-05-24 16:10:00.983060
++create database shop;
+
+# 2023-05-24 16:10:04.370649
++show databases;
+
+# 2023-05-24 16:10:17.498873
++use shop;
+
+# 2023-05-24 16:10:56.411281
++source ~/Projects/web-applications/ecommerce-v-1.0/database.sql
++;
+
+# 2023-05-24 16:11:10.043246
++exit
+
+# 2023-05-24 16:11:47.864385
++show databases;
+
+# 2023-05-24 16:12:04.595818
++use shop;
+
+# 2023-05-24 16:12:11.963833
++\dt
+
+# 2023-05-24 16:12:15.380104
++exit
+
+# 2023-05-29 16:45:13.943783
++show databases;
+
+# 2023-05-29 16:45:28.606670
++create database tagency;
+
+# 2023-05-29 16:46:15.055064
++exit;
+
+# 2023-05-31 11:41:30.398742
++show databases;
+
+# 2023-05-31 11:41:34.411099
++/dt;
+
+# 2023-05-31 11:41:37.333340
++use shop;
+
+# 2023-05-31 11:41:39.409317
++/dt;
+
+# 2023-05-31 11:41:43.905154
++ls
++;
+
+# 2023-05-31 11:41:48.300361
++exit;
+
+# 2023-05-31 17:38:39.553379
++create database shoporder;
+
+# 2023-05-31 17:38:46.076826
++exit;
+
+# 2023-05-31 17:39:28.706208
++show databases;
+
+# 2023-05-31 17:39:50.245888
++use shop_order;
+
+# 2023-05-31 17:39:57.645684
++\dt;
+
+# 2023-05-31 17:40:07.877836
++exit;
+
+# 2023-06-01 13:52:49.601942
++create database ecommerce;
+
+# 2023-06-01 13:52:55.349333
++exit;
+
+# 2023-06-01 17:06:15.100721
++create database larablog;
+
+# 2023-06-01 17:06:25.128425
++exit;
+
+# 2023-06-01 17:26:13.677062
++create database blog;
+
+# 2023-06-01 17:26:16.752269
++exit;

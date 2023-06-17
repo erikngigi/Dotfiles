@@ -159,3 +159,4 @@ output.null = "#808080"
 # example_dsn = mysql://[user[:password]@][host][:port][/dbname]
 eric = mysql://eric:vexille@localhost:3306
 root = mysql://root:vexille@localhost:3306
+mande = mysql://crater:crater@localhost:33006

@@ -1,0 +1,10 @@
+time 1684846467
+new [description:"create a page for resumes and cover letters on website" entry:"1684846467" modified:"1684846467" priority:"H" status:"pending" uuid:"3d1cab72-cfb8-45f6-9c20-e22b20ebcfb2"]
+---
+time 1684846519
+old [description:"create a page for resumes and cover letters on website" entry:"1684846467" modified:"1684846467" priority:"H" status:"pending" uuid:"3d1cab72-cfb8-45f6-9c20-e22b20ebcfb2"]
+new [description:"create a page for resumes and cover letters on website" end:"1684846514" entry:"1684846467" modified:"1684846519" priority:"H" status:"deleted" uuid:"3d1cab72-cfb8-45f6-9c20-e22b20ebcfb2"]
+---
+time 1684846536
+new [description:"create a page for resumes and cover letters on website" entry:"1684846536" modified:"1684846536" status:"pending" uuid:"1f63b999-998f-42be-9726-5bce0bf022ad"]
+---
