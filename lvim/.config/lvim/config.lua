@@ -1,0 +1,5 @@
+require('user.plugins')
+require('user.options')
+require('user.colorschemes')
+require('user.keymaps')
+require("user.nvim-tree")

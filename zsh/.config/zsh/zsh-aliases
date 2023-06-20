@@ -39,7 +39,7 @@ alias cleanup='doas pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 alias sudo='doas'
 alias sudoedit='doas lvim'
 
-alias vim='nvim'
+alias v='lvim'
 
 # confirm before overwriting something
 alias rm='rm -i'

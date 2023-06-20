@@ -13,8 +13,8 @@ bspc config active_border_color     "#808080"
 bspc config presel_feedback_color   "#327bd1"
 
 ##--Monitor and Desktop Settings--##
-bspc config top_padding           32
-bspc config bottom_padding        7
+bspc config top_padding           30
+bspc config bottom_padding        8
 bspc config left_padding          2
 bspc config right_padding         2
 bspc config border_width          2
@@ -28,7 +28,7 @@ bspc config focus_by-distance     true
 bspc config history_aware_focus   true
 
 bspc rule -a mpv desktop=^1
-bspc rule -a Chromium desktop=^2
+bspc rule -a Brave-browser desktop=^2
 bspc rule -a TIPP10 desktop=^3
 bspc rule -a TelegramDesktop desktop=^4
 bspc rule -a Clementine desktop=^4
