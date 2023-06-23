@@ -11,7 +11,6 @@ env:
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
   TERM: xterm-256color
-  # WINIT_XII_SCALE_FACTOR: "1"
 
 window:
   # dynamic_title: true
@@ -19,16 +18,16 @@ window:
   #
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
-  dimensions:
-    columns: 0
-    lines: 0
+  # dimensions:
+    # columns: 0
+    # lines: 0
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
-  position:
-    x: 0
-    y: 0
+  # position:
+    # x: 0
+    # y: 0
   # Window padding (changes require restart)
   #
   # Blank space added around the window in pixels. This padding is scaled
@@ -54,7 +53,7 @@ window:
   #
   # Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
   # Set this to `None` to use the default theme variant.
-  window.decorations_theme_variant: dark
+  # window.decorations_theme_variant: dark
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -88,7 +87,7 @@ font:
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: -1 # For letter spacing
-    y:  1 # For line spacing
+    y: 1 # For line spacing
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
@@ -169,13 +168,13 @@ selection:
   save_to_clipboard: false
 
 # Allow terminal applications to change Alacritty's window title.
-cursor:
-  style: Beam
+# cursor:
+  # style: Beam
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
-  unfocused_hollow: true
-  vi_mode_style: Block
+  # unfocused_hollow: true
+  # vi_mode_style: Block
 
 # Live config reload (changes require restart)
 live_config_reload: true
