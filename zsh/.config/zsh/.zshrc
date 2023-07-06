@@ -52,8 +52,11 @@ source /usr/share/fzf/key-bindings.zsh
 compinit
 
 # Edit line in vim with ctrl-e:
+bindkey -v
 autoload edit-command-line; zle -N edit-command-line
-# bindkey '^e' edit-command-line
+bindkey '^r' history-incremental-search-backward
+bindkey '^a' beginning-of-line
+bindkey '^e' end-of-line
 
 # Environment variables set everywhere
 export EDITOR="lvim"

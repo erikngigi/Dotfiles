@@ -39,7 +39,9 @@ alias cleanup='doas pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 alias sudo='doas'
 alias sudoedit='doas lvim'
 
+# Lunarvim
 alias v='lvim'
+alias V='doas lvim'
 
 # confirm before overwriting something
 alias rm='rm -i'
@@ -77,6 +79,9 @@ alias set-br='doas set-brightness.sh'
 # neovim
 alias lv='lvim'
 alias Lv='doas lvim'
+alias aria-conf='lvim $HOME/.aria2/'
+alias mpv-conf='lvim $HOME/.config/mpv/'
+alias yt-conf='lvim $HOME/.config/yt-dlp/'
 
 #feh
 alias feh-display='feh -d -.'

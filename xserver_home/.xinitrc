@@ -55,6 +55,6 @@ fi
 export _JAVA_AWT_WM_NONREPARENTING=1
 xsetroot -cursor_name left_ptr
 sh ~/.fehbg
-# picom --config /home/eric/.config/picom/picom.conf &
+picom --config /home/eric/.config/picom.conf &
 # numlockx on &
 exec bspwm
