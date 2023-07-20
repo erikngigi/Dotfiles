@@ -1,7 +1,13 @@
 #!/bin/sh
+
+# security variable
+s='sudo'
+d='doas'
+
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
 alias lvimrc='lvim ~/.config/lvim/'
 alias zshrc='lvim ~/.config/zsh/'
+alias z-source='source $HOME/.zshrc'
 
 # get fastest mirrors
 alias mirror="doas reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
@@ -24,8 +30,12 @@ alias ll='exa -l --color=always --group-directories-first'  # long format
 alias lt='exa -aT --color=always --group-directories-first' # tree listing
 alias l.='exa -a | egrep "^\."'
 
+# pdf
+alias pdf='evince'
+
 # pacman and yay
 alias Pacman='doas pacman'
+alias refresh='$d pacman'
 alias pacsyu='doas pacman -Syu'                  # update only standard pkgs
 alias pacsyyu='doas pacman -Syyu'                # Refresh pkglist & update standard pkgs
 alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay)
@@ -40,13 +50,16 @@ alias sudo='doas'
 alias sudoedit='doas lvim'
 
 # Lunarvim
-alias v='lvim'
-alias V='doas lvim'
+alias v='lvim +NvimTreeOpen'
+alias V='doas lvim +NvimTreeOpen'
 
 # confirm before overwriting something
 alias rm='rm -i'
 alias cp='advcp -gu'
 alias mv='advmv -gu'
+
+# hugo server
+alias hugo-server='hugo serve --noHTTPCache --ignoreCache --disableFastRender'
 
 # bat
 alias cat='bat'
@@ -55,13 +68,16 @@ alias cat='bat'
 alias mpv-nv="mpv --vid=no"
 alias mpv-720='mpv --ytdl-format="bestvideo[height<=?720][fps<=?30][vcodec^=avc1]+bestaudio/best"'
 alias mpv-1080='mpv --ytdl-format="bestvideo[height<=?1080][fps<=?30][vcodec^=avc1]+bestaudio/best"'
-
+alias k-pop='mpv --vid=no "https://www.youtube.com/playlist?list=PLlhlrF6zpj01PV6qkBItGubiz-Z0Eefci"'
 #anime-cli
 alias anime-cli='anipy-cli -D -o -q 1080'
 
 #directory shortcuts
 alias ericngigi='cd $HOME/Projects/web-applications/ericngigi.com/'
+alias e-ericngigi='lvim $HOME/Projects/web-applications/ericngigi.com/'
 alias homepage='cd $HOME/Projects/web-applications/custom-homepage/'
+alias e-homepage='lvim $HOME/Projects/web-applications/custom-homepage/'
+alias e-config='lvim $HOME/.config/'
 
 #xrandr brightness
 alias br='xrandr --output VGA-0 --brightness '
@@ -99,6 +115,7 @@ alias push='git push origin'
 alias stat='git status'  # 'status' is protected name so using 'stat' instead
 alias tag='git tag'
 alias newtag='git tag -a'
+alias merge='git merge'
 
 # Vanaheim HDD
 alias vanaheim='doas mount -t btrfs /dev/sdb1 /home/eric/Yggdrasil'
@@ -154,6 +171,9 @@ alias naruto-shippuden="mpv $HOME/Anime/Shows/Naruto\ Shippuden"
 
 # JoJo
 alias jojo="mpv $HOME/Anime/Shows/JoJo\ no\ Kimyou\ na\ Bouken"
+
+# Dr Stone
+alias dr-stone="mpv $HOME/Anime/Shows/Dr\ Stone\ New\ World"
 
 # Other Aliases
 # alias clear-buckets="aws s3 rm s3://b2voiprectest --recursive --endpoint-url=https://s3.us-west-000.backblazeb2.com --profile ericjohnson-backblaze-rw && aws s3 rm s3://voiprectest --recursive --endpoint-url=$BIFROST_ENDPOINT_URL --profile ericjohnson-bifrost-rw"

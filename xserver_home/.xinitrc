@@ -52,9 +52,6 @@ fi
 # [ -f /etc/xprofile ] && . /etc/xprofile
 [ -f ~/.xprofile ] && . ~/.xprofile
 
-export _JAVA_AWT_WM_NONREPARENTING=1
 xsetroot -cursor_name left_ptr
 sh ~/.fehbg
-picom --config /home/eric/.config/picom.conf &
-# numlockx on &
 exec bspwm

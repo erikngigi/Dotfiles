@@ -1,8 +1,5 @@
 # Screen Layout Script
-$HOME/.local/scripts/vga-layout.sh
-
-# Dunstify 
-pkill -9 dunst; dunst &
+$HOME/.scripts/vga-layout.sh
 
 # Network-Manager Applet
 nm-applet &

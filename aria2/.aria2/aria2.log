@@ -5038,3 +5038,14 @@ Exception: [AbstractCommand.cc:351] errorCode=1 URI=https://rr1---sn-n545gpjvh-h
 2023-07-03 17:30:00.273907 [NOTICE] [RequestGroup.cc:251] GID#46d9f90a83df7540 - Download has already completed: /home/eric/YouTube/Video/Critical Drinker After Hours//archlinux-2023.07.01-x86_64.iso
 2023-07-03 17:30:00.274771 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/YouTube/Video/Critical Drinker After Hours//archlinux-2023.07.01-x86_64.iso
 2023-07-03 17:30:04.223579 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2023-07-16 18:36:31.324728 [NOTICE] [Context.cc:310] Downloading 1 item(s)
+2023-07-16 18:36:32.612037 [ERROR] [AbstractCommand.cc:349] CUID#8 - Download aborted. URI=https://www68.uptobox.com/dl/UdY3g8loQndwSCNV1Yn1vMO2r-RqQruZfZBDpiLq0zWzd4Q9O86lCnNEaRCOJeDyr6w9_hX3yGGPqL0EjnXHT17xXESIZ49hugZzZNLwuXza59JQqJYIZsKS6HK8SvB8/Extraction.2.2023.1080p.NF.WEB-DL.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www68.uptobox.com/dl/UdY3g8loQndwSCNV1Yn1vMO2r-RqQruZfZBDpiLq0zWzd4Q9O86lCnNEaRCOJeDyr6w9_hX3yGGPqL0EjnXHT17xXESIZ49hugZzZNLwuXza59JQqJYIZsKS6HK8SvB8/Extraction.2.2023.1080p.NF.WEB-DL.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2023-07-16 18:36:32.626874 [ERROR] [AbstractCommand.cc:349] CUID#9 - Download aborted. URI=https://www68.uptobox.com/dl/UdY3g8loQndwSCNV1Yn1vMO2r-RqQruZfZBDpiLq0zWzd4Q9O86lCnNEaRCOJeDyr6w9_hX3yGGPqL0EjnXHT17xXESIZ49hugZzZNLwuXza59JQqJYIZsKS6HK8SvB8/Extraction.2.2023.1080p.NF.WEB-DL.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www68.uptobox.com/dl/UdY3g8loQndwSCNV1Yn1vMO2r-RqQruZfZBDpiLq0zWzd4Q9O86lCnNEaRCOJeDyr6w9_hX3yGGPqL0EjnXHT17xXESIZ49hugZzZNLwuXza59JQqJYIZsKS6HK8SvB8/Extraction.2.2023.1080p.NF.WEB-DL.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2023-07-16 18:36:32.641956 [ERROR] [AbstractCommand.cc:349] CUID#10 - Download aborted. URI=https://www68.uptobox.com/dl/UdY3g8loQndwSCNV1Yn1vMO2r-RqQruZfZBDpiLq0zWzd4Q9O86lCnNEaRCOJeDyr6w9_hX3yGGPqL0EjnXHT17xXESIZ49hugZzZNLwuXza59JQqJYIZsKS6HK8SvB8/Extraction.2.2023.1080p.NF.WEB-DL.x264.DD5.1-Pahe.in.mkv
+Exception: [AbstractCommand.cc:351] errorCode=22 URI=https://www68.uptobox.com/dl/UdY3g8loQndwSCNV1Yn1vMO2r-RqQruZfZBDpiLq0zWzd4Q9O86lCnNEaRCOJeDyr6w9_hX3yGGPqL0EjnXHT17xXESIZ49hugZzZNLwuXza59JQqJYIZsKS6HK8SvB8/Extraction.2.2023.1080p.NF.WEB-DL.x264.DD5.1-Pahe.in.mkv
+  -> [HttpSkipResponseCommand.cc:239] errorCode=22 The response status is not successful. status=429
+2023-07-16 19:35:06.197407 [NOTICE] [RequestGroup.cc:1214] Download complete: /home/eric/Anime/Anime-Downloads/Extraction.2.2023.1080p.NF.WEB-DL.x264.DD5.1-Pahe.in.mkv
