@@ -3,7 +3,6 @@
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
 alias lvimrc='lvim ~/.config/lvim/'
 alias zshrc='lvim ~/.config/zsh/'
-alias zsource='source $HOME/.zshrc'
 
 # get fastest mirrors
 alias mirror="doas reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
@@ -71,7 +70,7 @@ alias anime-cli='anipy-cli -D -o -q 1080'
 
 #directory shortcuts
 alias ericngigi='cd $HOME/Projects/web-applications/ericngigi.com/'
-alias homepage='cd $HOME/Projects/web-applications/homepage/'
+alias homepage='cd $HOME/.surf/'
 
 #xrandr brightness
 alias br='xrandr --output VGA-0 --brightness '
@@ -152,7 +151,7 @@ alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 # Anime Aliases
 # ------------------------------------------------------------------------------------------------#
 # Neon Evangelion
-alias neon="mpv $HOME/Anime/Shows/Neon\ Genesis\ Evangelion"
+alias neon-evangelion="mpv $HOME/Anime/Shows/Neon\ Genesis\ Evangelion"
 
 # Hamna Baki
 alias baki="mpv $HOME/Anime/Shows/Hanma\ Baki\ Son\ of\ Ogre\ 2nd\ Season"

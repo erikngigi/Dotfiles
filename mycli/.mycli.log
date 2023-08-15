@@ -496,3 +496,24 @@
 2023-06-01 17:26:08,529 (5162/MainThread) mycli.config WARNING - Using successfully parsed config values.
 2023-06-01 17:26:08,539 (5162/MainThread) mycli.config WARNING - Unable to parse line 1 of config file '/home/eric/.my.cnf'.
 2023-06-01 17:26:08,539 (5162/MainThread) mycli.config WARNING - Using successfully parsed config values.
+2023-08-15 09:46:48,878 (1679/MainThread) mycli.config WARNING - Unable to parse line 10 of config file '/etc/my.cnf'.
+2023-08-15 09:46:48,890 (1679/MainThread) mycli.config WARNING - Using successfully parsed config values.
+2023-08-15 09:46:48,900 (1679/MainThread) mycli.config WARNING - Unable to parse line 1 of config file '/home/eric/.my.cnf'.
+2023-08-15 09:46:48,901 (1679/MainThread) mycli.config WARNING - Using successfully parsed config values.
+2023-08-15 09:46:48,928 (1679/MainThread) mycli.config WARNING - Unable to parse line 10 of config file '/etc/my.cnf'.
+2023-08-15 09:46:48,929 (1679/MainThread) mycli.config WARNING - Using successfully parsed config values.
+2023-08-15 09:46:48,947 (1679/MainThread) mycli.config WARNING - Unable to parse line 1 of config file '/home/eric/.my.cnf'.
+2023-08-15 09:46:48,948 (1679/MainThread) mycli.config WARNING - Using successfully parsed config values.
+2023-08-15 09:46:50,922 (1679/MainThread) mycli.main ERROR - traceback: 'Traceback (most recent call last):\n  File "/home/eric/.local/lib/python3.11/site-packages/mycli/main.py", line 487, in connect\n    _connect()\n  File "/home/eric/.local/lib/python3.11/site-packages/mycli/main.py", line 471, in _connect\n    new_passwd = click.prompt(\'Password\', hide_input=True,\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/eric/.local/lib/python3.11/site-packages/click/termui.py", line 164, in prompt\n    value = prompt_func(prompt)\n            ^^^^^^^^^^^^^^^^^^^\n  File "/home/eric/.local/lib/python3.11/site-packages/click/termui.py", line 147, in prompt_func\n    raise Abort() from None\nclick.exceptions.Abort\n'
+2023-08-15 09:47:00,541 (1711/MainThread) mycli.config WARNING - Unable to parse line 10 of config file '/etc/my.cnf'.
+2023-08-15 09:47:00,542 (1711/MainThread) mycli.config WARNING - Using successfully parsed config values.
+2023-08-15 09:47:00,592 (1711/MainThread) mycli.config WARNING - Unable to parse line 1 of config file '/home/eric/.my.cnf'.
+2023-08-15 09:47:00,592 (1711/MainThread) mycli.config WARNING - Using successfully parsed config values.
+2023-08-15 09:47:00,599 (1711/MainThread) mycli.config WARNING - Unable to parse line 10 of config file '/etc/my.cnf'.
+2023-08-15 09:47:00,600 (1711/MainThread) mycli.config WARNING - Using successfully parsed config values.
+2023-08-15 09:47:00,623 (1711/MainThread) mycli.config WARNING - Unable to parse line 1 of config file '/home/eric/.my.cnf'.
+2023-08-15 09:47:00,623 (1711/MainThread) mycli.config WARNING - Using successfully parsed config values.
+2023-08-15 09:47:00,838 (1711/MainThread) mycli.config WARNING - Unable to parse line 10 of config file '/etc/my.cnf'.
+2023-08-15 09:47:00,839 (1711/MainThread) mycli.config WARNING - Using successfully parsed config values.
+2023-08-15 09:47:00,848 (1711/MainThread) mycli.config WARNING - Unable to parse line 1 of config file '/home/eric/.my.cnf'.
+2023-08-15 09:47:00,848 (1711/MainThread) mycli.config WARNING - Using successfully parsed config values.
