@@ -78,5 +78,12 @@ auto_open_dl_defaultcli: False
 
 # Mal user credentials
 # Required to connect to your MAL account and use the MAL cli.
-# mal_user: username
-# mal_password: password
+mal_user: 'ericngigi'
+mal_password: 'n0mor3w3ed81%'
+mal_status_categories:
+  # Possible categories:
+  - watching
+  - completed
+  - on_hold
+  - dropped
+  - plan_to_watch

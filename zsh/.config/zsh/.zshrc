@@ -59,9 +59,9 @@ bindkey '^a' beginning-of-line
 bindkey '^e' end-of-line
 
 # Environment variables set everywhere
-export EDITOR="lvim"
+export EDITOR="nvim"
 export TERMINAL="alacritty"
-export BROWSER="brave"
+export BROWSER="firefox"
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {
