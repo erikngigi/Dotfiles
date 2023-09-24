@@ -16,6 +16,7 @@ colorizer.setup {
     "tmux",
     "conf",
     "dosini",
+    "sh",
   },
   user_default_options = {
     names = false,

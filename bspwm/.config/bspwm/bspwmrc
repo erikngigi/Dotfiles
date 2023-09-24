@@ -1,9 +1,7 @@
 #! /bin/sh
 
 # colors
-# orange="#FF825C"
 blue="#0066FF"
-# green="#007500"
 silver="#808080"
 light_blue="#327bd1"
 
@@ -32,10 +30,6 @@ bspc config gapless_monocle       true
 bspc config focus_follows_pointer true
 bspc config single_monocle        false
 
-bspc rule -a mpv desktop=^1
 bspc rule -a Brave-browser desktop=^2
-bspc rule -a firefox desktop=^2
 bspc rule -a TIPP10 desktop=^3
-bspc rule -a libreoffice-startcenter desktop=^3
 bspc rule -a TelegramDesktop desktop=^4
-bspc rule -a Zotero desktop=^4
