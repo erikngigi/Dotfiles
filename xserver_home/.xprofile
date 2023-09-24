@@ -1,9 +1,5 @@
 # Screen Layout Script
-$HOME/.scripts/vga-layout.sh
+$HOME/.scripts/lvds-only.sh
 
 # Network-Manager Applet
 nm-applet &
-
-# Turn off DPMS
-xset s off &
-xset -dpms &

@@ -1,9 +1,9 @@
 #!/bin/sh
 
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
-alias lvimrc='nvim ~/.config/lvim/'
+alias lvimrc='lvim ~/.config/lvim/'
 alias nvimrc='nvim ~/.config/nvim/'
-alias zshrc='nvim ~/.config/zsh/'
+alias zshrc='lvim ~/.config/zsh/'
 
 # get fastest mirrors
 alias mirror="doas reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
@@ -46,8 +46,8 @@ alias sudo='doas'
 # alias sudoedit='doas lvim'
 
 # Lunarvim
-# alias lv='lvim'
-# alias Lv='doas lvim'
+alias lv='lvim'
+alias Lv='doas lvim'
 
 # NvChad
 alias nv='nvim'
@@ -74,6 +74,7 @@ alias k-pop='mpv --vid=no "https://www.youtube.com/playlist?list=PLlhlrF6zpj01PV
 
 #anime-cli
 alias anime-cli='anipy-cli -D -o -q 1080'
+alias anime-watch='anipy-cli -o -q 1080'
 
 #directory shortcuts
 alias ericngigi='cd $HOME/Projects/web-applications/ericngigi.com/'
@@ -88,13 +89,6 @@ alias N='doas nnn -drx'
 
 #brightness
 alias set-br='doas set-brightness.sh'
-
-# neovim
-# alias lv='lvim'
-# alias Lv='doas lvim'
-# alias aria-conf='lvim $HOME/.aria2/'
-# alias mpv-conf='lvim $HOME/.config/mpv/'
-# alias yt-conf='lvim $HOME/.config/yt-dlp/'
 
 #feh
 alias feh-display='feh -d -.'
@@ -161,8 +155,8 @@ alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 
 # Anime Aliases
 # ------------------------------------------------------------------------------------------------#
-# Planetes
-alias cowboy-bebop="mpv $HOME/Anime/Shows/Cowboy\ Bebop/"
+# Bleach
+alias bleach="mpv --aid=2 sid=1 $HOME/Anime/Shows/Bleach"
 
 # Other Aliases
 # alias clear-buckets="aws s3 rm s3://b2voiprectest --recursive --endpoint-url=https://s3.us-west-000.backblazeb2.com --profile ericjohnson-backblaze-rw && aws s3 rm s3://voiprectest --recursive --endpoint-url=$BIFROST_ENDPOINT_URL --profile ericjohnson-bifrost-rw"

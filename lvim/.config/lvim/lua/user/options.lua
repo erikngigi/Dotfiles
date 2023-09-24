@@ -1,42 +1,61 @@
--- neovim options
-vim.opt.cmdheight = 1             -- more space in the neovim command line for displaying messages
-vim.opt.guifont = "monospace:h17" -- the font used in graphical neovim applications
-vim.opt.shiftwidth = 2            -- the number of spaces inserted for each indentation
-vim.opt.tabstop = 2               -- insert 2 spaces for a tab
-vim.opt.relativenumber = false    -- relative line numbers
-vim.opt.wrap = true               -- wrap lines
-vim.o.linebreak = true
-
+lvim.colorscheme = "tokyonight"
 lvim.log.level = "warn"
-lvim.format_on_save = true
-
-lvim.builtin.treesitter.ensure_installed = {
-  "bash",
-  "c",
-  "html",
-  "javascript",
-  "json",
-  "lua",
-  "python",
-  "typescript",
-  "tsx",
-  "css",
-  "yaml"
-}
-
--- custom in-built configurations
-lvim.builtin.treesitter.rainbow.enable = true
+lvim.builtin.alpha.active = true
+lvim.reload_config_on_save = true
+lvim.builtin.illuminate.active = false
+lvim.builtin.bufferline.active = true
+lvim.builtin.terminal.persist_mode = false
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = true
-lvim.builtin.project.detection_methods = { "lsp", "pattern" }
-lvim.builtin.project.patterns = {
-  ".git",
-  "package-lock.json",
-  "yarn.lock",
-  "package.json",
-  "requirements.txt"
-}
-lvim.builtin.alpha.active = false
-lvim.builtin.dap.active = false
-lvim.builtin.cmp.completion.keyword_length = 1
+lvim.builtin.breadcrumbs.active = true
+lvim.builtin.dap.active = true
 lvim.transparent_window = true
+lvim.builtin.nvimtree.setup.actions.open_file.quit_on_open = true
+lvim.builtin.lualine.style = "lvim"
+lvim.builtin.lualine.options.theme = "tokyonight"
+
+vim.opt.showtabline = 0
+
+local options = {
+  backup = false,                          -- creates a backup file
+  clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
+  cmdheight = 1,                           -- more space in the neovim command line for displaying messages
+  completeopt = { "menuone", "noselect" }, -- mostly just for cmp
+  conceallevel = 0,                        -- so that `` is visible in markdown files
+  fileencoding = "utf-8",                  -- the encoding written to a file
+  hlsearch = true,                         -- highlight all matches on previous search pattern
+  ignorecase = true,                       -- ignore case in search patterns
+  mouse = "a",                             -- allow the mouse to be used in neovim
+  pumheight = 10,                          -- pop up menu height
+  showmode = false,                        -- we don't need to see things like -- INSERT -- anymore
+  showtabline = 0,                         -- always show tabs
+  smartcase = true,                        -- smart case
+  smartindent = true,                      -- make indenting smarter again
+  splitbelow = true,                       -- force all horizontal splits to go below current window
+  splitright = true,                       -- force all vertical splits to go to the right of current window
+  swapfile = false,                        -- creates a swapfile
+  termguicolors = true,                    -- set term gui colors (most terminals support this)
+  timeoutlen = 1000,                       -- time to wait for a mapped sequence to complete (in milliseconds)
+  undofile = true,                         -- enable persistent undo
+  updatetime = 100,                        -- faster completion (4000ms default)
+  writebackup = false,                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
+  expandtab = true,                        -- convert tabs to spaces
+  shiftwidth = 2,                          -- the number of spaces inserted for each indentation
+  tabstop = 2,                             -- insert 2 spaces for a tab
+  cursorline = true,                       -- highlight the current line
+  number = true,                           -- set numbered lines
+  laststatus = 3,
+  showcmd = false,
+  ruler = false,
+  relativenumber = false, -- set relative numbered lines
+  numberwidth = 4,        -- set number column width to 2 {default 4}
+  signcolumn = "yes",     -- always show the sign column, otherwise it would shift the text each time
+  wrap = false,           -- display lines as one long line
+  scrolloff = 0,
+  sidescrolloff = 8,
+  guifont = "monospace:h17", -- the font used in graphical neovim applications
+  title = true,
+  titleold = vim.split(os.getenv("SHELL") or "", "/")[3],
+  -- colorcolumn = "80",
+  -- colorcolumn = "120",
+}
