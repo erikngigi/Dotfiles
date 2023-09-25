@@ -9,8 +9,7 @@
 #-----------------------------------------------------------------------------------
 # Output Directory
 #-----------------------------------------------------------------------------------
--o "/home/eric/YouTube/Video/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
-# -o "/home/eric/YouTube/Video/%(uploader)s/%(autonumber)s - %(title)s.%(ext)s"
+-o "/home/eric/Videos/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
 
 #-----------------------------------------------------------------------------------
 # Download preferences

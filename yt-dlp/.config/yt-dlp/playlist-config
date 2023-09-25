@@ -2,14 +2,14 @@
 # Flags
 #-----------------------------------------------------------------------------------
 --limit-rate 1024K
---write-auto-sub
---embed-subs
---sub-lang en
+# --write-auto-sub
+# --embed-subs
+# --sub-lang en
 
 #-----------------------------------------------------------------------------------
 # Output directory
 #-----------------------------------------------------------------------------------
--o "/home/eric/YouTube/Video/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s"
+-o "/home/eric/Videos/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s"
 
 #-----------------------------------------------------------------------------------
 # Video preferences
