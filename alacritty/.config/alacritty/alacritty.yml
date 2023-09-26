@@ -70,7 +70,7 @@ font:
   normal:
     family: JetBrainsMono Nerd Font
     # family: Hack Nerd Font Mono
-    style: Regular
+    style: Light
   bold:
     family: JetBrainsMono Nerd Font
     # family: Hack Nerd Font Mono

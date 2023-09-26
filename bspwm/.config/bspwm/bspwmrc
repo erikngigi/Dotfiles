@@ -30,6 +30,6 @@ bspc config gapless_monocle       true
 bspc config focus_follows_pointer true
 bspc config single_monocle        false
 
-bspc rule -a Brave-browser desktop=^2
+bspc rule -a firefoxdeveloperedition desktop=^2
 bspc rule -a TIPP10 desktop=^3
 bspc rule -a TelegramDesktop desktop=^4
