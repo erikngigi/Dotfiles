@@ -1,7 +1,5 @@
-lvim.builtin.nvimtree.setup.view.centralize_selection = true
 lvim.builtin.nvimtree.setup.renderer.icons.glyphs.folder.arrow_open = ""
 lvim.builtin.nvimtree.setup.renderer.icons.glyphs.folder.arrow_closed = ""
-lvim.builtin.nvimtree.setup.view.centralize_selection = true
 lvim.builtin.nvimtree.setup.actions.open_file.quit_on_open = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = true

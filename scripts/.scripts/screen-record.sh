@@ -15,8 +15,8 @@ echo "Enter the name of the screen recording (without extension):"
 read -r output_name
 
 if [ -z "$output_name" ]; then
-  echo "Error: You must enter a valid name for the screen recording."
-  exit 1
+	echo "Error: You must enter a valid name for the screen recording."
+	exit 1
 fi
 
 output_file="${output_name}.mkv"

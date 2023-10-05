@@ -1,7 +1,7 @@
 lvim.builtin.cmp.window = {
   completion = {
     border = "rounded",
-    winhighlight = "Normal:Pmenu,FloatBorder:Pmenu,Search:None",
+    winhighlight = "Normal:ModeMsg,FloatBorder:Pmenu,Search:None",
     -- winhighlight = "Normal:Pmenu,CursorLine:PmenuThumb,FloatBorder:Pmenu,Search:None",
     col_offset = -3,
     side_padding = 1,

@@ -23,7 +23,7 @@ bspc config bottom_padding        2
 bspc config left_padding          2
 bspc config right_padding         2
 bspc config border_width          2
-bspc config window_gap            7
+bspc config window_gap            4
 bspc config split_ratio           0.50
 bspc config borderless_monocle    true
 bspc config gapless_monocle       true
@@ -31,5 +31,6 @@ bspc config focus_follows_pointer true
 bspc config single_monocle        false
 
 bspc rule -a firefoxdeveloperedition desktop=^2
+bspc rule -a Brave-browser desktop=^2
 bspc rule -a TIPP10 desktop=^3
 bspc rule -a TelegramDesktop desktop=^4

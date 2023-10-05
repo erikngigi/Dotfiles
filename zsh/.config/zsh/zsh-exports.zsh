@@ -16,5 +16,4 @@ export NNN_PLUG='r:renamer'
 export NNN_TRASH=1
 export NNN_COLORS='#27272727'
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
-# export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
-export NNN_BMS="a:$HOME/Anime;d:$HOME/Downloads;e:$HOME/Yggdrasil;m:$HOME/Music;t:$HOME/Torrents;w:$HOME/Projects/web-applications/ericngigi.com;y:$HOME/YouTube/Video"
+export NNN_BMS="a:$HOME/Tv-Shows/Anime;d:$HOME/Downloads;e:$HOME/Yggdrasil;t:$HOME/Downloads/Torrents;v:$HOME/Videos/"

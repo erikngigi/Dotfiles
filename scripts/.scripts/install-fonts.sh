@@ -11,9 +11,9 @@ git clone "$FONT_REPO" /tmp/fonts
 
 # Check if the clone was successful
 if [ $? -ne 0 ]; then
-  echo "Failed to clone the font repository"
-  else
-    echo "Fonts were successfully downloaded"
+	echo "Failed to clone the font repository"
+else
+	echo "Fonts were successfully downloaded"
 fi
 
 # Create the destination directory if it doesn't exist

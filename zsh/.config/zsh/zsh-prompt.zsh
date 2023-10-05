@@ -25,13 +25,6 @@ zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
     fi
 }
 zstyle ':vcs_info:*' check-for-changes true
-# Set custom strings for an unstaged vcs repo changes (*) and staged changes (+)
-# zstyle ':vcs_info:*' unstagedstr ' *'
-# zstyle ':vcs_info:*' stagedstr ' +'
-# Set the format of the Git information for vcs_info
-# zstyle ':vcs_info:git:*' formats       '(%b%u%c)'
-# zstyle ':vcs_info:git:*' actionformats '(%b|%a%u%c)'
-zstyle ':vcs_info:git:*' formats "%F{45}(%F{1}%m%u%c%F{10} 󰘬 %F{10}%b%F{45})"
-# PROMPT='%F{014}[%T] %F{014}%~%F{015} %F{002}${vcs_info_msg_0_}%F{007}$%f '
-PROMPT='%F{45}[%T]%F{reset} %F{45}%~%F{reset}'
+zstyle ':vcs_info:git:*' formats " %{$fg[blue]%}(%{$fg[red]%}%m%u%c%{$fg[yellow]%}%{$fg[magenta]%} %b%{$fg[blue]%})"
+PROMPT='%F{45}[%T]%F{reset} %(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )%F{45}%~%F{reset}'
 PROMPT+="\$vcs_info_msg_0_ %F{reset}"

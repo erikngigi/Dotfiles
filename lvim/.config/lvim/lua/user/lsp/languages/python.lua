@@ -16,6 +16,3 @@ linters.setup {
              "--select=B,C,E,F,W,T4,B9"},
   }
 }
-
--- lvim.format_on_save = false
--- lvim.format_on_save.pattern = { "*.py" }

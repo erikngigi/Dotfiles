@@ -1,7 +1,5 @@
 -- custom keybindings
 lvim.keys.normal_mode["<Space>n"] = "<cmd>NvimTreeFocus<cr>"
--- lvim.keys.normal_mode["<Space>w"] = "<cmd>w<cr>"
--- lvim.keys.normal_mode["<Space>wq"] = "<cmd>quitall<cr>"
 lvim.keys.normal_mode["<TAB>"] = "<cmd>BufferLineCycleNext<cr>"
 lvim.builtin.which_key.mappings["w"] = {
   name = "Save Options",
