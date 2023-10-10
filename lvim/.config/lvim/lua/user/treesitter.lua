@@ -1,6 +1,18 @@
 lvim.builtin.treesitter.ensure_installed = {
   "python",
   "javascript",
+  "bash",
+  "css",
+  "git_config",
+  "git_rebase",
+  "gitattributes",
+  "gitcommit",
+  "gitignore",
+  "html",
+  "lua",
+  "markdown",
+  "vim",
+  "yaml",
 }
 
 lvim.builtin.treesitter.rainbow = {

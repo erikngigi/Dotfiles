@@ -1,9 +1,8 @@
 #!/bin/sh
 
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
-alias lvimrc='lvim ~/.config/lvim/'
 alias nvimrc='nvim ~/.config/nvim/'
-alias zshrc='lvim ~/.config/zsh/'
+alias zshrc='nvim ~/.config/zsh/'
 alias clear-zsh='echo -n "" > /home/eric/.zsh_history'
 alias zsh-colors='for i in {1..256}; do print -P "%F{$i}Color : $i"; done;'
 
@@ -45,11 +44,6 @@ alias cleanup='doas pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
 
 # Sudo
 alias sudo='doas'
-# alias sudoedit='doas lvim'
-
-# Lunarvim
-alias lv='lvim'
-alias Lv='doas lvim'
 
 # NvChad
 alias nv='nvim'
@@ -159,7 +153,7 @@ alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 # Anime Aliases
 # ------------------------------------------------------------------------------------------------#
 # Bleach
-alias bleach="mpv --aid=2 sid=2 $HOME/Tv-Shows/Anime/Bleach/"
+alias bleach="mpv --aid=1 --vid=1 $HOME/Tv-Shows/Anime/Bleach/"
 
 # Other Aliases
 # alias clear-buckets="aws s3 rm s3://b2voiprectest --recursive --endpoint-url=https://s3.us-west-000.backblazeb2.com --profile ericjohnson-backblaze-rw && aws s3 rm s3://voiprectest --recursive --endpoint-url=$BIFROST_ENDPOINT_URL --profile ericjohnson-bifrost-rw"
