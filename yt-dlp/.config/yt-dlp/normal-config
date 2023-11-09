@@ -2,6 +2,7 @@
 # Flags
 #-----------------------------------------------------------------------------------
 --limit-rate 1024K
+--no-playlist
 # --write-auto-sub
 # --embed-subs
 # --sub-lang en

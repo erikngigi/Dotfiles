@@ -631,3 +631,294 @@
 
 # 2023-08-15 09:50:26.484367
 +exit;
+
+# 2023-10-11 09:34:09.826237
++exit
+
+# 2023-10-11 09:36:16.138563
++show databases;
+
+# 2023-10-11 09:36:20.389489
++exit
+
+# 2023-10-11 09:37:35.609170
++show databases;
+
+# 2023-10-11 09:37:38.269941
++exit
+
+# 2023-10-11 09:40:04.324489
++select user from mysql.user
++;
+
+# 2023-10-11 09:40:18.837821
++select user from mysql.user;
+
+# 2023-10-11 09:41:10.582164
++create user 'eric'@% identified by 'vexille';
+
+# 2023-10-11 09:41:24.173972
++create user 'eric'@localhost identified by 'vexille';
+
+# 2023-10-11 09:41:28.093753
++select user from mysql.user;
+
+# 2023-10-11 09:42:11.685922
++grant all privileges on *.* to 'eric'@'localhost' identified by 'vexille';
+
+# 2023-10-11 09:42:22.301586
++flush privileges;
+
+# 2023-10-11 09:42:27.573803
++exit
+
+# 2023-10-11 09:47:25.474607
++show user from mysql.user;
+
+# 2023-10-11 09:47:37.477742
++select user from mysql.user;
+
+# 2023-10-11 09:48:00.878114
++drop user 'eric'@'localhost';
+
+# 2023-10-11 09:48:08.966298
++select user from mysql.user;
+
+# 2023-10-11 09:48:43.302756
++create user 'eric'@'%' identified by 'vexille';
+
+# 2023-10-11 09:49:06.750367
++grant all privileges on *.* to 'eric'@'%' identified by 'vexille';
+
+# 2023-10-11 09:49:09.646142
++flush privileges;
+
+# 2023-10-11 09:49:13.926238
++exit
+
+# 2023-10-11 09:49:56.386404
++show databases;
+
+# 2023-10-11 09:49:59.270140
++exit
+
+# 2023-10-11 09:51:06.770905
++show databases;
+
+# 2023-10-11 09:51:16.398452
++exit
+
+# 2023-10-11 11:01:24.276528
++show databases;
+
+# 2023-10-11 11:01:35.695985
++drop database ona_data_eric_1;
+
+# 2023-10-11 11:01:41.103440
++show databases;
+
+# 2023-10-11 11:01:51.943909
++exit
+
+# 2023-10-11 14:25:26.442683
++show databases;
+
+# 2023-10-11 14:25:31.590469
++exit
+
+# 2023-10-11 16:35:14.744403
++show databases;
+
+# 2023-10-11 16:35:21.068031
++exit
+
+# 2023-10-11 20:36:58.397250
++show databases;
+
+# 2023-10-11 20:37:01.824551
++exit
+
+# 2023-10-11 21:11:31.915812
++show databases;
+
+# 2023-10-11 21:11:35.151579
++exit
+
+# 2023-10-12 13:30:54.533415
++show databases;
+
+# 2023-10-12 13:31:07.273353
++exit;
+
+# 2023-10-12 14:56:39.848242
++show databases;
+
+# 2023-10-12 14:56:44.515857
++exit;
+
+# 2023-10-12 15:04:22.504563
++exit
+
+# 2023-10-13 11:23:16.045970
++show databases;
+
+# 2023-10-13 11:23:18.634065
++exit
+
+# 2023-10-13 12:19:05.052195
++create user 'eric'@'%' identified by 'vexille';
+
+# 2023-10-13 12:19:11.207181
++grant all privileges on *.* to 'eric'@'%' identified by 'vexille';
+
+# 2023-10-13 12:22:23.079779
++grant all privileges on *.* to 'eric'@'%' with grant option;
+
+# 2023-10-13 12:22:40.111817
++exit
+
+# 2023-10-13 12:23:08.912677
++show databases;
+
+# 2023-10-13 12:23:12.878807
++exit
+
+# 2023-10-13 12:24:37.427824
++show databases;
+
+# 2023-10-13 12:24:40.527514
++exit
+
+# 2023-10-18 12:21:04.660134
++show databases;
+
+# 2023-10-18 12:21:24.679541
++create database db2;
+
+# 2023-10-18 12:21:40.799409
++exit
+
+# 2023-10-18 12:22:07.873721
++show databases;
+
+# 2023-10-18 12:22:14.077541
++create database db2;
+
+# 2023-10-18 12:22:17.350085
++show databases;
+
+# 2023-10-18 12:23:24.709877
++exit
+
+# 2023-10-18 12:24:04.819576
++grant all privileges on *.* to 'user1'@'%' with grant option;
+
+# 2023-10-18 12:24:09.334544
++exit
+
+# 2023-10-18 12:24:19.157343
++grant all privileges on *.* to 'user1'@'%' with grant option;
+
+# 2023-10-18 12:24:22.829574
++flush privileges;
+
+# 2023-10-18 12:24:24.772091
++exit
+
+# 2023-10-18 12:24:36.423975
++show databases;
+
+# 2023-10-18 12:24:41.941879
++create database db3;
+
+# 2023-10-18 12:24:45.422340
++show databases;
+
+# 2023-10-18 12:26:19.421693
++create database db4;
+
+# 2023-10-18 12:26:54.266013
++exit
+
+# 2023-10-18 13:14:16.306826
++show databases;
+
+# 2023-10-18 13:14:51.034491
++use db1;
+
+# 2023-10-18 13:14:55.506779
++\dt;
+
+# 2023-10-18 13:15:02.067943
++show tables;
+
+# 2023-10-18 13:15:12.347404
++exit
+
+# 2023-10-21 15:02:16.416100
++show databases;
+
+# 2023-10-21 15:02:19.039279
++exit
+
+# 2023-10-21 15:16:26.451453
++show databases;
+
+# 2023-10-21 15:24:05.720052
++exit
+
+# 2023-10-21 16:25:42.747384
++create user 'eric'@'%' identified by 'vexille';
+
+# 2023-10-21 16:25:55.257969
++grant all privileges on *.* to 'eric'@'%' with grant option;
+
+# 2023-10-21 16:25:58.391655
++flush privileges;
+
+# 2023-10-21 16:26:00.482191
++exit
+
+# 2023-10-21 16:26:34.333298
++show databases;
+
+# 2023-10-21 16:29:41.624564
++exit
+
+# 2023-10-21 16:34:19.881625
++source ~/Projects/web-applications/ecommerce-v-1.0/database.sql
++;
+
+# 2023-10-21 16:35:24.880293
++source ~/Downloads/Brave/Sample-SQL-File-1000-Rows.sql
++;
+
+# 2023-10-21 16:36:35.930107
++use db3;
+
+# 2023-10-21 16:36:42.729977
++source ~/Downloads/Brave/Sample-SQL-File-1000-Rows.sql;
+
+# 2023-10-21 16:36:58.921458
++show databases;
+
+# 2023-10-21 16:37:06.593446
++\dt;
+
+# 2023-10-21 16:37:24.073768
++show tables;
+
+# 2023-10-21 16:37:36.546051
++describe user_details;
+
+# 2023-10-21 16:40:43.985637
++use db2;
+
+# 2023-10-21 16:40:55.273596
++source ~/Downloads/DA_Example_notebook.sql;
+
+# 2023-10-21 16:44:28.282964
++show databases;
+
+# 2023-10-21 16:44:32.786350
++exit

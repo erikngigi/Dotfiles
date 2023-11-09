@@ -48,6 +48,8 @@ source "$ZDOTDIR/zsh-prompt.zsh"
 zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 zsh_add_plugin "hlissner/zsh-autopair"
+zsh_add_plugin "conda-incubator/conda-zsh-completion"
+zsh_add_plugin "greymd/docker-zsh-completion"
 
 # FZF 
 source /usr/share/fzf/completion.zsh
@@ -63,9 +65,9 @@ bindkey '^a' beginning-of-line
 bindkey '^e' end-of-line
 
 # Environment variables set everywhere
-export EDITOR="lvim"
-export TERMINAL="alacritty"
-export BROWSER="brave"
+# export EDITOR="nvim"
+# export TERMINAL="alacritty"
+# export BROWSER="brave"
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select {

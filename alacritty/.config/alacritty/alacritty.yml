@@ -20,23 +20,22 @@ window:
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
   # dimensions:
-    # columns: 0
-    # lines: 0
+  # columns: 0
+  # lines: 0
   # Window position (changes require restart)
   #
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
   # position:
-    # x: 0
-    # y: 0
+  # x: 0
+  # y: 0
   # Window padding (changes require restart)
   #
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   # padding:
-    # x: 6
-    # y: 6
-
+  # x: 6
+  # y: 6
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: false
 
@@ -49,13 +48,11 @@ window:
     instance: Alacritty
     # General application class
     general: Alacritty
-
   # GTK theme variant (Linux/BSD only)
   #
   # Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
   # Set this to `None` to use the default theme variant.
   # window.decorations_theme_variant: dark
-
 scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
@@ -72,10 +69,10 @@ font:
     style: Regular
   bold:
     family: JetBrainsMono Nerd Font
-    style: Medium Bold
+    style: Medium
   italic:
     family: JetBrainsMono Nerd Font
-    style: Medium Italic
+    style: Italic
   bold_italic:
     family: JetBrainsMono Nerd Font
     style: Bold Italic
@@ -93,8 +90,8 @@ font:
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
   # increasing `y` moves the glyph upwards.
   glyph_offset:
-    x: 0
-    y: 0
+    x: -1
+    y: 1
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: false
@@ -166,11 +163,9 @@ selection:
 
   # When set to `true`, selected text will be copied to the primary clipboard.
   save_to_clipboard: false
-
-# Allow terminal applications to change Alacritty's window title.
-# cursor:
+  # Allow terminal applications to change Alacritty's window title.
+  # cursor:
   # style: Beam
-
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
   # unfocused_hollow: true

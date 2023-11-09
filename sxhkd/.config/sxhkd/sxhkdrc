@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	alacritty -vvv
+	alacritty
 
 # program launcher
 super + d
@@ -18,9 +18,13 @@ super + Escape
 super + x
     betterlockscreen -l
 
-# open chromium
+# activate python environment
 super + shift + c
-    chromium
+    conda activate eric
+
+# deactivate python environment
+super + shift + d
+    conda deactivate
 #
 # bspwm hotkeys
 #

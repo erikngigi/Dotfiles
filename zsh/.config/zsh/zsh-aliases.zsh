@@ -6,6 +6,9 @@ alias zshrc='nvim ~/.config/zsh/'
 alias clear-zsh='echo -n "" > /home/eric/.zsh_history'
 alias zsh-colors='for i in {1..256}; do print -P "%F{$i}Color : $i"; done;'
 
+# man alias
+alias man='batman'
+
 # get fastest mirrors
 alias mirror="doas reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
 alias mirrord="doas reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
@@ -40,7 +43,7 @@ alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR 
 alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
 alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
 alias unlock='doas rm /var/lib/pacman/db.lck'    # remove pacman lock
-alias cleanup='doas pacman -Rns $(pacman -Qtdq)' # remove orphaned packages
+alias cleanup='yay -Rns $(yay -Qtdq)'       # remove orphaned packages
 
 # Sudo
 alias sudo='doas'
@@ -64,27 +67,17 @@ alias cat='bat'
 
 #mpv
 alias mpv-nv="mpv --vid=no"
-alias play-720='mpv --ytdl-format="bestvideo[height<=?720][fps<=?30][vcodec^=avc1]+bestaudio/best"'
-alias play-1080='mpv --ytdl-format="bestvideo[height<=?1080][fps<=?30][vcodec^=avc1]+bestaudio/best"'
 alias k-pop='mpv --vid=no "https://www.youtube.com/playlist?list=PLlhlrF6zpj01PV6qkBItGubiz-Z0Eefci"'
 
 #anime-cli
 alias anime-cli='anipy-cli -D -o -q 1080'
-alias anime-watch='anipy-cli -o -q 1080'
-
-#directory shortcuts
-alias ericngigi='cd $HOME/Projects/web-applications/ericngigi.com/'
-alias homepage='cd $HOME/.surf/'
 
 #xrandr brightness
-alias br='xrandr --output VGA-0 --brightness '
+alias br='xrandr --output LVDS --brightness '
 
 # nnn
 alias n='nnn -dr'
 alias N='doas nnn -drx'
-
-#brightness
-alias set-br='doas set-brightness.sh'
 
 #feh
 alias feh-display='feh -d -.'
@@ -104,6 +97,18 @@ alias tag='git tag'
 alias newtag='git tag -a'
 alias merge='git merge'
 alias git-eric='https://github.com/ErikNgigi/'
+
+# docker
+alias dps='docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"'
+alias dim='docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.ID}}\t{{.Size}}"'
+alias dcup='docker compose up -d'
+alias dcupf='docker compose up -d && docker compose --follow logs'
+alias dcdown='docker compose down'
+alias dcrm='docker rm $(docker ps -a -q)'
+alias dirm='docker rmi $(docker images -a -q)'
+alias docker-compose='docker compose'
+alias docker-start='docker start $(docker ps -a -q)'
+alias docker-stop='docker stop $(docker ps -a -q)'
 
 # Vanaheim HDD
 alias vanaheim='doas mount -t btrfs /dev/sdb1 /home/eric/Yggdrasil'
@@ -153,9 +158,6 @@ alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 # Anime Aliases
 # ------------------------------------------------------------------------------------------------#
 # Bleach
-alias bleach="mpv --aid=1 --vid=1 $HOME/Tv-Shows/Anime/Bleach/"
-
-# Other Aliases
-# alias clear-buckets="aws s3 rm s3://b2voiprectest --recursive --endpoint-url=https://s3.us-west-000.backblazeb2.com --profile ericjohnson-backblaze-rw && aws s3 rm s3://voiprectest --recursive --endpoint-url=$BIFROST_ENDPOINT_URL --profile ericjohnson-bifrost-rw"
+alias bleach="mpv --aid=1 --sid=1 $HOME/Tv-Shows/Anime/Bleach/"
 
 alias colormysql=$(echo -e 'mysql --prompt="\x1B[31m\\u\x1B[34m@\x1B[32m\\h\x1B[0m:\x1B[36m\\d>\x1B[0m "')

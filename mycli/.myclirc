@@ -157,6 +157,9 @@ output.null = "#808080"
 # Special characters in passwords and other strings can be escaped with URL encoding.
 [alias_dsn]
 # example_dsn = mysql://[user[:password]@][host][:port][/dbname]
-eric = mysql://eric:vexille@localhost:3306
-root = mysql://root:vexille@localhost:3306
-mande = mysql://crater:crater@localhost:33006
+mariadb-root = mariadb://root:password@127.0.0.1:13306
+mariadb-eric = mariadb://eric:vexille@127.0.0.1:13306
+
+# MySQL logins
+mysql-root = mysql://root:password12345@127.0.0.1:13307
+mysql-eric = mysql://eric:vexille@127.0.0.1:3310

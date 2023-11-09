@@ -3,9 +3,6 @@
 # Define the base directory
 base_dir="$HOME/Projects"
 
-# Define timestamp
-current_date=$(date "+%Y-%m-%d")
-
 # Create the parent directory if it doesnt exist
 mkdir -p "$base_dir"
 
@@ -14,7 +11,7 @@ next_project=""
 i=65
 while true; do
   project_name="Project_$(printf "\\$(printf '%03o' $i)")"
-  project_dir="$base_dir/$project_name-$current_date"
+  project_dir="$base_dir/$project_name"
 
   if [ ! -d "$project_dir" ]; then
     next_project=$project_name
