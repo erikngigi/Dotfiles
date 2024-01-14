@@ -1,0 +1,175 @@
+live_config_reload = true
+# theme = "Hyper"
+# vents = false
+working_directory = "None"
+
+[bell]
+animation = "EaseOutExpo"
+color = "#ffffff"
+duration = 0
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "#808080"
+blue = "#0066ff"
+cyan = "#00ffff"
+green = "#33ff00"
+magenta = "#cc00ff"
+red = "#fe0100"
+white = "#FFFFFF"
+yellow = "#feff00"
+
+[colors.cursor]
+cursor = "#ffffff"
+text = "#F81CE5"
+
+[colors.normal]
+black = "#000000"
+blue = "#0066ff"
+cyan = "#00ffff"
+green = "#33ff00"
+magenta = "#cc00ff"
+red = "#fe0100"
+white = "#d0d0d0"
+yellow = "#feff00"
+
+[colors.primary]
+background = "#1B1B1B"
+foreground = "#ffffff"
+
+[debug]
+log_level = "Warn"
+persistent_logging = false
+print_events = false
+render_timer = false
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 14.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Medium"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Medium"
+
+[font.offset]
+x = -1
+y = 0
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "P"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "Insert"
+mods = "Shift"
+
+[[keyboard.bindings]]
+chars = "gc"
+key = "Slash"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "Y"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Plus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[[keyboard.bindings]]
+chars = "\u0002\""
+key = "H"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0002%"
+key = "V"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = "\u0002c"
+key = "T"
+mods = "Alt"
+
+[[keyboard.bindings]]
+chars = """
+\u000E
+"""
+key = "N"
+mods = "Control"
+
+[[mouse.bindings]]
+action = "Copy"
+mouse = "Middle"
+
+# [mouse.double_click]
+# threshold = 300
+
+# [mouse.hints]
+# modifiers = "None"
+
+# [mouse.hints.launcher]
+# args = []
+# program = "xdg-open"
+
+# [mouse.triple_click]
+# threshold = 300
+
+[scrolling]
+history = 5000
+multiplier = 1
+
+[selection]
+save_to_clipboard = false
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[shell]
+program = "/usr/bin/zsh"
+
+[window]
+dynamic_padding = false
+opacity = 1.0
+title = "Alacritty"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"

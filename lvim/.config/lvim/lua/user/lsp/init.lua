@@ -10,7 +10,7 @@ formatters.setup {
   },
   {
     command = "prettierd",
-    filetypes = { "css", "scss", "less" }
+    filetypes = { "html", "css", "scss", "less" }
   },
   {
     command = "markdownlint",

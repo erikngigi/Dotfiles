@@ -17,6 +17,8 @@ colorizer.setup {
     "conf",
     "dosini",
     "sh",
+    "scss",
+    "toml",
   },
   user_default_options = {
     names = false,

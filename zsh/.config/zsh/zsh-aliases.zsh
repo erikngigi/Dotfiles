@@ -1,8 +1,8 @@
 #!/bin/sh
 
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
-alias nvimrc='nvim ~/.config/nvim/'
-alias zshrc='nvim ~/.config/zsh/'
+alias lvimrc='lvim ~/.config/lvim/'
+alias zshrc='lvim ~/.config/zsh/'
 alias clear-zsh='echo -n "" > /home/eric/.zsh_history'
 alias zsh-colors='for i in {1..256}; do print -P "%F{$i}Color : $i"; done;'
 
@@ -49,6 +49,8 @@ alias cleanup='yay -Rns $(yay -Qtdq)'       # remove orphaned packages
 alias sudo='doas'
 
 # NvChad
+alias lv='lvim'
+alias Lv='doas lvim'
 alias nv='nvim'
 alias Nv='doas nvim'
 
@@ -60,7 +62,8 @@ alias mv='advmv -gu'
 alias Mv='doas advmv -gu'
 
 # hugo server
-alias hugo-server='hugo serve --noHTTPCache --ignoreCache --disableFastRender'
+alias hugo-serve='hugo serve --port 3000 --buildDrafts --noHTTPCache --ignoreCache --disableFastRender'
+alias tina-serve='npx tinacms dev -c "hugo serve --port 3001 --buildDrafts --noHTTPCache --ignoreCache --disableFastRender"'
 
 # bat
 alias cat='bat'
@@ -68,12 +71,13 @@ alias cat='bat'
 #mpv
 alias mpv-nv="mpv --vid=no"
 alias k-pop='mpv --vid=no "https://www.youtube.com/playlist?list=PLlhlrF6zpj01PV6qkBItGubiz-Z0Eefci"'
+alias getting-loose='mpv --vid=no "https://www.youtube.com/playlist?list=PLlhlrF6zpj02QWTFPIQ_aMs7I3hACMzqr"'
 
 #anime-cli
 alias anime-cli='anipy-cli -D -o -q 1080'
 
 #xrandr brightness
-alias br='xrandr --output LVDS --brightness '
+alias br='xrandr --output VGA-0 --brightness '
 
 # nnn
 alias n='nnn -dr'
@@ -111,7 +115,8 @@ alias docker-start='docker start $(docker ps -a -q)'
 alias docker-stop='docker stop $(docker ps -a -q)'
 
 # Vanaheim HDD
-alias vanaheim='doas mount -t btrfs /dev/sdb1 /home/eric/Yggdrasil'
+alias vanaheim-btrfs='doas mount -t btrfs /dev/sdb1 /home/eric/Yggdrasil'
+alias vanaheim-ntfs='doas mount -t ntfs /dev/sdb1 /home/eric/Yggdrasil'
 alias uvanaheim='doas umount /dev/sdb1 /home/eric/Yggdrasil'
 
 # Flash Drive Mount
@@ -155,9 +160,11 @@ alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate ar
 # systemd
 alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 
+alias colormysql=$(echo -e 'mysql --prompt="\x1B[31m\\u\x1B[34m@\x1B[32m\\h\x1B[0m:\x1B[36m\\d>\x1B[0m "')
+
 # Anime Aliases
 # ------------------------------------------------------------------------------------------------#
 # Bleach
-alias bleach="mpv --aid=1 --sid=1 $HOME/Tv-Shows/Anime/Bleach/"
-
-alias colormysql=$(echo -e 'mysql --prompt="\x1B[31m\\u\x1B[34m@\x1B[32m\\h\x1B[0m:\x1B[36m\\d>\x1B[0m "')
+alias psycho-pass="mpv $HOME/Tv-Shows/Anime/Psycho-Pass"
+alias fam="mpv --sid=2 $HOME/Tv-Shows/Western/For\ All\ Mankind\ Season\ 4"
+alias bob="mpv --aid=2 --sid=2 $HOME/Tv-Shows/Western/Band\ of\ Brothers"

@@ -13,6 +13,7 @@ lvim.builtin.treesitter.ensure_installed = {
   "markdown",
   "vim",
   "yaml",
+  "scss",
 }
 
 lvim.builtin.treesitter.rainbow = {

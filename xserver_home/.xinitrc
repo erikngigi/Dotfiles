@@ -53,6 +53,5 @@ fi
 [ -f ~/.xprofile ] && . ~/.xprofile
 
 xsetroot -cursor_name left_ptr
-# picom --config ~/.config/picom.conf &
 sh ~/.fehbg
 exec bspwm

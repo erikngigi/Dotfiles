@@ -5,4 +5,5 @@ lvim.plugins = {
   "NvChad/nvim-colorizer.lua",
   "Mofiqul/dracula.nvim",
   "folke/tokyonight.nvim",
+  "shaunsingh/nord.nvim",
 }

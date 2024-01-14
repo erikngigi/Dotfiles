@@ -1,4 +1,4 @@
-lvim.colorscheme = "dracula"
+lvim.colorscheme = "dracula-soft"
 lvim.log.level = "warn"
 lvim.reload_config_on_save = true
 lvim.builtin.illuminate.active = false

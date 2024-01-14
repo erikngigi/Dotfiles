@@ -1,5 +1,6 @@
 # Screen Layout Script
-$HOME/.scripts/lvds-only.sh
+# $HOME/.scripts/lvds-only.sh
+$HOME/.screenlayout/vga-only.sh
 
 # Network-Manager Applet
 nm-applet &
