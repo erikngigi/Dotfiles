@@ -3,6 +3,10 @@
 
 # History
 HISTFILE=~/.zsh_history
+HISTORY_IGNORE="(tremc ..)"
+setopt HIST_FIND_NO_DUPS
+setopt INC_APPEND_HISTORY
+setopt HIST_IGNORE_SPACE
 
 # Sources
 plug "$HOME/.config/zsh/zsh-aliases.zsh"

@@ -3,7 +3,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 export PATH="$HOME/.local/bin":$PATH
-export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+# export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANWIDTH=999
 export GEM_HOME="usr/lib/ruby/gems"
 export PATH="$PATH:$GEM_HOME/bin"

@@ -7,7 +7,7 @@ alias clear-zsh='echo -n "" > /home/eric/.zsh_history'
 alias zsh-colors='for i in {1..256}; do print -P "%F{$i}Color : $i"; done;'
 
 # man alias
-alias man='batman'
+# alias man='batman'
 
 # get fastest mirrors
 alias mirror="doas reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
@@ -165,6 +165,6 @@ alias colormysql=$(echo -e 'mysql --prompt="\x1B[31m\\u\x1B[34m@\x1B[32m\\h\x1B[
 # Anime Aliases
 # ------------------------------------------------------------------------------------------------#
 # Bleach
-alias psycho-pass="mpv $HOME/Tv-Shows/Anime/Psycho-Pass"
+alias psycho-pass="mpv $HOME/Tv-Shows/Anime/Psycho-Pass\ Season\ 3"
 alias fam="mpv --sid=2 $HOME/Tv-Shows/Western/For\ All\ Mankind\ Season\ 4"
 alias bob="mpv --aid=2 --sid=2 $HOME/Tv-Shows/Western/Band\ of\ Brothers"

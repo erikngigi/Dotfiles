@@ -20,8 +20,8 @@ bspc config normal_border_color     "$silver"
 bspc config active_border_color     "$silver"
 
 ##--Monitor and Desktop Settings--##
-bspc config top_padding           44
-bspc config bottom_padding        4
+bspc config top_padding           4
+bspc config bottom_padding        16
 bspc config left_padding          8
 bspc config right_padding         8
 bspc config border_width          2
@@ -33,8 +33,7 @@ bspc config focus_follows_pointer true
 bspc config single_monocle        false
 
 bspc rule -a Brave-browser desktop=^2
-bspc rule -a Thorium-browser desktop=^2
-bspc rule -a TIPP10 desktop=^4
+bspc rule -a TIPP10 desktop=^3
 bspc rule -a strawberry desktop=^4
 bspc rule -a Xdm-app desktop=^4
 bspc rule -a Gimp desktop=^5
