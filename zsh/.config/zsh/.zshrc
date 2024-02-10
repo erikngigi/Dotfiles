@@ -12,7 +12,6 @@ plug "$HOME/.config/zsh/zsh-aliases.zsh"
 plug "$HOME/.config/zsh/zsh-prompt.zsh"
 plug "$HOME/.config/zsh/zsh-exports.zsh"
 plug "$HOME/.config/zsh/zsh-vim.zsh"
-plug "$HOME/.config/zsh/aws.zsh"
 
 # Plugins
 plug "zsh-users/zsh-autosuggestions"
