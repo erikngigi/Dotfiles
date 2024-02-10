@@ -1,19 +1,15 @@
 #!/bin/sh
 
-alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
 alias lvimrc='lvim ~/.config/lvim/'
 alias zshrc='lvim ~/.config/zsh/'
 alias clear-zsh='echo -n "" > /home/eric/.zsh_history'
 alias zsh-colors='for i in {1..256}; do print -P "%F{$i}Color : $i"; done;'
 
-# man alias
-# alias man='batman'
+# terraform
+alias tf='terraform'
 
 # get fastest mirrors
-alias mirror="doas reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
-alias mirrord="doas reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
-alias mirrors="doas reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
-alias mirrora="doas reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
+alias mirror="doas reflector --country Kenya --latest 5 --protocol http --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -40,8 +36,6 @@ alias pacsyu='doas pacman -Syu'                  # update only standard pkgs
 alias pacsyyu='doas pacman -Syyu'                # Refresh pkglist & update standard pkgs
 alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay)
 alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR pkgs (yay)
-alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
-alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
 alias unlock='doas rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='yay -Rns $(yay -Qtdq)'       # remove orphaned packages
 
@@ -100,7 +94,6 @@ alias stat='git status'  # 'status' is protected name so using 'stat' instead
 alias tag='git tag'
 alias newtag='git tag -a'
 alias merge='git merge'
-alias git-eric='https://github.com/ErikNgigi/'
 
 # docker
 alias dps='docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"'
@@ -162,9 +155,8 @@ alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 
 alias colormysql=$(echo -e 'mysql --prompt="\x1B[31m\\u\x1B[34m@\x1B[32m\\h\x1B[0m:\x1B[36m\\d>\x1B[0m "')
 
-# Anime Aliases
-# ------------------------------------------------------------------------------------------------#
-# Bleach
-alias psycho-pass="mpv $HOME/Tv-Shows/Anime/Psycho-Pass\ Season\ 3"
-alias fam="mpv --sid=2 $HOME/Tv-Shows/Western/For\ All\ Mankind\ Season\ 4"
-alias bob="mpv --aid=2 --sid=2 $HOME/Tv-Shows/Western/Band\ of\ Brothers"
+# Anime
+# Tv-Shows
+alias tokyo-ghoul="mpv $HOME/Tv-Shows/Anime/Tokyo\ Ghoul/"
+alias fate-zero="mpv $HOME/Tv-Shows/Anime/Fate\ Zero/"
+alias the-sopranos="mpv $HOME/Tv-Shows/Western/The\ Sopranos/"

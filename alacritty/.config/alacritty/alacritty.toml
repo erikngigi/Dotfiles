@@ -36,7 +36,7 @@ white = "#d0d0d0"
 yellow = "#feff00"
 
 [colors.primary]
-background = "#1B1B1B"
+background = "#000000"
 foreground = "#ffffff"
 
 [debug]

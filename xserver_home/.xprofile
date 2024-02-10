@@ -4,3 +4,6 @@ $HOME/.screenlayout/vga.sh
 
 # Network-Manager Applet
 nm-applet &
+
+# Open Browser
+# $HOME/.scripts/open-browser.sh

@@ -55,3 +55,6 @@ fi
 xsetroot -cursor_name left_ptr
 sh ~/.fehbg
 exec bspwm
+# export XDG_SESSION_TYPE=x11
+# export GDK_BACKEND=x11
+# exec gnome-session

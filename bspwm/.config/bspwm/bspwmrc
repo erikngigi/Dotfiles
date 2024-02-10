@@ -1,10 +1,10 @@
 #! /bin/sh
 
 # colors
-azure="#039AF1"
+# azure="#039AF1"
 # green="#007500"
 silver="#808080"
-# light_blue="#327bd1"
+light_blue="#327bd1"
 # red="#CC0000"
 # orange="#FFB300"
 
@@ -15,16 +15,16 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 bspc monitor VGA-0 -d 1 2 3 4 5 6
 
 ##--Global Settings--##
-bspc config focused_border_color    "$azure" 
+bspc config focused_border_color    "$light_blue" 
 bspc config normal_border_color     "$silver"
 bspc config active_border_color     "$silver"
 
 ##--Monitor and Desktop Settings--##
-bspc config top_padding           4
-bspc config bottom_padding        16
+bspc config top_padding           2
+bspc config bottom_padding        44
 bspc config left_padding          8
 bspc config right_padding         8
-bspc config border_width          2
+bspc config border_width          1
 bspc config window_gap            4
 bspc config split_ratio           0.50
 bspc config borderless_monocle    true
@@ -32,7 +32,7 @@ bspc config gapless_monocle       true
 bspc config focus_follows_pointer true
 bspc config single_monocle        false
 
-bspc rule -a Brave-browser desktop=^2
+bspc rule -a firefoxdeveloperedition desktop=^2
 bspc rule -a TIPP10 desktop=^3
 bspc rule -a strawberry desktop=^4
 bspc rule -a Xdm-app desktop=^4

@@ -3,7 +3,6 @@
 
 # History
 HISTFILE=~/.zsh_history
-HISTORY_IGNORE="(tremc ..)"
 setopt HIST_FIND_NO_DUPS
 setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_SPACE
@@ -12,6 +11,8 @@ setopt HIST_IGNORE_SPACE
 plug "$HOME/.config/zsh/zsh-aliases.zsh"
 plug "$HOME/.config/zsh/zsh-prompt.zsh"
 plug "$HOME/.config/zsh/zsh-exports.zsh"
+plug "$HOME/.config/zsh/zsh-vim.zsh"
+plug "$HOME/.config/zsh/aws.zsh"
 
 # Plugins
 plug "zsh-users/zsh-autosuggestions"
@@ -23,15 +24,16 @@ plug "zsh-users/zsh-history-substring-search"
 plug "zsh-users/zsh-syntax-highlighting"
 # plug "zap-zsh/zap-prompt"
 
-# Keybindings
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
-
 # If tmux is executable, X is running, and not inside a tmux session, then try to attach. If attachment fails, start a new session
 if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ]; then
   [ -z "${TMUX}" ] && { tmux || tmux; } >/dev/null 2>&1
 fi
 
 # Load and initialise completion system
+autoload bashcompinit
+bashcompinit
 autoload -Uz compinit
 compinit
+
+# Load aws zsh complete
+complete -C "$HOME/.local/bin/aws_completer" aws
