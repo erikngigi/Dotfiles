@@ -2,7 +2,7 @@
 
 alias lvimrc='lvim ~/.config/lvim/'
 alias zshrc='lvim ~/.config/zsh/'
-alias clear-zsh='echo -n "" > /home/eric/.zsh_history'
+alias clear-zsh='echo -n "" > /home/ericngigi/.zsh_history'
 alias zsh-colors='for i in {1..256}; do print -P "%F{$i}Color : $i"; done;'
 
 # terraform
@@ -71,7 +71,7 @@ alias getting-loose='mpv --vid=no "https://www.youtube.com/playlist?list=PLlhlrF
 alias anime-cli='anipy-cli -D -o -q 1080'
 
 #xrandr brightness
-alias br='xrandr --output VGA-0 --brightness '
+alias br='xrandr --output VGA-1 --brightness '
 
 # nnn
 alias n='nnn -dr'
@@ -108,24 +108,24 @@ alias docker-start='docker start $(docker ps -a -q)'
 alias docker-stop='docker stop $(docker ps -a -q)'
 
 # Vanaheim HDD
-alias vanaheim-btrfs='doas mount -t btrfs /dev/sdb1 /home/eric/Yggdrasil'
-alias vanaheim-ntfs='doas mount -t ntfs /dev/sdb1 /home/eric/Yggdrasil'
-alias uvanaheim='doas umount /dev/sdb1 /home/eric/Yggdrasil'
+alias vanaheim-btrfs='doas mount -t btrfs /dev/sdb1 /home/ericngigi/Yggdrasil'
+alias vanaheim-ntfs='doas mount -t ntfs /dev/sdb1 /home/ericngigi/Yggdrasil'
+alias uvanaheim='doas umount /dev/sdb1 /home/ericngigi/Yggdrasil'
 
 # Flash Drive Mount
-alias fdmount='doas mount /dev/sdb1 /home/eric/Yggdrasil'
-alias ufdmount='doas umount /dev/sdb1 /home/eric/Yggdrasil'
+alias fdmount='doas mount /dev/sdb1 /home/ericngigi/Yggdrasil'
+alias ufdmount='doas umount /dev/sdb1 /home/ericngigi/Yggdrasil'
 
 # Youtube
-alias yt='yt-dlp --config-location /home/eric/.config/yt-dlp/normal-config'
-alias ytp='yt-dlp --config-location /home/eric/.config/yt-dlp/playlist-config'
-alias yta='yt-dlp --config-location /home/eric/.config/yt-dlp/audio-config'
-alias clear-yt='echo -n "" > /home/eric/.youtube.txt'
-alias clear-pl='echo -n "" > /home/eric/.youtube.m3u'
-alias youtube-download='yt -a /home/eric/.youtube.txt'
+alias yt='yt-dlp --config-location /home/ericngigi/.config/yt-dlp/normal-config'
+alias ytp='yt-dlp --config-location /home/ericngigi/.config/yt-dlp/playlist-config'
+alias yta='yt-dlp --config-location /home/ericngigi/.config/yt-dlp/audio-config'
+alias clear-yt='echo -n "" > /home/ericngigi/.youtube.txt'
+alias clear-pl='echo -n "" > /home/ericngigi/.youtube.m3u'
+alias youtube-download='yt -a /home/ericngigi/.youtube.txt'
 
 #Aria
-alias clear-aria='echo -n "" > /home/eric/.aria2/input.conf'
+alias clear-aria='echo -n "" > /home/ericngigi/.aria2/input.conf'
 
 # easier to read disk
 alias df='df -h'     # human-readable sizes
@@ -156,7 +156,6 @@ alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 alias colormysql=$(echo -e 'mysql --prompt="\x1B[31m\\u\x1B[34m@\x1B[32m\\h\x1B[0m:\x1B[36m\\d>\x1B[0m "')
 
 # Anime
+alias tokyo-ghoul="mpv $HOME/Anime/Tokyo\ Ghoul/"
 # Tv-Shows
-alias tokyo-ghoul="mpv $HOME/Tv-Shows/Anime/Tokyo\ Ghoul/"
-alias fate-zero="mpv $HOME/Tv-Shows/Anime/Fate\ Zero/"
-alias the-sopranos="mpv $HOME/Tv-Shows/Western/The\ Sopranos/"
+alias sopranos="mpv $HOME/Tv-Shows/The\ Sopranos/"

@@ -24,4 +24,4 @@ export NNN_COLORS='#27272727'
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 export NNN_BMS="a:$HOME/Tv-Shows/Anime;d:$HOME/Downloads;e:$HOME/Yggdrasil;t:$HOME/Downloads/Torrents;v:$HOME/Videos/"
 export EDITOR="lvim"
-export BROWSER="Thorium-browser"
+export BROWSER="firefox-developer-edition"

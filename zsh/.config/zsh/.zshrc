@@ -29,10 +29,10 @@ if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ]; then
 fi
 
 # Load and initialise completion system
-autoload bashcompinit
-bashcompinit
+# autoload bashcompinit
+# bashcompinit
 autoload -Uz compinit
 compinit
 
 # Load aws zsh complete
-complete -C "$HOME/.local/bin/aws_completer" aws
+# complete -C "$HOME/.local/bin/aws_completer" aws

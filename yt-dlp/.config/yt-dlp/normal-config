@@ -10,7 +10,7 @@
 #-----------------------------------------------------------------------------------
 # Output Directory
 #-----------------------------------------------------------------------------------
--o "/home/eric/Videos/YouTube/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
+-o "/home/ericngigi/YouTube/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
 
 #-----------------------------------------------------------------------------------
 # Download preferences
