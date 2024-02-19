@@ -1,5 +1,5 @@
 -- custom keybindings
-lvim.keys.normal_mode["<Space>e"] = "<cmd>NeoTreeFocus<cr>"
+lvim.keys.normal_mode["<Space>e"] = "<cmd>Neotree toggle<cr>"
 lvim.keys.normal_mode["<TAB>"] = "<cmd>BufferLineCycleNext<cr>"
 -- lvim.builtin.which_key.mappings["w"] = {
 --   name = "Save Options",
