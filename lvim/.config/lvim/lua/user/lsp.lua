@@ -7,7 +7,7 @@ formatters.setup({
 	{ name = "rustfmt", extra_args = { "--edition", "2021" } },
 	{ name = "stylelint" },
 	{
-		name = "prettier",
+		name = "prettierd",
 		---@usage arguments to pass to the formatter
 		-- these cannot contain whitespace
 		-- options such as `--line-width 80` become either `{"--line-width", "80"}` or `{"--line-width=80"}`

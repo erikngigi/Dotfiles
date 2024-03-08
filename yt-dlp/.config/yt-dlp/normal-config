@@ -10,11 +10,10 @@
 #-----------------------------------------------------------------------------------
 # Output Directory
 #-----------------------------------------------------------------------------------
--o "/home/ericngigi/YouTube/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
+-o "/home/eric/Videos/YouTube/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
 
 #-----------------------------------------------------------------------------------
 # Download preferences
 #-----------------------------------------------------------------------------------
 # -f 137+140/22+140/136+140/135+140/133+140/160+140
-# -f bestvideo[height<=?720][fps<=?30][vcodec^=avc1]+bestaudio/m4a
 -f bestvideo[height<=?1080][fps<=?30][vcodec^=avc1]+bestaudio/m4a

@@ -3,18 +3,18 @@
 #-----------------------------------------------------------------------------------
 --limit-rate 1024K
 --no-playlist
---write-thumbnail
---write-subs
---embed-subs
---sub-format "srt"
---sub-langs "en"
+# --write-thumbnail
+# --write-subs
+# --embed-subs
+# --sub-format "srt"
+# --sub-langs "en"
 
 #-----------------------------------------------------------------------------------
 # Output Directory
 #-----------------------------------------------------------------------------------
--o "/home/eric/Videos/YouTube/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
+-o "/home/eric/Music/Audios/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s"
 
 #-----------------------------------------------------------------------------------
 # Download preferences
 #-----------------------------------------------------------------------------------
--f bestaudio/best
+-f 140

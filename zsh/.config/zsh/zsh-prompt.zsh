@@ -28,5 +28,5 @@ zstyle ':vcs_info:*' check-for-changes true
 # zstyle ':vcs_info:git:*' formats " %F{48}(%F{1}%m%u%c%F{14}%F{48} %b%F{48})"
 zstyle ':vcs_info:git:*' formats " %F{1}%m%u%c%F{11}%F{11} %b"
 # PROMPT='%F{14}󰔛 %T%F{reset} %(?:%F{40}➜ :%F{1}➜ )%F{14}%~%F{reset}'
-PROMPT='%F{14}⏱  %T %F{14}%c'
+PROMPT='%F{14}  %F{14}%c'
 PROMPT+="\$vcs_info_msg_0_ %F{reset}"

@@ -39,6 +39,9 @@ alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR 
 alias unlock='doas rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='yay -Rns $(yay -Qtdq)'       # remove orphaned packages
 
+# Infracost
+alias infracost-breakdown='infracost breakdown --path . --show-skipped'
+
 # Sudo
 alias sudo='doas'
 
@@ -71,7 +74,7 @@ alias getting-loose='mpv --vid=no "https://www.youtube.com/playlist?list=PLlhlrF
 alias anime-cli='anipy-cli -D -o -q 1080'
 
 #xrandr brightness
-alias br='xrandr --output VGA-1 --brightness '
+alias br='xrandr --output DP1 --brightness '
 
 # nnn
 alias n='nnn -dr'

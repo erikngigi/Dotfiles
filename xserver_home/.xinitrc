@@ -54,6 +54,7 @@ fi
 
 xsetroot -cursor_name left_ptr
 sh ~/.fehbg
+picom --config $HOME/.config/picom/picom.conf &
 exec bspwm
 # export XDG_SESSION_TYPE=x11
 # export GDK_BACKEND=x11

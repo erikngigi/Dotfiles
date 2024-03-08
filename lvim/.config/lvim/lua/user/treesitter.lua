@@ -8,12 +8,18 @@ lvim.builtin.treesitter.ensure_installed = {
   "gitattributes",
   "gitcommit",
   "gitignore",
+  "go",
+  "graphql",
+  "javascript",
+  "ini",
   "html",
   "lua",
   "markdown",
   "vim",
   "yaml",
   "scss",
+  "terraform",
+  "typescript",
 }
 
 lvim.builtin.treesitter.rainbow = {

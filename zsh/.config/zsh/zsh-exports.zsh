@@ -7,10 +7,11 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 export MANROFFOPT="-c"
 export MANWIDTH=999
 # export GEM_HOME="usr/lib/ruby/gems"
+export PATH=~/.npm-global/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=/usr/bin/python:$PATH
-export PATH=$HOME/.npm-global/bin:$PATH
 export PATH=$HOME/.scripts:$PATH
+export PATH=$HOME/.scripts/terraform:$PATH
 # export PATH=$HOME/.miniconda/bin:$PATH
 export PATH=/usr/local/go/bin:$PATH
 # set PATH so it includes GOPATH/bin if it exists

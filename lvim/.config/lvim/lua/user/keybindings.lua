@@ -1,11 +1,15 @@
 -- custom keybindings
 lvim.keys.normal_mode["<Space>e"] = "<cmd>Neotree toggle<cr>"
 lvim.keys.normal_mode["<TAB>"] = "<cmd>BufferLineCycleNext<cr>"
--- lvim.builtin.which_key.mappings["w"] = {
---   name = "Save Options",
---   w = { "<cmd>w<cr>", "save" },
---   q = { "<cmd>quitall<cr>", "quit all" }
--- }
+lvim.builtin.which_key.mappings["w"] = {
+  name = "File Options",
+  w = { "<cmd>w<cr>", "save" },
+  q = { "<cmd>quitall<cr>", "quit all" }
+}
+lvim.builtin.which_key.mappings["b"] = {
+  name = "Browser",
+  b = { "<cmd>!firefox-developer-edition '%'<cr>", "Open In Firefox" }
+}
 
 -- null-ls timeout
 lvim.builtin.which_key.mappings["l"]["f"] = {
