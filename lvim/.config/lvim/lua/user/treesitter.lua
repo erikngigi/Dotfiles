@@ -13,6 +13,7 @@ lvim.builtin.treesitter.ensure_installed = {
   "javascript",
   "ini",
   "html",
+  "hcl",
   "lua",
   "markdown",
   "vim",

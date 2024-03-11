@@ -20,6 +20,8 @@ lvim.builtin.lualine.style = "lvim"
 lvim.builtin.nvimtree.setup.actions.open_file.quit_on_open = true
 lvim.builtin.nvimtree.setup.view.adaptive_size = true
 lvim.builtin.nvimtree.active = false -- NOTE: using neo-tree
+lvim.builtin.project.manual_mode = true
 
 -- vim options
 vim.opt.wrap = true
+-- vim.opt.autochdir = true

@@ -61,4 +61,7 @@ lvim.plugins = {
     })
   end
   },
+
+  -- python environments
+  { "AckslD/swenv.nvim" },
  }

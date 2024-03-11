@@ -20,7 +20,7 @@ lvim.builtin.which_key.mappings["l"]["f"] = {
 }
 
 -- switch python environment
--- lvim.builtin.which_key.mappings["p"] = {
---   name = "Python",
---   p = { "<cmd>lua require('swenv.api').pick_venv()<cr>", "Choose Env" },
--- }
+lvim.builtin.which_key.mappings["p"] = {
+  name = "Python",
+  p = { "<cmd>lua require('swenv.api').pick_venv()<cr>", "Choose Env" },
+}

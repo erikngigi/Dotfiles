@@ -12,7 +12,7 @@ export PATH=$HOME/.cargo/bin:$PATH
 export PATH=/usr/bin/python:$PATH
 export PATH=$HOME/.scripts:$PATH
 export PATH=$HOME/.scripts/terraform:$PATH
-# export PATH=$HOME/.miniconda/bin:$PATH
+export PATH=$HOME/.miniconda/bin:$PATH
 export PATH=/usr/local/go/bin:$PATH
 # set PATH so it includes GOPATH/bin if it exists
 if [ -x "$(command -v go)" ] && [ -d "$(go env GOPATH)/bin" ]; then
