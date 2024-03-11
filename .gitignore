@@ -7,6 +7,10 @@ ssh/
 mpv/.config/mpv/watch_later/
 cargo/.config/cargo/registry/
 newboat/.newboat/cache.db
+transmission-daemon/.config/transmission-daemon/dht.dat
+transmission-daemon/.config/transmission-daemon/resume/
+transmission-daemon/.config/transmission-daemon/stats.json
+transmission-daemon/.config/transmission-daemon/torrents/
 
 # file types to ignore
 *.bak
