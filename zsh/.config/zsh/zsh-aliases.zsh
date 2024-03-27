@@ -162,3 +162,4 @@ alias colormysql=$(echo -e 'mysql --prompt="\x1B[31m\\u\x1B[34m@\x1B[32m\\h\x1B[
 alias tokyo-ghoul="mpv $HOME/Anime/Tokyo\ Ghoul/"
 # Tv-Shows
 alias sopranos="mpv $HOME/Tv-Shows/The\ Sopranos/"
+alias got="mpv $HOME/Tv-Shows/Game\ of\ Thrones/"

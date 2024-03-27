@@ -106,10 +106,33 @@ EOF
     echo "Directory structure created successfully."
 }
 
-# Main function
 main() {
-    read -r -p "Enter the root directory name: " root_directory_name
-    create_directory_structure "$root_directory_name"
+    echo "Current working directory: $(pwd)"
+    read -r -p "Do you want to create a root directory? (yes[y]/no[n]): " answer
+    case "$answer" in
+        [yY]|[yY][eE][sS])
+            # Prompt the user until a valid directory name is provided
+            while true; do
+                read -r -p "Enter the root directory name (no spaces, only hyphens or underscores allowed): " root_directory_name
+                # Check if directory already exists
+                if [[ -d "$root_directory_name" ]]; then
+                    echo "Directory '$root_directory_name' already exists. Please enter a new directory name."
+                # Check if directory name contains only allowed characters
+                elif [[ ! "$root_directory_name" =~ ^[a-zA-Z0-9_-]+$ ]]; then
+                    echo "Invalid directory name. Only letters, numbers, hyphens (-), and underscores (_) are allowed."
+                else
+                    create_directory_structure "$root_directory_name"
+                    break
+                fi
+            done
+            ;;
+        [nN]|[nN][oO])
+            echo "Exiting without creating a root directory."
+            ;;
+        *)
+            echo "Invalid input. Exiting without creating a root directory."
+            ;;
+    esac
 }
 
 # Execute main function
