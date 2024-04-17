@@ -21,6 +21,7 @@ plug "zap-zsh/fzf"
 plug "zap-zsh/exa"
 plug "zsh-users/zsh-history-substring-search"
 plug "zsh-users/zsh-syntax-highlighting"
+plug "conda-incubator/conda-zsh-completion"
 # plug "zap-zsh/zap-prompt"
 
 # If tmux is executable, X is running, and not inside a tmux session, then try to attach. If attachment fails, start a new session

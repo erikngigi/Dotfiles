@@ -67,7 +67,7 @@
     "speed-limit-down": 512,
     "speed-limit-down-enabled": true,
     "speed-limit-up": 512,
-    "speed-limit-up-enabled": false,
+    "speed-limit-up-enabled": true,
     "start-added-torrents": false,
     "tcp-enabled": true,
     "torrent-added-verify-mode": "fast",
