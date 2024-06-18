@@ -26,7 +26,6 @@ export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 export NNN_BMS="a:$HOME/Tv-Shows/Anime;d:$HOME/Downloads;e:$HOME/Yggdrasil;t:$HOME/Downloads/Torrents;v:$HOME/Videos/"
 export EDITOR="lvim"
 export BROWSER="Brave-browser"
-export DOCKER_CONTAINER_REGISTRY_TOKEN="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"
 
 # heroku autocomplete setup
 # HEROKU_AC_ZSH_SETUP_PATH=/home/eric/.cache/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
