@@ -5,6 +5,9 @@ alias zshrc='lvim ~/.config/zsh/'
 alias clear-zsh='echo -n "" > /home/eric/.zsh_history'
 alias zsh-colors='for i in {1..256}; do print -P "%F{$i}Color : $i"; done;'
 
+# clear mozilla cache
+alias clear-firefox="rm -rf ~/.cache/mozilla/firefox/*"
+
 # terraform
 alias tf='terraform'
 
@@ -28,6 +31,9 @@ alias l.='exa -a | egrep "^\."'
 
 # pdf
 alias pdf='evince'
+
+# wine
+alias metatrader-wine= "wine 'c:\program files\pepperstone metatrader 5/terminal64.exe'"
 
 # pacman and yay
 alias Pacman='doas pacman'
@@ -99,16 +105,24 @@ alias newtag='git tag -a'
 alias merge='git merge'
 
 # docker
-alias dps='docker ps --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"'
-alias dim='docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.ID}}\t{{.Size}}"'
-alias dcup='docker compose up -d'
+alias docker-containers-all='docker ps -all --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"'
+alias docker-images-all='docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.ID}}\t{{.Size}}"'
+alias docker-compose-up='docker compose up -d'
 alias dcupf='docker compose up -d && docker compose --follow logs'
-alias dcdown='docker compose down'
-alias dcrm='docker rm $(docker ps -a -q)'
-alias dirm='docker rmi $(docker images -a -q)'
-alias docker-compose='docker compose'
+alias docker-compose-down='docker compose down'
+alias docker-remove-containers='docker rm $(docker ps -a -q)'
+alias docker-remove-images='docker rmi $(docker images -a -q)'
+alias docker-compose-build='docker compose up --build'
 alias docker-start='docker start $(docker ps -a -q)'
 alias docker-stop='docker stop $(docker ps -a -q)'
+alias docker-prune='docker system prune --all'
+
+# python django
+alias python-makemigrations='python manage.py makemigrations'
+alias python-migrate='python manage.py migrate'
+alias python-collectstatic='python manage.py collectstatic'
+alias python-createsuperuser='python manage.py createsuperuser'
+alias python-runserver='python manage.py runserver'
 
 # Vanaheim HDD
 alias vanaheim-btrfs='doas mount -t btrfs /dev/sdb1 /home/eric/Yggdrasil'

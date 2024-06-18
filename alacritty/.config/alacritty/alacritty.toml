@@ -1,6 +1,4 @@
 live_config_reload = true
-# theme = "Hyper"
-# vents = false
 working_directory = "None"
 
 [bell]
@@ -11,33 +9,33 @@ duration = 0
 [colors]
 draw_bold_text_with_bright_colors = true
 
-[colors.bright]
-black = "#808080"
-blue = "#0066ff"
-cyan = "#00ffff"
-green = "#33ff00"
-magenta = "#cc00ff"
-red = "#fe0100"
-white = "#FFFFFF"
-yellow = "#feff00"
+  [colors.bright]
+  black = "#808080"
+  blue = "#0066ff"
+  cyan = "#00ffff"
+  green = "#33ff00"
+  magenta = "#cc00ff"
+  red = "#fe0100"
+  white = "#FFFFFF"
+  yellow = "#feff00"
 
-[colors.cursor]
-cursor = "#ffffff"
-text = "#F81CE5"
+  [colors.cursor]
+  cursor = "#ffffff"
+  text = "#F81CE5"
 
-[colors.normal]
-black = "#000000"
-blue = "#0066ff"
-cyan = "#00ffff"
-green = "#33ff00"
-magenta = "#cc00ff"
-red = "#fe0100"
-white = "#d0d0d0"
-yellow = "#feff00"
+  [colors.normal]
+  black = "#000000"
+  blue = "#0066ff"
+  cyan = "#00ffff"
+  green = "#33ff00"
+  magenta = "#cc00ff"
+  red = "#fe0100"
+  white = "#d0d0d0"
+  yellow = "#feff00"
 
-[colors.primary]
-background = "#000000"
-foreground = "#ffffff"
+  [colors.primary]
+  background = "#000000"
+  foreground = "#ffffff"
 
 [debug]
 log_level = "Warn"
@@ -49,31 +47,31 @@ render_timer = false
 TERM = "xterm-256color"
 
 [font]
-size = 13.0
+size = 14.0
 
-[font.bold]
-family = "JetBrainsMono Nerd Font"
-style = "Medium"
+  [font.normal]
+  family = "JetBrainsMono Nerd Font"
+  style = "Regular"
 
-[font.bold_italic]
-family = "JetBrainsMono Nerd Font"
-style = "Bold Italic"
+  [font.italic]
+  family = "JetBrainsMono Nerd Font"
+  style = "Italic"
 
-[font.glyph_offset]
-x = 0
-y = 0
+  [font.bold]
+  family = "JetBrainsMono Nerd Font"
+  style = "SemiBold"
 
-[font.italic]
-family = "JetBrainsMono Nerd Font"
-style = "Italic"
+  [font.bold_italic]
+  family = "JetBrainsMono Nerd Font"
+  style = "Bold Italic"
 
-[font.normal]
-family = "JetBrainsMono Nerd Font"
-style = "Medium"
+  [font.offset]
+  x = -1
+  y = 0
 
-[font.offset]
-x = -1
-y = 0
+  [font.glyph_offset]
+  x = 0
+  y = 0
 
 [[keyboard.bindings]]
 action = "Paste"
@@ -116,11 +114,6 @@ key = "Minus"
 mods = "Control"
 
 [[keyboard.bindings]]
-chars = "\u0002\""
-key = "H"
-mods = "Alt"
-
-[[keyboard.bindings]]
 chars = "\u0002%"
 key = "V"
 mods = "Alt"
@@ -132,7 +125,7 @@ mods = "Alt"
 
 [[keyboard.bindings]]
 chars = """
-\u000E
+\u000e
 """
 key = "N"
 mods = "Control"
@@ -141,21 +134,8 @@ mods = "Control"
 action = "Copy"
 mouse = "Middle"
 
-# [mouse.double_click]
-# threshold = 300
-
-# [mouse.hints]
-# modifiers = "None"
-
-# [mouse.hints.launcher]
-# args = []
-# program = "xdg-open"
-
-# [mouse.triple_click]
-# threshold = 300
-
 [scrolling]
-history = 5000
+history = 5_000
 multiplier = 1
 
 [selection]
@@ -170,6 +150,6 @@ dynamic_padding = false
 opacity = 0.9
 title = "Alacritty"
 
-[window.class]
-general = "Alacritty"
-instance = "Alacritty"
+  [window.class]
+  general = "Alacritty"
+  instance = "Alacritty"

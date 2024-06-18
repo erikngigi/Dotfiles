@@ -1,5 +1,5 @@
 configuration {
-  font: "JetBrains Mono Nerd Font Mono 10";
+  font: "JetBrainsMono NFM 10";
   terminal: "alacritty";
   hide-scrollbar: true;
   transparency: false;

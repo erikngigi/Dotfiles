@@ -21,8 +21,8 @@ plug "zap-zsh/fzf"
 plug "zap-zsh/exa"
 plug "zsh-users/zsh-history-substring-search"
 plug "zsh-users/zsh-syntax-highlighting"
-plug "conda-incubator/conda-zsh-completion"
-# plug "zap-zsh/zap-prompt"
+plug "felixr/docker-zsh-completion"
+# plug "conda-incubator/conda-zsh-completion"
 
 # If tmux is executable, X is running, and not inside a tmux session, then try to attach. If attachment fails, start a new session
 if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ]; then
@@ -30,10 +30,8 @@ if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ]; then
 fi
 
 # Load and initialise completion system
-autoload bashcompinit
-bashcompinit
-autoload -Uz compinit
-compinit
+autoload bashcompinit; bashcompinit
+autoload -Uz compinit; compinit
 
 # Load aws zsh complete
 complete -C "$HOME/.local/bin/aws_completer" aws

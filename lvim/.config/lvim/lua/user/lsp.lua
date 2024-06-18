@@ -1,13 +1,12 @@
 local formatters = require("lvim.lsp.null-ls.formatters")
 formatters.setup({
-	-- { name = "black", extra_args = { "--fast" } },
 	{ name = "ruff" },
 	{ name = "stylua" },
 	{ name = "shfmt" },
 	{ name = "rustfmt", extra_args = { "--edition", "2021" } },
 	{ name = "stylelint" },
 	{
-		name = "prettierd",
+		name = "prettier",
 		---@usage arguments to pass to the formatter
 		-- these cannot contain whitespace
 		-- options such as `--line-width 80` become either `{"--line-width", "80"}` or `{"--line-width=80"}`
@@ -20,13 +19,20 @@ formatters.setup({
 			"javascript",
 			"javascriptreact",
 			"typescriptreact",
+			"html",
+      "css",
+      "scss",
 		},
 	},
+	{ name = "djlint", filetypes = {
+		"html",
+		"htmldjango",
+	} },
 	{
 		name = "terraform_fmt",
 		filetypes = {
 			"tf",
-      "terraform"
+			"terraform",
 		},
 	},
 })
@@ -37,9 +43,18 @@ linters.setup({
 		name = "shellcheck",
 		args = { "--severity", "warning" },
 	},
-	{ name = "ruff" },
+	{ name = "flake8", args = { "--ignore=E203", "--line-length=120" }, filetypes = { "python" } },
 	{ name = "terraform_validate", filetypes = { "tf", "terraform" } },
 	{ name = "eslint_d", filetypes = { "typescript", "typescriptreact" } },
+	{
+		name = "hadolint",
+		filetypes = { "yml" },
+		root_pattern = { "docker-compose.yaml", "docker-compose.yml", "compose.yaml", "compose.yml" },
+	},
+	{ name = "djlint", filetypes = {
+		"html",
+		"htmldjango",
+	} },
 })
 
 local code_actions = require("lvim.lsp.null-ls.code_actions")

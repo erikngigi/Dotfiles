@@ -20,9 +20,9 @@ prompt_git() {
         GIT_STATUS=$(command git status --porcelain 2> /dev/null | tail -n1)
         GIT_BRANCH=$(git symbolic-ref HEAD | sed 's!refs\/heads\/!!')
         if [[ -n $GIT_STATUS ]]; then
-            PROMPT_GIT_INFO=" :%F{1}$GIT_BRANCH%f "
+            PROMPT_GIT_INFO="%F{1} %f:%F{1}$GIT_BRANCH%f "
         else
-            PROMPT_GIT_INFO=" :%F{14}$GIT_BRANCH%f "
+            PROMPT_GIT_INFO="%F{10} %f:%F{10}$GIT_BRANCH%f "
         fi
     else 
         PROMPT_GIT_INFO=""
@@ -31,11 +31,11 @@ prompt_git() {
 
 prompt_conda() {
     if [[ -n $CONDA_DEFAULT_ENV ]]; then
-        PROMPT_CONDA_ENV=" :%F{14}$CONDA_DEFAULT_ENV%f "
+        PROMPT_CONDA_ENV="%F{10} %f:%F{10}$CONDA_DEFAULT_ENV%f "
     else
         PROMPT_CONDA_ENV=""
     fi
 }
 
 NEWLINE=$'\n'
-PROMPT='%F{14}[%F{14}%n%F{14}]%f %F{14}%~%f ${PROMPT_GIT_INFO}${PROMPT_CONDA_ENV}${NEWLINE}%F{14}%f '
+PROMPT='%F{10}[%F{10}%n%F{10}]%f %F{10}%~%f ${PROMPT_GIT_INFO}${PROMPT_CONDA_ENV}${NEWLINE}%F{10}󰜥%f '
