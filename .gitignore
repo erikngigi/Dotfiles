@@ -11,6 +11,8 @@ transmission-daemon/.config/transmission-daemon/dht.dat
 transmission-daemon/.config/transmission-daemon/resume/
 transmission-daemon/.config/transmission-daemon/stats.json
 transmission-daemon/.config/transmission-daemon/torrents/
+zsh/.config/zsh/secrets.zsh
+zsh/.config/zsh/.zsh_history
 
 # file types to ignore
 *.bak
