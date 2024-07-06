@@ -3,7 +3,6 @@ formatters.setup({
 	{ name = "ruff" },
 	{ name = "stylua" },
 	{ name = "shfmt" },
-	{ name = "rustfmt", extra_args = { "--edition", "2021" } },
 	{ name = "stylelint" },
 	{
 		name = "prettier",
@@ -20,14 +19,14 @@ formatters.setup({
 			"javascriptreact",
 			"typescriptreact",
 			"html",
-      "css",
-      "scss",
+			"css",
+			"scss",
 		},
 	},
-	{ name = "djlint", filetypes = {
-		"html",
-		"htmldjango",
-	} },
+	-- { name = "djlint", filetypes = {
+	-- 	"html",
+	-- 	"htmldjango",
+	-- } },
 	{
 		name = "terraform_fmt",
 		filetypes = {
@@ -51,10 +50,10 @@ linters.setup({
 		filetypes = { "yml" },
 		root_pattern = { "docker-compose.yaml", "docker-compose.yml", "compose.yaml", "compose.yml" },
 	},
-	{ name = "djlint", filetypes = {
-		"html",
-		"htmldjango",
-	} },
+	-- { name = "djlint", filetypes = {
+	-- 	"html",
+	-- 	"htmldjango",
+	-- } },
 })
 
 local code_actions = require("lvim.lsp.null-ls.code_actions")

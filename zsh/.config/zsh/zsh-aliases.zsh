@@ -116,6 +116,7 @@ alias docker-compose-build='docker compose up --build'
 alias docker-start='docker start $(docker ps -a -q)'
 alias docker-stop='docker stop $(docker ps -a -q)'
 alias docker-prune='docker system prune --all'
+alias docker-volume-prune='docker volume rm $(docker volume ls)'
 
 # python django
 alias python-makemigrations='python manage.py makemigrations'

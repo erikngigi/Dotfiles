@@ -9,10 +9,11 @@ function zle-keymap-select {
 
 zle -N zle-keymap-select
 
-_fix_cursor() {
-    echo -ne '\e[6 q'
-}
-precmd_functions+=(_fix_cursor)
+# fix_cursor() {
+#     echo -ne '\e[5;#00FF00\a'
+# }
+
+# precmd_functions+=(fix_cursor)
 
 # keybindings
 bindkey '^A' beginning-of-line

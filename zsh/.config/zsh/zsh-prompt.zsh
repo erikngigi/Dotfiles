@@ -7,6 +7,13 @@ autoload -U colors && colors
 # enable only git
 zstyle ':vcs_info:*' enable git
 
+# change zsh cursor shape
+fix_cursor() {
+    echo -ne '\e[6 q'
+}
+
+precmd_functions+=(fix_cursor)
+
 precmd() {
     vcs_info
     prompt_git
@@ -22,7 +29,7 @@ prompt_git() {
         if [[ -n $GIT_STATUS ]]; then
             PROMPT_GIT_INFO="%F{1} %f:%F{1}$GIT_BRANCH%f "
         else
-            PROMPT_GIT_INFO="%F{10} %f:%F{10}$GIT_BRANCH%f "
+            PROMPT_GIT_INFO="%F{2} %f:%F{2}$GIT_BRANCH%f "
         fi
     else 
         PROMPT_GIT_INFO=""
@@ -31,11 +38,13 @@ prompt_git() {
 
 prompt_conda() {
     if [[ -n $CONDA_DEFAULT_ENV ]]; then
-        PROMPT_CONDA_ENV="%F{10} %f:%F{10}$CONDA_DEFAULT_ENV%f "
+        PROMPT_CONDA_ENV="%F{2} %f:%F{2}$CONDA_DEFAULT_ENV%f "
     else
         PROMPT_CONDA_ENV=""
     fi
 }
 
 NEWLINE=$'\n'
-PROMPT='%F{10}[%F{10}%n%F{10}]%f %F{10}%~%f ${PROMPT_GIT_INFO}${PROMPT_CONDA_ENV}${NEWLINE}%F{10}󰜥%f '
+# PROMPT='%F{2}[%F{2}%t %F{2}@ %F{2}%n%F{2}]%f %F{2}%~%f ${PROMPT_GIT_INFO}${PROMPT_CONDA_ENV}${NEWLINE}%F{2}%f '
+# PROMPT='%F{13}%t %F{2}@ %F{2}%n%f in %F{6}%~%f ${PROMPT_GIT_INFO}${PROMPT_CONDA_ENV}${NEWLINE}%F{2} %f '
+PROMPT='%F{2}%n%f %F{256}at%F{13}%t %F{256}in %F{6}%~%f ${PROMPT_GIT_INFO}${PROMPT_CONDA_ENV}${NEWLINE}%F{14}󰣇%f '

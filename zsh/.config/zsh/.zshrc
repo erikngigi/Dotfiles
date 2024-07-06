@@ -8,6 +8,8 @@ setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_SPACE
 
 # Sources
+plug "$HOME/.config/zsh/.zshenv"
+plug "$HOME/.config/zsh/secrets.zsh"
 plug "$HOME/.config/zsh/zsh-aliases.zsh"
 plug "$HOME/.config/zsh/zsh-prompt.zsh"
 plug "$HOME/.config/zsh/zsh-exports.zsh"
@@ -50,4 +52,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-

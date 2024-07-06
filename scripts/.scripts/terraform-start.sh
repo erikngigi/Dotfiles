@@ -77,82 +77,84 @@ directory_structure_template() {
 	# mkdir -p "$root_directory/environment/production"
 
 	# Create infrastructure directory
-	mkdir -p "$root_directory/infrastructure/modules"
+	mkdir -p "$root_directory/modules"
 
 	# Create Media directory
-	mkdir -p "$root_directory/files"
+	# mkdir -p "$root_directory/files"
 
 	# Create modules subdirectories
-	mkdir -p "$root_directory/infrastructure/modules/containers"
-	mkdir -p "$root_directory/infrastructure/modules/instances"
-	mkdir -p "$root_directory/infrastructure/modules/database"
-	mkdir -p "$root_directory/infrastructure/modules/management"
-	mkdir -p "$root_directory/infrastructure/modules/network"
-	mkdir -p "$root_directory/infrastructure/modules/notifications"
-	mkdir -p "$root_directory/infrastructure/modules/scaling"
-	mkdir -p "$root_directory/infrastructure/modules/security"
-	mkdir -p "$root_directory/infrastructure/modules/storage"
+	mkdir -p "$root_directory/modules/containers"
+	mkdir -p "$root_directory/modules/instances"
+	mkdir -p "$root_directory/modules/database"
+	mkdir -p "$root_directory/modules/management"
+	mkdir -p "$root_directory/modules/network"
+	mkdir -p "$root_directory/modules/notifications"
+	mkdir -p "$root_directory/modules/scaling"
+	mkdir -p "$root_directory/modules/security"
+	mkdir -p "$root_directory/modules/storage"
 
 	# Create templates subdirectories
-	mkdir -p "$root_directory/infrastructure/modules/containers/templates"
-	mkdir -p "$root_directory/infrastructure/modules/notifications/templates"
-	mkdir -p "$root_directory/infrastructure/modules/security/templates"
+	mkdir -p "$root_directory/modules/instances/templates"
+	mkdir -p "$root_directory/modules/containers/templates"
+	mkdir -p "$root_directory/modules/notifications/templates"
+	mkdir -p "$root_directory/modules/security/templates"
 
-	# Create main.tf, outputs.tf, variables.tf, and versions.tf files
-	touch "$root_directory/infrastructure/main.tf"
-	touch "$root_directory/infrastructure/outputs.tf"
-	touch "$root_directory/infrastructure/variables.tf"
-	touch "$root_directory/infrastructure/provider.tf"
-	touch "$root_directory/infrastructure/terraform.tfvars"
+	# Create main.tf, outputs.tf, variables.tf, and versions.tf files and gitignore file
+	touch "$root_directory/main.tf"
+	touch "$root_directory/outputs.tf"
+	touch "$root_directory/variables.tf"
+	touch "$root_directory/provider.tf"
+	touch "$root_directory/terraform.tfvars"
+	touch "$root_directory/.gitignore"
 
-	touch "$root_directory/infrastructure/modules/containers/main.tf"
-	touch "$root_directory/infrastructure/modules/containers/outputs.tf"
-	touch "$root_directory/infrastructure/modules/containers/variables.tf"
-	touch "$root_directory/infrastructure/modules/containers/versions.tf"
-	touch "$root_directory/infrastructure/modules/containers/templates/app.json.tpl"
+	touch "$root_directory/modules/containers/main.tf"
+	touch "$root_directory/modules/containers/outputs.tf"
+	touch "$root_directory/modules/containers/variables.tf"
+	touch "$root_directory/modules/containers/versions.tf"
+	touch "$root_directory/modules/containers/templates/app.json.tpl"
 
-	touch "$root_directory/infrastructure/modules/instances/main.tf"
-	touch "$root_directory/infrastructure/modules/instances/outputs.tf"
-	touch "$root_directory/infrastructure/modules/instances/variables.tf"
-	touch "$root_directory/infrastructure/modules/instances/versions.tf"
+	touch "$root_directory/modules/instances/main.tf"
+	touch "$root_directory/modules/instances/outputs.tf"
+	touch "$root_directory/modules/instances/variables.tf"
+	touch "$root_directory/modules/instances/versions.tf"
 
-	touch "$root_directory/infrastructure/modules/database/main.tf"
-	touch "$root_directory/infrastructure/modules/database/outputs.tf"
-	touch "$root_directory/infrastructure/modules/database/variables.tf"
-	touch "$root_directory/infrastructure/modules/database/versions.tf"
+	touch "$root_directory/modules/database/main.tf"
+	touch "$root_directory/modules/database/outputs.tf"
+	touch "$root_directory/modules/database/variables.tf"
+	touch "$root_directory/modules/database/versions.tf"
 
-	touch "$root_directory/infrastructure/modules/management/main.tf"
-	touch "$root_directory/infrastructure/modules/management/outputs.tf"
-	touch "$root_directory/infrastructure/modules/management/variables.tf"
-	touch "$root_directory/infrastructure/modules/management/versions.tf"
+	touch "$root_directory/modules/management/main.tf"
+	touch "$root_directory/modules/management/outputs.tf"
+	touch "$root_directory/modules/management/variables.tf"
+	touch "$root_directory/modules/management/versions.tf"
 
-	touch "$root_directory/infrastructure/modules/network/main.tf"
-	touch "$root_directory/infrastructure/modules/network/outputs.tf"
-	touch "$root_directory/infrastructure/modules/network/variables.tf"
-	touch "$root_directory/infrastructure/modules/network/versions.tf"
+	touch "$root_directory/modules/network/main.tf"
+	touch "$root_directory/modules/network/outputs.tf"
+	touch "$root_directory/modules/network/variables.tf"
+	touch "$root_directory/modules/network/versions.tf"
 
-	touch "$root_directory/infrastructure/modules/notifications/main.tf"
-	touch "$root_directory/infrastructure/modules/notifications/outputs.tf"
-	touch "$root_directory/infrastructure/modules/notifications/variables.tf"
-	touch "$root_directory/infrastructure/modules/notifications/versions.tf"
-	touch "$root_directory/infrastructure/modules/notifications/templates/email-sns-stack.json.tpl"
+	touch "$root_directory/modules/notifications/main.tf"
+	touch "$root_directory/modules/notifications/outputs.tf"
+	touch "$root_directory/modules/notifications/variables.tf"
+	touch "$root_directory/modules/notifications/versions.tf"
+	touch "$root_directory/modules/notifications/templates/email-sns-stack.json.tpl"
 
-	touch "$root_directory/infrastructure/modules/scaling/main.tf"
-	touch "$root_directory/infrastructure/modules/scaling/outputs.tf"
-	touch "$root_directory/infrastructure/modules/scaling/variables.tf"
+	touch "$root_directory/modules/scaling/main.tf"
+	touch "$root_directory/modules/scaling/outputs.tf"
+	touch "$root_directory/modules/scaling/variables.tf"
 
-	touch "$root_directory/infrastructure/modules/security/main.tf"
-	touch "$root_directory/infrastructure/modules/security/outputs.tf"
-	touch "$root_directory/infrastructure/modules/security/variables.tf"
-	touch "$root_directory/infrastructure/modules/security/versions.tf"
-	touch "$root_directory/infrastructure/modules/security/templates/ecs-ec2-role-policy.json.tpl"
-	touch "$root_directory/infrastructure/modules/security/templates/ecs-ec2-role.json.tpl"
-	touch "$root_directory/infrastructure/modules/security/templates/ecs-service-role.json.tpl"
+	touch "$root_directory/modules/security/main.tf"
+	touch "$root_directory/modules/security/outputs.tf"
+	touch "$root_directory/modules/security/variables.tf"
+	touch "$root_directory/modules/security/versions.tf"
+	touch "$root_directory/modules/security/templates/ecs-ec2-role-policy.json.tpl"
+	touch "$root_directory/modules/security/templates/ecs-ec2-role.json.tpl"
+	touch "$root_directory/modules/security/templates/ecs-service-role.json.tpl"
 
-	touch "$root_directory/infrastructure/modules/storage/main.tf"
-	touch "$root_directory/infrastructure/modules/storage/outputs.tf"
-	touch "$root_directory/infrastructure/modules/storage/variables.tf"
-	touch "$root_directory/infrastructure/modules/storage/versions.tf"
+	touch "$root_directory/modules/storage/main.tf"
+	touch "$root_directory/modules/storage/outputs.tf"
+	touch "$root_directory/modules/storage/variables.tf"
+	touch "$root_directory/modules/storage/versions.tf"
 }
 
 # (Functions like create_directory_structure, configure_terraform_provider, etc., remain unchanged.)
@@ -185,14 +187,13 @@ create_directory() {
 		;;
 	esac
 	echo -e "${GREEN}Directory structure created successfully.${RESET}"
-  echo
+	echo
 	echo -e "${GREEN}$lines${RESET}"
 }
 
 populate_provider() {
-
 	# Append provider information to provider.tf
-	cat <<EOF >>"$root_directory_name/infrastructure/provider.tf"
+	cat <<EOF >>"$root_directory_name/provider.tf"
 terraform {
   required_providers {
     aws = {
@@ -216,8 +217,8 @@ terraform_initialize() {
 	read -r -p "$terraform_init" terraform_answer
 	case "$terraform_answer" in
 	[yY] | [yY][eE][sS])
-		if [[ -d "$root_directory_name/infrastructure" ]]; then
-			cd "$root_directory_name/infrastructure" || exit
+		if [[ -d "$root_directory_name" ]]; then
+			cd "$root_directory_name" || exit
 			echo -e "${GREEN}Running 'terraform init' in the infrastructure directory...${RESET}"
 			terraform init
 			echo
@@ -237,20 +238,10 @@ terraform_initialize() {
 		exit 1
 		;;
 	esac
+}
 
-	# move one directory out
-	cd ..
-
-	echo -e "${GREEN}$lines${RESET}"
-
-	read -r -p "$terraform_git_init" terraform_git_answer
-
-	case "$terraform_git_answer" in
-	[yY] | [yY][eE][sS])
-		# User answered yes
-		touch ".gitignore"
-
-		cat <<EOF >>".gitignore"
+populate_gitignore() {
+	cat <<EOF >>"$root_directory_name/.gitignore"
 # Local .terraform directories
 **/.terraform/*
 
@@ -286,22 +277,6 @@ override.tf.json
 .terraformrc
 terraform.rc
 EOF
-
-		echo
-
-		echo -e "${GREEN}File created and information appended....${RESET}"
-		;;
-	[nN] | [nN][oO])
-		# User answered no
-		echo -e "${RED}Exiting without adding the '.gitignore' file....${RESET}"
-		;;
-	*)
-		# Invalid input
-		echo -e "${RED}Invalid input. Exiting without adding the '.gitignore' file....${RESET}"
-		;;
-	esac
-
-	echo -e "${GREEN}$lines${RESET}"
 }
 
 main() {
@@ -312,6 +287,7 @@ main() {
 	extract_profiles
 	prompt_for_profile_selection
 	populate_provider
+	populate_gitignore
 	terraform_initialize
 }
 
