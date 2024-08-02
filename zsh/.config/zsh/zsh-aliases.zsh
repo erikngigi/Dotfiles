@@ -41,7 +41,7 @@ alias refresh='doas pacman -Syyy'
 alias pacsyu='doas pacman -Syu'                  # update only standard pkgs
 alias pacsyyu='doas pacman -Syyu'                # Refresh pkglist & update standard pkgs
 alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay)
-alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR pkgs (yay)
+alias update-packages='yay -Syu --noconfirm'              # update standard pkgs and AUR pkgs (yay)
 alias unlock='doas rm /var/lib/pacman/db.lck'    # remove pacman lock
 alias cleanup='yay -Rns $(yay -Qtdq)'       # remove orphaned packages
 
@@ -174,7 +174,7 @@ alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 alias colormysql=$(echo -e 'mysql --prompt="\x1B[31m\\u\x1B[34m@\x1B[32m\\h\x1B[0m:\x1B[36m\\d>\x1B[0m "')
 
 # Anime
-alias tokyo-ghoul="mpv $HOME/Anime/Tokyo\ Ghoul/"
+alias fumetsu="mpv $HOME/Tv-Shows/Fumetsu\ no\ Anata\ e/"
 # Tv-Shows
 alias sopranos="mpv $HOME/Tv-Shows/The\ Sopranos/"
 alias got="mpv $HOME/Tv-Shows/Game\ of\ Thrones/"

@@ -10,6 +10,7 @@ export PATH=~/.npm-global/bin:$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=/usr/bin/python:$PATH
 export PATH=$HOME/.scripts:$PATH
+export PATH=$HOME/.scripts/terraform:$PATH
 export PATH=$HOME/.miniconda/bin:$PATH
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
 export NNN_PLUG='r:renamer'
