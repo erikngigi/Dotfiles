@@ -47,4 +47,4 @@ prompt_conda() {
 NEWLINE=$'\n'
 # PROMPT='%F{2}[%F{2}%t %F{2}@ %F{2}%n%F{2}]%f %F{2}%~%f ${PROMPT_GIT_INFO}${PROMPT_CONDA_ENV}${NEWLINE}%F{2}%f '
 # PROMPT='%F{13}%t %F{2}@ %F{2}%n%f in %F{6}%~%f ${PROMPT_GIT_INFO}${PROMPT_CONDA_ENV}${NEWLINE}%F{2} %f '
-PROMPT='%F{2}%n%f %F{256}at%F{13}%t %F{256}in %F{6}%~%f ${PROMPT_GIT_INFO}${PROMPT_CONDA_ENV}${NEWLINE}%F{14}󰣇%f '
+PROMPT='%F{2}%n%f %F{256}at %F{13}%T %F{256}in %F{6}%~%f ${PROMPT_GIT_INFO}${PROMPT_CONDA_ENV}${NEWLINE}%F{14}%f '

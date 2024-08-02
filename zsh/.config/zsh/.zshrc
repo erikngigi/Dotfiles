@@ -2,7 +2,9 @@
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 
 # History
-HISTFILE=~/.zsh_history
+export HISTFILESIZE=1000000
+export HISTSIZE=10000001
+export HISTFILE=~/.zsh_history
 setopt HIST_FIND_NO_DUPS
 setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_SPACE
@@ -23,8 +25,7 @@ plug "zap-zsh/fzf"
 plug "zap-zsh/exa"
 plug "zsh-users/zsh-history-substring-search"
 plug "zsh-users/zsh-syntax-highlighting"
-plug "felixr/docker-zsh-completion"
-# plug "conda-incubator/conda-zsh-completion"
+plug "conda-incubator/conda-zsh-completion"
 
 # If tmux is executable, X is running, and not inside a tmux session, then try to attach. If attachment fails, start a new session
 if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ]; then
@@ -52,3 +53,10 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+zstyle ':completion:*' special-dirs false
+zstyle ':completion::complete:*' use-cache 1
+zstyle ":conda_zsh_completion:*" use-groups true
+zstyle ":conda_zsh_completion:*" show-unnamed true
+zstyle ":conda_zsh_completion:*" sort-envs-by-time true
+zstyle ":conda_zsh_completion:*" show-global-envs-first true

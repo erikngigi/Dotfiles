@@ -13,7 +13,7 @@ lvim.builtin.which_key.mappings["b"] = {
 -- null-ls timeout
 lvim.builtin.which_key.mappings["l"]["f"] = {
 	function()
-		require("lvim.lsp.utils").format({ timeout_ms = 5000 })
+		require("lvim.lsp.utils").format({ timeout_ms = 10000 })
 	end,
 	"Format",
 }

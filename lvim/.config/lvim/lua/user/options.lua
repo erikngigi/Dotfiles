@@ -1,8 +1,9 @@
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
+vim.lsp.set_log_level("off")
 
-lvim.colorscheme = "tokyonight"
+lvim.colorscheme = "catppuccin-mocha"
 -- vim.g.nightflyCursorColor = true
 -- vim.g.nightflyItalics = true
 -- vim.g.nightflyNormalFloat = true
