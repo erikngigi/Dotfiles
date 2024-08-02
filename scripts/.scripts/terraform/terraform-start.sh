@@ -66,93 +66,57 @@ prompt_for_profile_selection() {
 }
 
 directory_structure_template() {
-
 	root_directory=$1
-	# Create Documentation directory
-	mkdir -p "$root_directory/documentation"
 
-	# Create Environment directory
-	# mkdir -p "$root_directory/environment/development"
-	# mkdir -p "$root_directory/environment/staging"
-	# mkdir -p "$root_directory/environment/production"
+	# Define an array of module names
+	modules=(
+		"containers"
+		"instances"
+		"database"
+		"management"
+		"network"
+		"notifications"
+		"scaling"
+		"security"
+		"severless"
+		"storage"
+	)
 
-	# Create infrastructure directory
-	mkdir -p "$root_directory/infrastructure/modules"
+	# Define an array of module filenames to create
+	module_files=(
+		"main.tf"
+		"outputs.tf"
+		"variables.tf"
+		"provider.tf"
+	)
 
-	# Create Media directory
-	mkdir -p "$root_directory/files"
+	# Define an array of root filenames to create
+	root_files=(
+		"main.tf"
+		"outputs.tf"
+		"variables.tf"
+		"provider.tf"
+		"terraform.tfvars"
+		".gitignore"
+	)
 
-	# Create modules subdirectories
-	mkdir -p "$root_directory/infrastructure/modules/containers"
-	mkdir -p "$root_directory/infrastructure/modules/instances"
-	mkdir -p "$root_directory/infrastructure/modules/database"
-	mkdir -p "$root_directory/infrastructure/modules/management"
-	mkdir -p "$root_directory/infrastructure/modules/network"
-	mkdir -p "$root_directory/infrastructure/modules/notifications"
-	mkdir -p "$root_directory/infrastructure/modules/scaling"
-	mkdir -p "$root_directory/infrastructure/modules/security"
-	mkdir -p "$root_directory/infrastructure/modules/storage"
+	# Create the files in the root directory
+	for file in "${root_files[@]}"; do
+		root_name="$root_directory"
+		if [ ! -d "$root_name" ]; then
+			mkdir -p "$root_name"
+		fi
+		touch "$root_name/$file"
+	done
 
-	# Create templates subdirectories
-	mkdir -p "$root_directory/infrastructure/modules/containers/templates"
-	mkdir -p "$root_directory/infrastructure/modules/notifications/templates"
-	mkdir -p "$root_directory/infrastructure/modules/security/templates"
-
-	# Create main.tf, outputs.tf, variables.tf, and versions.tf files
-	touch "$root_directory/infrastructure/main.tf"
-	touch "$root_directory/infrastructure/outputs.tf"
-	touch "$root_directory/infrastructure/variables.tf"
-	touch "$root_directory/infrastructure/provider.tf"
-	touch "$root_directory/infrastructure/terraform.tfvars"
-
-	touch "$root_directory/infrastructure/modules/containers/main.tf"
-	touch "$root_directory/infrastructure/modules/containers/outputs.tf"
-	touch "$root_directory/infrastructure/modules/containers/variables.tf"
-	touch "$root_directory/infrastructure/modules/containers/versions.tf"
-	touch "$root_directory/infrastructure/modules/containers/templates/app.json.tpl"
-
-	touch "$root_directory/infrastructure/modules/instances/main.tf"
-	touch "$root_directory/infrastructure/modules/instances/outputs.tf"
-	touch "$root_directory/infrastructure/modules/instances/variables.tf"
-	touch "$root_directory/infrastructure/modules/instances/versions.tf"
-
-	touch "$root_directory/infrastructure/modules/database/main.tf"
-	touch "$root_directory/infrastructure/modules/database/outputs.tf"
-	touch "$root_directory/infrastructure/modules/database/variables.tf"
-	touch "$root_directory/infrastructure/modules/database/versions.tf"
-
-	touch "$root_directory/infrastructure/modules/management/main.tf"
-	touch "$root_directory/infrastructure/modules/management/outputs.tf"
-	touch "$root_directory/infrastructure/modules/management/variables.tf"
-	touch "$root_directory/infrastructure/modules/management/versions.tf"
-
-	touch "$root_directory/infrastructure/modules/network/main.tf"
-	touch "$root_directory/infrastructure/modules/network/outputs.tf"
-	touch "$root_directory/infrastructure/modules/network/variables.tf"
-	touch "$root_directory/infrastructure/modules/network/versions.tf"
-
-	touch "$root_directory/infrastructure/modules/notifications/main.tf"
-	touch "$root_directory/infrastructure/modules/notifications/outputs.tf"
-	touch "$root_directory/infrastructure/modules/notifications/variables.tf"
-	touch "$root_directory/infrastructure/modules/notifications/versions.tf"
-	touch "$root_directory/infrastructure/modules/notifications/templates/email-sns-stack.json.tpl"
-
-	touch "$root_directory/infrastructure/modules/scaling/main.tf"
-	touch "$root_directory/infrastructure/modules/scaling/outputs.tf"
-	touch "$root_directory/infrastructure/modules/scaling/variables.tf"
-
-	touch "$root_directory/infrastructure/modules/security/main.tf"
-	touch "$root_directory/infrastructure/modules/security/outputs.tf"
-	touch "$root_directory/infrastructure/modules/security/variables.tf"
-	touch "$root_directory/infrastructure/modules/security/versions.tf"
-	touch "$root_directory/infrastructure/modules/security/templates/ecs-ec2-role-policy.json.tpl"
-	touch "$root_directory/infrastructure/modules/security/templates/ecs-ec2-role.json.tpl"
-	touch "$root_directory/infrastructure/modules/security/templates/ecs-service-role.json.tpl"
-
-	touch "$root_directory/infrastructure/modules/storage/main.tf"
-	touch "$root_directory/infrastructure/modules/storage/outputs.tf"
-	touch "$root_directory/infrastructure/modules/storage/variables.tf"
-	touch "$root_directory/infrastructure/modules/storage/versions.tf"
+	# Create the directories and files in each module
+	for module in "${modules[@]}"; do
+		module_dir="$root_directory/modules/$module"
+		mkdir -p "$module_dir"
+		for file in "${module_files[@]}"; do
+			touch "$module_dir/$file"
+		done
+	done
 }
 
 # (Functions like create_directory_structure, configure_terraform_provider, etc., remain unchanged.)
@@ -185,30 +149,23 @@ create_directory() {
 		;;
 	esac
 	echo -e "${GREEN}Directory structure created successfully.${RESET}"
-  echo
+	echo
 	echo -e "${GREEN}$lines${RESET}"
 }
 
 populate_provider() {
+	# Define the templates
+	local template_0="$HOME/.scripts/terraform/provider_template_0.txt"
+	local template_1="$HOME/.scripts/terraform/provider_template_1.txt"
 
-	# Append provider information to provider.tf
-	cat <<EOF >>"$root_directory_name/infrastructure/provider.tf"
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
-}
-
-# Configure the AWS Provider
-provider "aws" {
-  shared_config_files      = ["~/.aws/config"]
-  shared_credentials_files = ["~/.aws/credentials"]
-  profile                  = "$aws_profile"
-}
-EOF
+	# Check if the selected profile is 'localstack'
+	if [[ "$aws_profile" == "localstack" ]]; then
+		echo "Using localstack template: $template_0"
+		cat "$template_0" >>"$root_directory_name/provider.tf"
+	else
+		echo "Using default template: $template_1"
+		cat "$template_1" >>"$root_directory_name/provider.tf"
+	fi
 }
 
 # terraform init function
@@ -216,41 +173,39 @@ terraform_initialize() {
 	read -r -p "$terraform_init" terraform_answer
 	case "$terraform_answer" in
 	[yY] | [yY][eE][sS])
-		if [[ -d "$root_directory_name/infrastructure" ]]; then
-			cd "$root_directory_name/infrastructure" || exit
-			echo -e "${GREEN}Running 'terraform init' in the infrastructure directory...${RESET}"
-			terraform init
+		if [[ -d "$root_directory_name" ]]; then
+			cd "$root_directory_name" || exit
+
+			if [[ "$aws_profile" == "localstack" ]]; then
+				# If the selected profile is 'localstack', run 'tflocal init'
+				echo -e "${GREEN}Running 'tflocal init' in the infrastructure directory...${RESET}"
+				tflocal init
+			else
+				# If another profile is selected, run 'terraform init'
+				echo -e "${GREEN}Running 'terraform init' in the infrastructure directory...${RESET}"
+				terraform init
+			fi
 			echo
 		else
-			echo -e "${GREEN}The infrastructure directory does not exist. Skipping 'terraform init'....${RESET}"
+			echo -e "${RED}The infrastructure directory does not exist. Skipping initialization....${RESET}"
 			echo
 		fi
 		;;
 	[nN] | [nN][oO])
-		echo -e "${RED}Exiting without running 'terraform init'....${RESET}"
+		echo -e "${RED}Exiting without running initialization....${RESET}"
 		echo
 		exit 1
 		;;
 	*)
-		echo -e "${RED}Invalid input. Exiting without running 'terraform init'...${RESET}"
+		echo -e "${RED}Invalid input. Exiting without running initialization....${RESET}"
 		echo
 		exit 1
 		;;
 	esac
+}
 
-	# move one directory out
-	cd ..
-
-	echo -e "${GREEN}$lines${RESET}"
-
-	read -r -p "$terraform_git_init" terraform_git_answer
-
-	case "$terraform_git_answer" in
-	[yY] | [yY][eE][sS])
-		# User answered yes
-		touch ".gitignore"
-
-		cat <<EOF >>".gitignore"
+populate_gitignore() {
+	cat <<EOF >>"$root_directory_name/.gitignore"
 # Local .terraform directories
 **/.terraform/*
 
@@ -286,22 +241,6 @@ override.tf.json
 .terraformrc
 terraform.rc
 EOF
-
-		echo
-
-		echo -e "${GREEN}File created and information appended....${RESET}"
-		;;
-	[nN] | [nN][oO])
-		# User answered no
-		echo -e "${RED}Exiting without adding the '.gitignore' file....${RESET}"
-		;;
-	*)
-		# Invalid input
-		echo -e "${RED}Invalid input. Exiting without adding the '.gitignore' file....${RESET}"
-		;;
-	esac
-
-	echo -e "${GREEN}$lines${RESET}"
 }
 
 main() {
@@ -312,6 +251,7 @@ main() {
 	extract_profiles
 	prompt_for_profile_selection
 	populate_provider
+	populate_gitignore
 	terraform_initialize
 }
 

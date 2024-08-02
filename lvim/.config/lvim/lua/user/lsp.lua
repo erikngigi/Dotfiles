@@ -3,7 +3,6 @@ formatters.setup({
 	{ name = "ruff" },
 	{ name = "stylua" },
 	{ name = "shfmt" },
-	{ name = "rustfmt", extra_args = { "--edition", "2021" } },
 	{ name = "stylelint" },
 	{
 		name = "prettier",
@@ -20,8 +19,8 @@ formatters.setup({
 			"javascriptreact",
 			"typescriptreact",
 			"html",
-      "css",
-      "scss",
+			"css",
+			"scss",
 		},
 	},
 	{ name = "djlint", filetypes = {
