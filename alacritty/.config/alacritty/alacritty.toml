@@ -151,7 +151,7 @@ program = "/usr/bin/zsh"
 
 [window]
 dynamic_padding = false
-opacity = 0.8
+opacity = 1
 title = "Alacritty"
 
   [window.class]

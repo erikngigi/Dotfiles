@@ -37,7 +37,7 @@ autoload bashcompinit; bashcompinit
 autoload -Uz compinit; compinit
 
 # Load aws zsh complete
-complete -C "$HOME/.local/bin/aws_completer" aws
+complete -C "/usr/local/bin/aws_completer" aws
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -60,3 +60,6 @@ zstyle ":conda_zsh_completion:*" use-groups true
 zstyle ":conda_zsh_completion:*" show-unnamed true
 zstyle ":conda_zsh_completion:*" sort-envs-by-time true
 zstyle ":conda_zsh_completion:*" show-global-envs-first true
+
+# Digital ocean completion
+source <(doctl completion zsh)

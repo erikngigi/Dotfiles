@@ -120,7 +120,7 @@ directory_structure_template() {
 		"main.tf"
 		"outputs.tf"
 		"variables.tf"
-		"provider.tf"
+    "README.md"
 	)
 
 	# Define an array of root filenames to create
@@ -131,6 +131,7 @@ directory_structure_template() {
 		"provider.tf"
 		"terraform.tfvars"
 		".gitignore"
+    "README.md"
 	)
 
 	# Create the files in the root directory
@@ -146,6 +147,12 @@ directory_structure_template() {
 	for module in "${modules[@]}"; do
 		module_dir="$root_directory/modules/$module"
 		mkdir -p "$module_dir"
+
+    # create sub-directory for templates
+    templates_dir="$module_dir/templates"
+    mkdir -p "$templates_dir"
+    
+    # create files for the modules
 		for file in "${module_files[@]}"; do
 			touch "$module_dir/$file"
 		done

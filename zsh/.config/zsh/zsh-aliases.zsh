@@ -105,11 +105,11 @@ alias newtag='git tag -a'
 alias merge='git merge'
 
 # docker
-alias docker-containers-all='docker ps -all --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"'
+alias docker-containers-all='docker ps -a --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"'
 alias docker-images-all='docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.ID}}\t{{.Size}}"'
 alias docker-compose-up='docker compose up -d'
 alias dcupf='docker compose up -d && docker compose --follow logs'
-alias docker-compose-down='docker compose down'
+alias docker-compose-down='docker compose down -v'
 alias docker-remove-containers='docker rm $(docker ps -a -q)'
 alias docker-remove-images='docker rmi $(docker images -a -q)'
 alias docker-compose-build='docker compose up --build'
@@ -175,6 +175,10 @@ alias colormysql=$(echo -e 'mysql --prompt="\x1B[31m\\u\x1B[34m@\x1B[32m\\h\x1B[
 
 # Anime
 alias fumetsu="mpv $HOME/Tv-Shows/Fumetsu\ no\ Anata\ e/"
+alias one-piece="mpv --aid=1 --sid=1 $HOME/Tv-Shows/One\ Piece/"
+
 # Tv-Shows
-alias sopranos="mpv $HOME/Tv-Shows/The\ Sopranos/"
-alias got="mpv $HOME/Tv-Shows/Game\ of\ Thrones/"
+alias batman-beyond="mpv $HOME/Tv-Shows/Batman\ Beyond"
+
+# Python Django
+alias GET='http --follow --timeout 6'

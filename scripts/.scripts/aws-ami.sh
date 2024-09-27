@@ -4,7 +4,7 @@
 ubuntu_versions=("noble" "jammy" "focal")
 
 # AWS region
-profile="tf-ericngigi"
+profile="ericngigi"
 
 # Loop through the Ubuntu versions and get the AMI IDs
 for version in "${ubuntu_versions[@]}"; do
