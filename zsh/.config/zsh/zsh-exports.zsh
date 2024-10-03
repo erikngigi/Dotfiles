@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env bash
+
 HISTSIZE=10000
 SAVEHIST=10000
 

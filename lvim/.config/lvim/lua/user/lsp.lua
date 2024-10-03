@@ -31,6 +31,7 @@ formatters.setup({
 		name = "terraform_fmt",
 		filetypes = {
 			"tf",
+      "tfvars",
 			"terraform",
 		},
 	},
@@ -43,7 +44,7 @@ linters.setup({
 		args = { "--severity", "warning" },
 	},
 	{ name = "flake8", args = { "--ignore=E203", "--line-length=120" }, filetypes = { "python" } },
-	{ name = "terraform_validate", filetypes = { "tf", "terraform" } },
+	{ name = "terraform_validate", filetypes = { "tf", "tfvars", "terraform" } },
 	{ name = "eslint_d", filetypes = { "typescript", "typescriptreact" } },
 	{
 		name = "hadolint",

@@ -1,6 +1,10 @@
 # Created by Zap installer
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 
+# Load and initialise completion system
+autoload -Uz compinit; compinit
+autoload bashcompinit; bashcompinit
+
 # History
 export HISTFILESIZE=1000000
 export HISTSIZE=10000001
@@ -31,10 +35,6 @@ plug "conda-incubator/conda-zsh-completion"
 if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ]; then
   [ -z "${TMUX}" ] && { tmux || tmux; } >/dev/null 2>&1
 fi
-
-# Load and initialise completion system
-autoload bashcompinit; bashcompinit
-autoload -Uz compinit; compinit
 
 # Load aws zsh complete
 complete -C "/usr/local/bin/aws_completer" aws

@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 export ZVM_CURSOR_STYLE_ENABLED=false
 function zle-keymap-select {
     if [[ ${KEYMAP} == vicmd ]] || [[ $1 = 'block' ]]; then

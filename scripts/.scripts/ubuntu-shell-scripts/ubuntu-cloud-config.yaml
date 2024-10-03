@@ -1,0 +1,8 @@
+users:
+  - name: ericngigi
+    shell: /bin/zsh
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCoXrrcyzTIC5kpN25owRYZjhJ0b8Tvt1UAZfL0lK6Zakj6ph1RMLRC4VU+eDJfGT95aAR8iE+hIl/6QFXcWg8cnrY031Li6vaVNSXhDbrbWhoFw6wQYf+RZDH2tw0x3vDZ/3CZ2jm00nsj6kIJvakHx8mYQr5wi4HRpwj5HWi01tl/2p58on05kSSzu74kiTGVBfuvaFHs1PqXTb7o8WlIIt7QU5NVadVphUt6elNUFMiJXDkaDjKxr70/vo/rPzyiSnUpRGLW0irayu/+gX9IiHPTaAxkGbWDw/jjXOP3UEfRT6T81h9sGiaItC13ArlEJv/jsLghm40LGuEiF7kDaAM8di23VNhnZr8Uy3s6+K+ZgT3wRPJ97WoB6npiK17X9+29q1FEHJ0e2XwIpEVnqOZiSMxfwcaTGZ5vWsn9nmSruNIGLkdQXDhbcF/5TIEE+kSToozaWD+TLmHQKaT/yqwCYsFVv2UuFtkUnlxLQTCaeuL6fAv+kQ7LWcyb7yEuKtFETWpEb+TkSJepsKmoJ92fzPlXhj0GsAD8YzB7A0Vi08omf001d7nl5n1L/mgZeaBCwkKzLdV5hWQIehUD+zHqSltUo3VIOGzOh5Kx5RwjsWKc0wDeh3lr86OZ+hBvCKSCk2nZrzzNaQWvVxCGA/VvRMtbzkEg4KjKKYtEDw== eric@eric
+packages:
+  - zsh

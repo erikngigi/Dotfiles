@@ -1,4 +1,4 @@
-# !/bin/sh
+#!/usr/bin/env bash
 
 # autoload vsc and colors
 autoload -Uz vcs_info

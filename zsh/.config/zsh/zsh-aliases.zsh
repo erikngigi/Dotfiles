@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 alias lvimrc='lvim ~/.config/lvim/'
 alias zshrc='lvim ~/.config/zsh/'
@@ -176,6 +176,7 @@ alias colormysql=$(echo -e 'mysql --prompt="\x1B[31m\\u\x1B[34m@\x1B[32m\\h\x1B[
 # Anime
 alias fumetsu="mpv $HOME/Tv-Shows/Fumetsu\ no\ Anata\ e/"
 alias one-piece="mpv --aid=1 --sid=1 $HOME/Tv-Shows/One\ Piece/"
+alias shingenki-no-kyojin="mpv $HOME/Tv-Shows/Shingeki\ no\ Kyojin/"
 
 # Tv-Shows
 alias batman-beyond="mpv $HOME/Tv-Shows/Batman\ Beyond"
