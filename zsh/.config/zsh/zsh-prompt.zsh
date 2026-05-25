@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # autoload vsc and colors
 autoload -Uz vcs_info
 autoload -U colors && colors
@@ -9,48 +7,48 @@ zstyle ':vcs_info:*' enable git
 
 # change zsh cursor shape
 fix_cursor() {
-    echo -ne '\e[6 q'
+  echo -ne '\e[6 q'
 }
 
 precmd_functions+=(fix_cursor)
 
 precmd() {
-    vcs_info
-    prompt_git
-    # prompt_conda
-    prompt_python_venv
+  vcs_info
+  prompt_git
+  # prompt_conda
+  prompt_python_venv
 }
 
 setopt PROMPT_SUBST
 
 prompt_git() {
-    if [[ -n ${vcs_info_msg_0_} ]]; then
-        GIT_STATUS=$(command git status --porcelain 2>/dev/null | tail -n1)
-        GIT_BRANCH=$(git symbolic-ref HEAD | sed 's!refs\/heads\/!!')
-        if [[ -n $GIT_STATUS ]]; then
-            PROMPT_GIT_INFO="%F{1} %f:%F{1}$GIT_BRANCH%f "
-        else
-            PROMPT_GIT_INFO="%F{2} %f:%F{2}$GIT_BRANCH%f "
-        fi
+  if [[ -n ${vcs_info_msg_0_} ]]; then
+    GIT_STATUS=$(command git status --porcelain 2>/dev/null | tail -n1)
+    GIT_BRANCH=$(git symbolic-ref HEAD | sed 's!refs\/heads\/!!')
+    if [[ -n $GIT_STATUS ]]; then
+      PROMPT_GIT_INFO="%F{1} %f:%F{1}$GIT_BRANCH%f "
     else
-        PROMPT_GIT_INFO=""
+      PROMPT_GIT_INFO="%F{2} %f:%F{2}$GIT_BRANCH%f "
     fi
+  else
+    PROMPT_GIT_INFO=""
+  fi
 }
 
 # prompt_conda() {
-#     if [[ -n $CONDA_DEFAULT_ENV ]]; then
-#         PROMPT_CONDA_ENV="%F{2} %f:%F{2}$CONDA_DEFAULT_ENV%f "
-#     else
-#         PROMPT_CONDA_ENV=""
-#     fi
+#   if [[ -n $CONDA_DEFAULT_ENV ]]; then
+#     PROMPT_CONDA_ENV="%F{2} %f:%F{2}$CONDA_DEFAULT_ENV%f "
+#   else
+#     PROMPT_CONDA_ENV=""
+#   fi
 # }
 
 prompt_python_venv() {
-    if [[ -n $VIRTUAL_ENV ]]; then
-        PROMPT_VENV_ENV="%F{2} %f:%F{2}$(basename $VIRTUAL_ENV)%f "
-    else
-        PROMPT_VENV_ENV=""
-    fi
+  if [[ -n $VIRTUAL_ENV ]]; then
+    PROMPT_VENV_ENV="%F{2} %f:%F{2}$(basename $VIRTUAL_ENV)%f "
+  else
+    PROMPT_VENV_ENV=""
+  fi
 }
 
 NEWLINE=$'\n'

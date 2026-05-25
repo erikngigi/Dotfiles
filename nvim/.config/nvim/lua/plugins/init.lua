@@ -8,6 +8,7 @@ return {
     },
     {
         "nvim-treesitter/nvim-treesitter",
+        branch = "master",
         event = { "BufReadPre", "BufNewFile" },
         config = function()
             require("configs.treesitter")
@@ -58,12 +59,6 @@ return {
         end,
     },
     {
-        "neovim/nvim-lspconfig",
-        config = function()
-            require("configs.lspconfig")
-        end,
-    },
-    {
         "folke/which-key.nvim",
         lazy = false,
     },
@@ -93,6 +88,10 @@ return {
         end,
     },
     {
+        "romainl/vim-cool",
+        lazy = false,
+    },
+    {
         "linux-cultist/venv-selector.nvim",
         dependencies = {
             "neovim/nvim-lspconfig",
@@ -117,6 +116,9 @@ return {
                     width = 30,
                 },
                 renderer = {
+                    root_folder_label = function(path)
+                        return vim.fn.fnamemodify(path, ":t")
+                    end,
                     icons = {
                         show = {
                             file = true,
@@ -189,5 +191,34 @@ return {
             inject_lsp = false, -- Set to false since we're doing manual setup
             add_filetypes = true,
         },
+    },
+    {
+        "L3MON4D3/LuaSnip",
+        dependencies = { "rafamadriz/friendly-snippets" },
+        config = function()
+            require("luasnip.loaders.from_vscode").lazy_load()
+        end,
+    },
+    { "saadparwaiz1/cmp_luasnip", event = "InsertEnter" },
+    {
+        "akinsho/flutter-tools.nvim",
+        lazy = false,
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+            "stevearc/dressing.nvim", -- optional for better UI
+        },
+        config = function()
+            require("flutter-tools").setup({
+                lsp = {
+                    color = { enabled = true },
+                    -- Use the path you set up earlier
+                    settings = {
+                        showTodos = true,
+                        completeFunctionCalls = true,
+                        analysisExcludedFolders = { vim.fn.expand("$HOME/.pub-cache") },
+                    },
+                },
+            })
+        end,
     },
 }

@@ -6,17 +6,19 @@ local lspconfig = require("nvchad.configs.lspconfig") -- nvim 0.11
 -- List of all servers configured
 lspconfig.servers = {
     "bashls",
+    "basedpyright",
     "cssls",
     "docker_compose_language_service",
     "dockerls",
     "gopls",
+    "jsonls",
     "html",
     "lua_ls",
     "marksman",
-    "pylsp",
     "sqlls",
     "terraformls",
     "texlab",
+    "tflint",
     "ts_ls",
     "yamlls",
 }
@@ -25,9 +27,7 @@ lspconfig.servers = {
 local default_servers = {
     "cssls",
     "marksman",
-    "pylsp",
     "terraformls",
-    "tflint",
     "texlab",
     "ts_ls",
 }
@@ -72,6 +72,29 @@ vim.lsp.config("bashls", {
         },
     },
 })
+
+vim.lsp.config("basedpyright", {
+    on_attach = on_attach,
+    on_init = on_init,
+    capabilities = capabilities,
+    settings = {
+        basedpyright = {
+            analysis = {
+                autoImportCompletions = true,
+                autoSearchPaths = true,
+                typeCheckingMode = "standard", -- options: off, basic, standard, strict, all
+                useLibraryCodeForTypes = true,
+                diagnosticSeverityOverrides = {
+                    reportUnknownVariableType = "none",
+                    reportUnknownMemberType = "none",
+                    reportUnknownArgumentType = "none",
+                    reportUnknownLambdaType = "none",
+                },
+            },
+        },
+    },
+})
+vim.lsp.enable("basedpyright")
 
 vim.lsp.config("denols", {
     on_attach = on_attach,
@@ -167,6 +190,7 @@ vim.lsp.config("html", {
     on_attach = on_attach,
     on_init = on_init,
     capabilities = capabilities,
+    filetypes = { "html", "handlebars", "hbs" },
     settings = {
         html = {
             -- Auto-closing and quotes
@@ -183,10 +207,10 @@ vim.lsp.config("html", {
                 enable = true,
                 contentUnformatted = "pre,code,textarea",
                 extraLiners = "head, body, /html",
-                indentHandlebars = false,
+                indentHandlebars = true,
                 indentInnerHtml = false,
                 preserveNewLines = true,
-                templating = false,
+                templating = true,
                 unformatted = "wbr",
                 unformattedContentDelimiter = "",
                 wrapAttributes = "auto",
@@ -240,45 +264,6 @@ vim.lsp.config("lua_ls", {
     },
 })
 
--- Python LSP (Pylsp) custom setup
--- vim.lsp.config("pylsp", {
---     on_attach = on_attach,
---     on_init = on_init,
---     capabilities = capabilities,
---     settings = {
---         pylsp = {
---             plugins = {
---                 jedi_completion = {
---                     enabled = true,
---                     fuzzy = true,
---                     eager = true,
---                 },
---                 pylsp_docs = {
---                     enabled = true,
---                     eager = true,
---                 },
---             },
---         },
---     },
--- })
-
--- Python LSP (Pyright) custom setup
--- vim.lsp.config("pyright", {
---     on_attach = on_attach,
---     on_init = on_init,
---     capabilities = capabilities,
---     settings = {
---         python = {
---             analysis = {
---                 autoImportCompletions = true,
---                 autoSearchPaths = true,
---                 typeCheckingMode = "strict",
---                 useLibraryCodeForTypes = true,
---             },
---         },
---     },
--- })
-
 vim.lsp.config("nginx_language_server", {
     on_attach = on_attach,
     on_init = on_init,
@@ -286,14 +271,6 @@ vim.lsp.config("nginx_language_server", {
     cmd = { "/home/eric/.local/bin/nginx-language-server" },
     filetypes = { "nginx" },
     root_markers = { "nginx.conf", ".git" },
-})
-
--- SQLLS LSP
-vim.lsp.config("sqlls", {
-    on_attach = on_attach,
-    on_attach = on_init,
-    capabilities = capabilities,
-    filetypes = { "sql", "mysql" },
 })
 
 -- Terraform LSP (terraformls) custom setup
@@ -342,25 +319,6 @@ vim.lsp.config("yamlls", {
     },
 })
 
--- Python LSP (Ruff) custom setup
--- vim.lsp.config("ruff", {
---     on_attach = on_attach,
---     on_init = on_init,
---     capabilities = capabilities,
---     init_options = {
---         settings = {
---             lineLength = 50,
---             targetVersion = "py310",
---             select = { "E", "W", "F", "I" },
---             ignore = {},
---             fixAll = true,
---             showSyntaxErrors = true,
---         },
---     },
--- })
---
--- vim.lsp.enable("ruff")
-
 -- Config LSP setup
 local util = require("lspconfig.util")
 local configs = require("lspconfig.configs")
@@ -376,9 +334,3 @@ if not configs.config_lsp then
         },
     }
 end
-
-require("lspconfig").config_lsp.setup({
-    on_attach = on_attach,
-    on_init = on_init,
-    capabilities = capabilities,
-})

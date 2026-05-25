@@ -49,7 +49,7 @@ size = 14.0
 
   [font.normal]
   family = "JetBrainsMono Nerd Font"
-  style = "Regular"
+  style = "Medium"
 
   [font.italic]
   family = "JetBrainsMono Nerd Font"

@@ -1,5 +1,5 @@
 # Dual monitor displays
-"$HOME/.screenlayout/dell-duals-screens.sh"
+"$HOME/.scripts/dual-monitor-setup.sh"
 
 # Export session type
 export XDG_SESSION_TYPE=x11
@@ -11,11 +11,20 @@ nm-applet &
 # Restore wallpaper
 sh ~/.fehbg &
 
+# Start brave browser
+(sleep 10 && brave) &
+
 # Thunderbird
-thunderbird &
+# (sleep 30 && thunderbird) &
+
+# Xsettingsd
+xsettingsd &
 
 # Set the default cursor to 'left_ptr'
-xsetroot -cursor_name left_ptr &
+xsetroot -cursor_name left_ptr
+
+# Load Xresources
+xrdb -merge ~/.Xresources
 
 # Launch BSPWM
 exec bspwm

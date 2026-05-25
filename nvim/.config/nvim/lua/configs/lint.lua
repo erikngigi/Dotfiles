@@ -3,6 +3,7 @@ local lint = require("lint")
 lint.linters_by_ft = {
     dockerfile = { "hadolint" },
     html = { "htmlhint" },
+    json = { "jsonlint" },
     -- javascript = { "eslint_d" },
     lua = { "luacheck" },
     make = { "checkmake" },
@@ -24,7 +25,6 @@ lint.linters.luacheck.args = {
 
 lint.linters.hadolint.args = {
     unpack(lint.linters.hadolint.args),
-    "--format=gcc",
     "--failure-threshold=warning",
     "--ignore=DL3008,DL3009", -- ignore specific rules
 }

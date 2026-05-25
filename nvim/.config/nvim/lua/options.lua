@@ -8,6 +8,11 @@ o.shiftwidth = 2
 o.tabstop = 2
 o.softtabstop = 2
 
+-- Backups
+o.backup = false
+o.writebackup = false
+o.swapfile = false
+
 -- Diagnostic configuration
 vim.diagnostic.config({
     virtual_text = {

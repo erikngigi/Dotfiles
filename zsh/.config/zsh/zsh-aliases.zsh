@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 alias clear-zsh='echo -n "" > /home/eric/.zsh_history'
 alias zsh-colors='for i in {1..256}; do print -P "%F{$i}Color : $i"; done;'
 
@@ -95,7 +93,7 @@ alias checkout='git checkout'
 alias clone='git clone'
 alias commit='git commit'
 alias fetch='git fetch'
-alias stat='git status' # 'status' is protected name so using 'stat' instead
+alias gstat='git status' # 'status' is protected name so using 'stat' instead
 alias tag='git tag'
 alias newtag='git tag -a'
 alias merge='git merge'
@@ -190,10 +188,12 @@ alias game-mode-on="xrandr --output DP2 --off"
 alias game-mode-off="xrandr --output DP2 --mode 1920x1080 --left-of DP1"
 
 # Anime
-alias one-piece="mpv --aid=2 --sid=1 /storage/Tv-Shows/Anime/One\ Piece/"
+alias one-piece="mpv --aid=1 --sid=1 /storage/Tv-Shows/Anime/One\ Piece/"
 alias boku-no-hero="mpv --aid=1 --sid=1 /storage/Tv-Shows/Boku\ no\ Hero\ Academia"
+alias lotgh="mpv --aid=1 --sid=1 /storage/Tv-Shows/Anime/Legend\ of\ the\ Galatic\ Heroes/"
 alias gurren-laggan="mpv --aid=1 --sid=2 /storage/Tv-Shows/Anime/Tengen\ Toppa\ Gurren\ Lagann"
+alias trigun="mpv --aid=2 --sid=1 /storage/Tv-Shows/Anime/Trigun"
 
 # Western Tv-Shows
-alias the-pacific="mpv --sid=1 --sub-scale=0.8 --sub-pos=108 /storage/Tv-Shows/Western/The\ Pacific"
 alias 1883="mpv /storage/Tv-Shows/Western/1883"
+alias akotsk="mpv /storage/Tv-Shows/Western/A\ Knight\ Of\ The\ Seven\ Kingdoms"

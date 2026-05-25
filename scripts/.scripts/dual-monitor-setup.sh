@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 # Dual monitor setup
 # DP-2: left monitor
 # DP-1: right monitor (primary)
