@@ -27,6 +27,14 @@ return {
         event = { "BufReadPre", "BufNewFile" },
         config = function()
             require("configs.lint")
+            -- 2. Create the autocommand to actually run the linters
+            local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
+            vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
+                group = lint_augroup,
+                callback = function()
+                    require("lint").try_lint()
+                end,
+            })
         end,
     },
     {
@@ -75,15 +83,84 @@ return {
     },
     {
         "hrsh7th/nvim-cmp",
+        dependencies = {
+            "hrsh7th/cmp-nvim-lsp",
+            "hrsh7th/cmp-buffer",
+            "hrsh7th/cmp-path",
+            "hrsh7th/cmp-nvim-lsp-signature-help",
+            "onsails/lspkind.nvim", -- adds VS Code-like icons + type labels
+        },
         config = function(_, opts)
             local cmp = require("cmp")
+            local lspkind = require("lspkind")
+
+            -- Key mappings
             local mymappings = {
                 ["<Up>"] = cmp.mapping.select_prev_item(),
                 ["<Down>"] = cmp.mapping.select_next_item(),
                 ["<C-Up>"] = cmp.mapping.scroll_docs(-4),
                 ["<C-Down>"] = cmp.mapping.scroll_docs(4),
+                -- Confirm with Enter, fallback to newline
+                ["<CR>"] = cmp.mapping.confirm({ select = false }),
+                -- Manually trigger completion
+                ["<C-Space>"] = cmp.mapping.complete(),
             }
             opts.mapping = vim.tbl_deep_extend("force", opts.mapping, mymappings)
+
+            -- Add sources (order = priority)
+            opts.sources = cmp.config.sources({
+                { name = "nvim_lsp", priority = 1000 },
+                { name = "nvim_lsp_signature_help", priority = 900 }, -- NEW: inline sig help
+                { name = "luasnip", priority = 800 },
+                { name = "buffer", priority = 500, keyword_length = 3 },
+                { name = "path", priority = 300 },
+            })
+
+            -- Rich documentation formatting with lspkind
+            opts.formatting = {
+                format = lspkind.cmp_format({
+                    mode = "symbol_text", -- show icon + type name
+                    maxwidth = 50,
+                    ellipsis_char = "...",
+                    show_labelDetails = true, -- shows detail like return type
+                    before = function(entry, vim_item)
+                        -- Show source name in menu column
+                        vim_item.menu = ({
+                            nvim_lsp = "[LSP]",
+                            nvim_lsp_signature_help = "[Sig]",
+                            luasnip = "[Snip]",
+                            buffer = "[Buf]",
+                            path = "[Path]",
+                        })[entry.source.name]
+                        return vim_item
+                    end,
+                }),
+            }
+
+            -- Better completion window
+            -- opts.window = {
+            --     completion = cmp.config.window.bordered(),
+            --     documentation = cmp.config.window.bordered(), -- bordered docs popup
+            -- }
+
+            -- Show completions even mid-word
+            opts.completion = {
+                completeopt = "menu,menuone,noinsert",
+            }
+
+            -- Prefer exact matches at top
+            opts.sorting = {
+                comparators = {
+                    cmp.config.compare.exact,
+                    cmp.config.compare.score,
+                    cmp.config.compare.recently_used,
+                    cmp.config.compare.locality,
+                    cmp.config.compare.kind,
+                    cmp.config.compare.length,
+                    cmp.config.compare.order,
+                },
+            }
+
             cmp.setup(opts)
         end,
     },
@@ -134,7 +211,8 @@ return {
                 },
                 filters = {
                     dotfiles = false,
-                    custom = { "^.git$" }, -- Optional: still hide .git folder
+                    -- custom = { "^.git$", "^.mypy_cache$", "^__pycache__$" }, -- Optional: still hide .git folder
+                    custom = { "^.mypy_cache$", "^__pycache__$" }, -- Optional: still hide .git folder
                 },
                 view = {
                     width = 30,
@@ -179,46 +257,21 @@ return {
         },
     },
     {
-        "https://git.myzel394.app/Myzel394/config-lsp.nvim",
-        opts = {
-            executable = {
-                path = nil, -- Change "nill" to "nil"
-                args = {
-                    "--no-undetectable-errors",
-                },
-                download_folder = vim.fn.stdpath("data") .. "/config-lsp/bin",
-            },
-            inject_lsp = false, -- Set to false since we're doing manual setup
-            add_filetypes = true,
-        },
-    },
-    {
         "L3MON4D3/LuaSnip",
         dependencies = { "rafamadriz/friendly-snippets" },
         config = function()
             require("luasnip.loaders.from_vscode").lazy_load()
-        end,
-    },
-    { "saadparwaiz1/cmp_luasnip", event = "InsertEnter" },
-    {
-        "akinsho/flutter-tools.nvim",
-        lazy = false,
-        dependencies = {
-            "nvim-lua/plenary.nvim",
-            "stevearc/dressing.nvim", -- optional for better UI
-        },
-        config = function()
-            require("flutter-tools").setup({
-                lsp = {
-                    color = { enabled = true },
-                    -- Use the path you set up earlier
-                    settings = {
-                        showTodos = true,
-                        completeFunctionCalls = true,
-                        analysisExcludedFolders = { vim.fn.expand("$HOME/.pub-cache") },
-                    },
-                },
+            -- Also load any custom snippets you place here:
+            require("luasnip.loaders.from_vscode").lazy_load({
+                paths = { vim.fn.stdpath("config") .. "/snippets" },
+            })
+            -- Enable autotriggered snippets
+            require("luasnip").config.set_config({
+                enable_autosnippets = true,
+                history = true,
+                updateevents = "TextChanged,TextChangedI",
             })
         end,
     },
+    { "saadparwaiz1/cmp_luasnip", event = "InsertEnter" },
 }

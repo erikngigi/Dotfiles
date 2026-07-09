@@ -15,70 +15,88 @@ local function lsp_clients()
     return " : " .. (#names > 0 and table.concat(names, ", ") or "none")
 end
 
--- Formatters from Conform.nvim
--- local function conform_formatters()
---     local ok, conform = pcall(require, "conform")
---     if not ok then
+-- -- Formatters from Conform.nvim + null-ls
+-- local function all_formatters()
+--     local ft = vim.bo.filetype
+--     local formatters = {}
+--
+--     -- -------------------------
+--     -- Conform formatters
+--     -- -------------------------
+--     local ok_conform, conform = pcall(require, "conform")
+--     if ok_conform then
+--         local available = conform.list_formatters()
+--         for _, f in ipairs(available or {}) do
+--             table.insert(formatters, f.name)
+--         end
+--     end
+--
+--     -- -------------------------
+--     -- null-ls formatters
+--     -- -------------------------
+--     local ok_null_ls, null_ls = pcall(require, "null-ls")
+--     if ok_null_ls then
+--         local builtins = null_ls.builtins.formatting
+--         for name, formatter in pairs(builtins) do
+--             if formatter.filetypes and vim.tbl_contains(formatter.filetypes, ft) then
+--                 table.insert(formatters, name)
+--             end
+--         end
+--     end
+--
+--     -- Deduplicate
+--     local unique = {}
+--     local seen = {}
+--     for _, name in ipairs(formatters) do
+--         if not seen[name] then
+--             seen[name] = true
+--             table.insert(unique, name)
+--         end
+--     end
+--
+--     if #unique == 0 then
 --         return " : none"
 --     end
 --
---     local available = conform.list_formatters()
---     if not available or #available == 0 then
---         return " : none"
---     end
---
---     local names = {}
---     for _, f in ipairs(available) do
---         table.insert(names, f.name)
---     end
---
---     return " : " .. table.concat(names, ",")
+--     return " : " .. table.concat(unique, ", ")
 -- end
 
--- Formatters from Conform.nvim + null-ls
+-- Formatters from Conform.nvim — shows binary name not formatter alias
 local function all_formatters()
-    local ft = vim.bo.filetype
-    local formatters = {}
-
-    -- -------------------------
-    -- Conform formatters
-    -- -------------------------
     local ok_conform, conform = pcall(require, "conform")
-    if ok_conform then
-        local available = conform.list_formatters()
-        for _, f in ipairs(available or {}) do
-            table.insert(formatters, f.name)
-        end
+    if not ok_conform then
+        return " : none"
     end
 
-    -- -------------------------
-    -- null-ls formatters
-    -- -------------------------
-    local ok_null_ls, null_ls = pcall(require, "null-ls")
-    if ok_null_ls then
-        local builtins = null_ls.builtins.formatting
-        for name, formatter in pairs(builtins) do
-            if formatter.filetypes and vim.tbl_contains(formatter.filetypes, ft) then
-                table.insert(formatters, name)
+    local available = conform.list_formatters()
+    if not available or #available == 0 then
+        return " : none"
+    end
+
+    -- Deduplicate by the underlying command (e.g. ruff_fix + ruff_format → "ruff")
+    local seen = {}
+    local commands = {}
+
+    for _, f in ipairs(available) do
+        -- get_formatter_info returns the resolved config including `command`
+        local info = conform.get_formatter_info(f.name)
+        local cmd = info and info.command
+
+        if cmd then
+            -- strip full path if present e.g. /usr/bin/ruff → ruff
+            local binary = cmd:match("([^/\\]+)$") or cmd
+            if not seen[binary] then
+                seen[binary] = true
+                table.insert(commands, binary)
             end
         end
     end
 
-    -- Deduplicate
-    local unique = {}
-    local seen = {}
-    for _, name in ipairs(formatters) do
-        if not seen[name] then
-            seen[name] = true
-            table.insert(unique, name)
-        end
+    if #commands == 0 then
+        return "  : none"
     end
 
-    if #unique == 0 then
-        return " : none"
-    end
-
-    return " : " .. table.concat(unique, ", ")
+    return "  : " .. table.concat(commands, ", ")
 end
 
 -- Linters from nvim-lint

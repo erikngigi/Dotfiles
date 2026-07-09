@@ -1,5 +1,3 @@
-local ktfmt_jar = vim.fn.expand("~/.local/share/nvim/mason/packages/ktfmt/ktfmt-0.61-with-dependencies.jar")
-
 local options = {
     formatters_by_ft = {
         css = { "prettierd" },
@@ -8,28 +6,25 @@ local options = {
         hcl = { "terraform_fmt" },
         html = { "prettierd" },
         json = { "prettierd" },
-        -- javascript = { "prettierd" },
         lua = { "stylua" },
         make = { "mbake" },
         markdown = { "prettierd" },
-        python = { "black", "isort" },
+        python = {
+            "ruff_organize_imports",
+            "ruff_fix",
+            "ruff_format",
+        },
         scss = { "prettierd" },
         sh = { "shfmt" },
         terraform = { "terraform_fmt" },
         ["terraform-vars"] = { "terraform_fmt" },
-        tex = { "tex-fmt" },
+        tex = { "tex-fmt", "latexindent" },
+        toml = { "taplo" },
         tf = { "terraform_fmt" },
         yaml = { "yamlfmt" },
         zsh = { "shfmt" },
     },
     formatters = {
-        black = {
-            prepend_args = {
-                "--fast",
-                "--line-length",
-                "150",
-            },
-        },
         dart_format = {
             command = "dart",
             args = { "format", "$FILENAME" },
@@ -40,17 +35,6 @@ local options = {
             prepend_args = {
                 "-i",
                 "4",
-            },
-            stdin = true,
-        },
-        ktfmt = {
-            command = "java",
-            args = {
-                "-Xmx512m",
-                "-jar",
-                ktfmt_jar,
-                "--kotlinlang-style",
-                "-",
             },
             stdin = true,
         },

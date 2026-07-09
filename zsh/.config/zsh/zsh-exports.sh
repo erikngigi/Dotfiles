@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Paths
 # Local bin
 export PATH="$HOME/.local/bin:$PATH"
@@ -6,7 +8,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="/opt/nvim/bin:$PATH"
 
 # NodeJS global packages
-export PATH="$HOME/.npm-global/bin:$PATH"
+# export PATH="$HOME/.npm-global/bin:$PATH"
 
 # Go
 export GOENV="$HOME/.go/env"

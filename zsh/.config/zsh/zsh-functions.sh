@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Manage and check status of a user service
 usctl() {
   local cmd="${1:-restart}"

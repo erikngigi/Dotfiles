@@ -17,24 +17,25 @@ export ZSH_AUTOSUGGEST_USE_ASYNC=1
 # Created by Zap installer
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 
-# Sources
-plug "$HOME/.config/zsh/zsh-exports.zsh"
-plug "$HOME/.config/zsh/zsh-functions.zsh"
-plug "$HOME/.config/zsh/zsh-prompt.zsh"
-plug "$HOME/.config/zsh/zsh-aliases.zsh"
-plug "$HOME/.config/zsh/zsh-vim.zsh"
-plug "$HOME/.config/zsh/secrets.zsh"
-
 # Plugins
+# External community plugins load first
 # NOTE: zsh-syntax-highlighting must remain last
 plug "zap-zsh/supercharge"
 plug "hlissner/zsh-autopair"
 plug "zsh-users/zsh-history-substring-search"
-plug "zap-zsh/exa"
+# plug "zap-zsh/exa"
 plug "zap-zsh/fzf"
 plug "zsh-users/zsh-autosuggestions"
 plug "macunha1/zsh-terraform"
 plug "zsh-users/zsh-syntax-highlighting"
+
+# Custom configurations come after community plugins
+plug "$HOME/.config/zsh/zsh-exports.sh"
+plug "$HOME/.config/zsh/zsh-functions.sh"
+plug "$HOME/.config/zsh/zsh-prompt.sh"
+plug "$HOME/.config/zsh/zsh-vim.sh"
+plug "$HOME/.config/zsh/secrets.sh"
+plug "$HOME/.config/zsh/zsh-aliases.sh"
 
 # Load compinit
 autoload -Uz compinit
@@ -122,10 +123,17 @@ else
   eval "$(register-python-argcomplete pipx)"
 fi
 
+# metatag — cache completion to avoid python subprocess forks on shell launch
+if [[ -f "$HOME/.config/zsh/completions/metatag-completion.zsh" ]]; then
+  source "$HOME/.config/zsh/completions/metatag-completion.zsh"
+else
+  eval "$(register-python-argcomplete metatag)"
+fi
+
 # NVM — lazy load (saves ~55ms; loads on first call to node/npm/nvm)
 export NVM_DIR="$HOME/.nvm"
 nvm() {
-  unfunction nvm node npm npx yarn
+  unfunction nvm node npm npx yarn m2t
   [ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
   [ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"
   nvm "$@"
@@ -145,6 +153,10 @@ npx() {
 yarn() {
   nvm
   yarn "$@"
+}
+m2t() {
+  nvm
+  m2t "$@"
 }
 
 # Conda — source hook file directly instead of running subprocess every launch

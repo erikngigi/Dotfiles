@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 alias clear-zsh='echo -n "" > /home/eric/.zsh_history'
 alias zsh-colors='for i in {1..256}; do print -P "%F{$i}Color : $i"; done;'
 
@@ -15,11 +17,7 @@ alias fgrep='fgrep --color=auto'
 # Tmux
 alias tmux-restart='tmux kill-server && tmux'
 
-# Changing "ls" to "exa"
-alias ls='exa -al --color=always --group-directories-first' # my preferred listing
-alias la='exa -a --color=always --group-directories-first'  # all files and dirs
-alias ll='exa -l --color=always --group-directories-first'  # long format
-alias lt='exa -aT --color=always --group-directories-first' # tree listing
+alias ls='eza -al --color=always --group-directories-first' # all files and dirs
 
 # pacman and yay
 alias Pacman='doas pacman'
@@ -67,7 +65,8 @@ alias mv='advmv -gu'
 alias Mv='doas advmv -gu'
 
 # hugo server
-alias hugo-serve='hugo serve --port 3000 --buildDrafts --noHTTPCache --ignoreCache --disableFastRender'
+# alias hugo-serve='hugo serve --port 3000 --buildDrafts --noHTTPCache --ignoreCache --disableFastRender'
+alias hugo-serve='hugo serve --port 3000 --disableFastRender'
 alias tina-serve='npx tinacms dev -c "hugo serve --port 3001 --buildDrafts --noHTTPCache --ignoreCache --disableFastRender"'
 
 # bat
@@ -179,21 +178,14 @@ alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate ar
 # systemd
 alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 
-# Roadsmart Windows RDP
-alias sr-win-rdpadmin="xfreerdp /v:18.198.114.201 /u:EC2AMAZ-4M1P3P5\\rdpadmin /p:'WZ8qO9y6LJwXAq2qGPPov7aHG' /size:1366x768 /cert:ignore /sec:nla"
-alias sr-win-administrator="xfreerdp /v:18.198.114.201 /u:Administrator /p:'3gYqwhiL5PTKhC6WMEgF6Fvo7' /size:1366x768 /cert:ignore /sec:nla"
-
 # Game mode
 alias game-mode-on="xrandr --output DP2 --off"
 alias game-mode-off="xrandr --output DP2 --mode 1920x1080 --left-of DP1"
 
 # Anime
-alias one-piece="mpv --aid=1 --sid=1 /storage/Tv-Shows/Anime/One\ Piece/"
-alias boku-no-hero="mpv --aid=1 --sid=1 /storage/Tv-Shows/Boku\ no\ Hero\ Academia"
-alias lotgh="mpv --aid=1 --sid=1 /storage/Tv-Shows/Anime/Legend\ of\ the\ Galatic\ Heroes/"
-alias gurren-laggan="mpv --aid=1 --sid=2 /storage/Tv-Shows/Anime/Tengen\ Toppa\ Gurren\ Lagann"
-alias trigun="mpv --aid=2 --sid=1 /storage/Tv-Shows/Anime/Trigun"
+alias legend-of-the-galatic-heroes="mpv --aid=1 --sid=1 /storage/Tv-Shows/Anime/Legend\ of\ the\ Galatic\ Heroes/"
 
 # Western Tv-Shows
+alias the-wire="mpv /storage/Tv-Shows/Western/The\ Wire"
 alias 1883="mpv /storage/Tv-Shows/Western/1883"
-alias akotsk="mpv /storage/Tv-Shows/Western/A\ Knight\ Of\ The\ Seven\ Kingdoms"
+alias maws="mpv /storage/Tv-Shows/Western/My\ Adventures\ With\ Superman"

@@ -15,7 +15,9 @@ lspconfig.servers = {
     "html",
     "lua_ls",
     "marksman",
+    "ruff",
     "sqlls",
+    "taplo",
     "terraformls",
     "texlab",
     "tflint",
@@ -43,17 +45,18 @@ end
 
 vim.lsp.enable(default_servers)
 
+-- Bashls with custom settings
 vim.lsp.config("bashls", {
     on_attach = on_attach, -- your on_attach function
     on_init = on_init, -- your on_init function
     capabilities = capabilities, -- your capabilities
-    filetypes = { "sh", "bash", "make", "zsh" },
+    filetypes = { "sh", "bash", "make" },
     settings = {
         bashIde = {
             backgroundAnalysisMaxFiles = 500,
             enableSourceErrorDiagnostics = false,
             explainshellEndpoint = "",
-            globPattern = "**/*@(.sh|.inc|.bash|.command|.zsh)",
+            globPattern = "**/*@(.sh|.inc|.bash|.command)",
             includeAllWorkspaceSymbols = false,
             logLevel = "info",
             shellcheckArguments = "",
@@ -72,30 +75,49 @@ vim.lsp.config("bashls", {
         },
     },
 })
+vim.lsp.enable("bashls")
 
+-- BasedPyright LSP custom settings
 vim.lsp.config("basedpyright", {
     on_attach = on_attach,
     on_init = on_init,
     capabilities = capabilities,
+    root_markers = { "pyproject.toml", "uv.lock", ".git" },
     settings = {
         basedpyright = {
             analysis = {
                 autoImportCompletions = true,
                 autoSearchPaths = true,
-                typeCheckingMode = "standard", -- options: off, basic, standard, strict, all
+                typeCheckingMode = "off", -- options: off, basic, standard, strict, all
                 useLibraryCodeForTypes = true,
-                diagnosticSeverityOverrides = {
-                    reportUnknownVariableType = "none",
-                    reportUnknownMemberType = "none",
-                    reportUnknownArgumentType = "none",
-                    reportUnknownLambdaType = "none",
-                },
+                pythonPlatform = "Linux",
+                diagnosticMode = "openFilesOnly",
             },
         },
     },
 })
 vim.lsp.enable("basedpyright")
 
+-- Config-lsp custom settings
+vim.lsp.config("config_lsp", {
+    on_attach = on_attach,
+    on_init = on_init,
+    capabilities = capabilities,
+    cmd = { "/usr/local/bin/config-lsp" },
+    filetypes = {
+        "sshconfig",
+        "sshdconfig",
+        "fstab",
+        "aliases",
+        "conf",
+        "gitconfig",
+        "hosts",
+    },
+    root_markers = { ".git" },
+})
+vim.lsp.enable("config_lsp")
+
+-- Denols LSP custom settings
 vim.lsp.config("denols", {
     on_attach = on_attach,
     on_init = on_init,
@@ -131,7 +153,9 @@ vim.lsp.config("denols", {
         },
     },
 })
+vim.lsp.enable("denols")
 
+-- Docker compose LSP custom settings
 vim.lsp.config("docker_compose_language_service", {
     on_attach = on_attach,
     on_init = on_init,
@@ -139,6 +163,7 @@ vim.lsp.config("docker_compose_language_service", {
     filetypes = { "yaml.docker-compose" },
     root_markers = { "docker-compose.yaml", "docker-compose.yml", "compose.yaml", "compose.yml" },
 })
+vim.lsp.enable("docker_compose_language_service")
 
 -- Dockerfile LSP with custom settings
 vim.lsp.config("dockerls", {
@@ -168,7 +193,9 @@ vim.lsp.config("dockerls", {
         },
     },
 })
+vim.lsp.enable("dockerls")
 
+-- GO LSP custom settings
 vim.lsp.config("gopls", {
     on_attach = on_attach,
     on_init = on_init,
@@ -185,7 +212,9 @@ vim.lsp.config("gopls", {
         },
     },
 })
+vim.lsp.enable("gopls")
 
+-- HTML LSP custom settings
 vim.lsp.config("html", {
     on_attach = on_attach,
     on_init = on_init,
@@ -238,6 +267,7 @@ vim.lsp.config("html", {
         },
     },
 })
+vim.lsp.enable("html")
 
 -- Lua LSP custom setup
 vim.lsp.config("lua_ls", {
@@ -263,15 +293,26 @@ vim.lsp.config("lua_ls", {
         },
     },
 })
+vim.lsp.enable("lua_ls")
 
-vim.lsp.config("nginx_language_server", {
-    on_attach = on_attach,
+-- Ruff LSP custom settings
+vim.lsp.config("ruff", {
+    on_attach = function(client, bufnr)
+        client.server_capabilities.hoverProvider = false
+        client.server_capabilities.diagnosticsProvider = false -- nvim-lint handles this
+        on_attach(client, bufnr)
+    end,
     on_init = on_init,
     capabilities = capabilities,
-    cmd = { "/home/eric/.local/bin/nginx-language-server" },
-    filetypes = { "nginx" },
-    root_markers = { "nginx.conf", ".git" },
+    root_markers = { "pyproject.toml", "ruff.toml", ".git" },
+    init_options = {
+        settings = {
+            lint = { enable = true }, -- nvim-lint handles diagnostics
+            organizeImports = true, -- LSP handles fix via code action
+        },
+    },
 })
+vim.lsp.enable("ruff")
 
 -- Terraform LSP (terraformls) custom setup
 vim.lsp.config("terraformls", {
@@ -282,6 +323,17 @@ vim.lsp.config("terraformls", {
     filetypes = { "terraform", "terraform-vars", "tf", "tfvars" },
     root_markers = { ".terraform", ".git" },
 })
+vim.lsp.enable("terraformls")
+
+-- Taplo LSP (TOML)
+vim.lsp.config("taplo", {
+    on_attach = on_attach,
+    on_init = on_init,
+    capabilities = capabilities,
+    filetypes = { "toml" },
+    root_markers = { ".git", "pyproject.toml", "Cargo.toml", ".taplo.toml" },
+})
+vim.lsp.enable("taplo")
 
 -- Yaml LSP (Yamlls) custom setup
 vim.lsp.config("yamlls", {
@@ -318,19 +370,4 @@ vim.lsp.config("yamlls", {
         },
     },
 })
-
--- Config LSP setup
-local util = require("lspconfig.util")
-local configs = require("lspconfig.configs")
-
--- Register config_lsp if it doesn't exist
-if not configs.config_lsp then
-    configs.config_lsp = {
-        default_config = {
-            cmd = { "config-lsp", "--stdio", "--no-undetectable-errors" },
-            filetypes = { "sshconfig", "sshdconfig", "fstab", "aliases", "conf", "gitconfig", "hosts", "wireguard" },
-            root_dir = util.root_pattern(".git", vim.fn.getcwd()),
-            single_file_support = true,
-        },
-    }
-end
+vim.lsp.enable("yamlls")

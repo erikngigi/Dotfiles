@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # autoload vsc and colors
 autoload -Uz vcs_info
 autoload -U colors && colors
@@ -43,9 +45,21 @@ prompt_git() {
 #   fi
 # }
 
+# prompt_python_venv() {
+#   if [[ -n $VIRTUAL_ENV ]]; then
+#     PROMPT_VENV_ENV="%F{2} %f:%F{2}$(basename $VIRTUAL_ENV)%f "
+#   else
+#     PROMPT_VENV_ENV=""
+#   fi
+# }
 prompt_python_venv() {
   if [[ -n $VIRTUAL_ENV ]]; then
-    PROMPT_VENV_ENV="%F{2} %f:%F{2}$(basename $VIRTUAL_ENV)%f "
+    # Get the base name (e.g., ".venv")
+    local venv_name=$(basename "$VIRTUAL_ENV")
+    # Remove a leading dot if it exists
+    venv_name=${venv_name#.}
+
+    PROMPT_VENV_ENV="%F{2} %f:%F{2}${venv_name}%f "
   else
     PROMPT_VENV_ENV=""
   fi

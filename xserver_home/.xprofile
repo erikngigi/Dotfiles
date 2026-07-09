@@ -12,7 +12,7 @@ nm-applet &
 sh ~/.fehbg &
 
 # Start brave browser
-(sleep 10 && brave) &
+# (sleep 10 && brave) &
 
 # Thunderbird
 # (sleep 30 && thunderbird) &
