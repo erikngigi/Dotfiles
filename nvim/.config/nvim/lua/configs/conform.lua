@@ -1,35 +1,30 @@
 local options = {
     formatters_by_ft = {
-        css = { "prettierd" },
-        dart = { "dart_format" },
+        css = { "prettier" },
         dockerfile = { "dockerfmt" },
         hcl = { "terraform_fmt" },
-        html = { "prettierd" },
-        json = { "prettierd" },
+        html = { "prettier" },
+        json = { "prettier" },
         lua = { "stylua" },
         make = { "mbake" },
-        markdown = { "prettierd" },
+        markdown = { "prettier" },
         python = {
             "ruff_organize_imports",
             "ruff_fix",
             "ruff_format",
         },
-        scss = { "prettierd" },
+        scss = { "prettier" },
         sh = { "shfmt" },
         terraform = { "terraform_fmt" },
         ["terraform-vars"] = { "terraform_fmt" },
         tex = { "tex-fmt", "latexindent" },
         toml = { "taplo" },
         tf = { "terraform_fmt" },
+        ["yaml.ansible"] = { "prettier" },
         yaml = { "yamlfmt" },
         zsh = { "shfmt" },
     },
     formatters = {
-        dart_format = {
-            command = "dart",
-            args = { "format", "$FILENAME" },
-            stdin = false,
-        },
         dockerfmt = {
             command = "dockerfmt",
             prepend_args = {

@@ -65,8 +65,8 @@ alias mv='advmv -gu'
 alias Mv='doas advmv -gu'
 
 # hugo server
-# alias hugo-serve='hugo serve --port 3000 --buildDrafts --noHTTPCache --ignoreCache --disableFastRender'
-alias hugo-serve='hugo serve --port 3000 --disableFastRender'
+alias hugo-serve='hugo serve --port 3000 --buildDrafts --noHTTPCache --ignoreCache --disableFastRender'
+# alias hugo-serve='hugo serve --port 3000 --disableFastRender'
 alias tina-serve='npx tinacms dev -c "hugo serve --port 3001 --buildDrafts --noHTTPCache --ignoreCache --disableFastRender"'
 
 # bat
@@ -188,4 +188,5 @@ alias legend-of-the-galatic-heroes="mpv --aid=1 --sid=1 /storage/Tv-Shows/Anime/
 # Western Tv-Shows
 alias the-wire="mpv /storage/Tv-Shows/Western/The\ Wire"
 alias 1883="mpv /storage/Tv-Shows/Western/1883"
-alias maws="mpv /storage/Tv-Shows/Western/My\ Adventures\ With\ Superman"
+alias my-adventures-with-superman="mpv /storage/Tv-Shows/Western/My\ Adventures\ With\ Superman"
+alias xmen-the-animated-series="mpv /storage/Tv-Shows/Western/X-Men\ The\ Animated\ Series"

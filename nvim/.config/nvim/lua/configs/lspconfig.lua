@@ -5,6 +5,7 @@ local lspconfig = require("nvchad.configs.lspconfig") -- nvim 0.11
 
 -- List of all servers configured
 lspconfig.servers = {
+    "ansiblels",
     "bashls",
     "basedpyright",
     "cssls",
@@ -16,11 +17,9 @@ lspconfig.servers = {
     "lua_ls",
     "marksman",
     "ruff",
-    "sqlls",
     "taplo",
     "terraformls",
     "texlab",
-    "tflint",
     "ts_ls",
     "yamlls",
 }
@@ -28,8 +27,7 @@ lspconfig.servers = {
 -- List of servers configured with default config
 local default_servers = {
     "cssls",
-    "marksman",
-    "terraformls",
+    "jsonls",
     "texlab",
     "ts_ls",
 }
@@ -44,6 +42,32 @@ for _, lsp in ipairs(default_servers) do
 end
 
 vim.lsp.enable(default_servers)
+
+-- Ansible LSP custom settings
+vim.lsp.config("ansiblels", {
+    on_attach = on_attach,
+    on_init = on_init,
+    capabilities = capabilities,
+    filetypes = { "yaml.ansible" },
+    root_markers = { "ansible.cfg" },
+    settings = {
+        ansible = {
+            ansible = {
+                useFullyQualifiedCollectionNames = true,
+            },
+            python = {
+                interpreterPath = "/usr/bin/python3",
+            },
+            validation = {
+                enabled = true,
+                lint = {
+                    enabled = true,
+                },
+            },
+        },
+    },
+})
+vim.lsp.enable("ansiblels")
 
 -- Bashls with custom settings
 vim.lsp.config("bashls", {
@@ -295,6 +319,15 @@ vim.lsp.config("lua_ls", {
 })
 vim.lsp.enable("lua_ls")
 
+vim.lsp.config("marksman", {
+    on_attach = on_attach,
+    on_init = on_init,
+    capabilities = capabilities,
+    filetypes = { "markdown", "markdown.mdx" },
+    root_markers = { ".marksman.toml", ".git" },
+})
+vim.lsp.enable("marksman")
+
 -- Ruff LSP custom settings
 vim.lsp.config("ruff", {
     on_attach = function(client, bufnr)
@@ -340,6 +373,8 @@ vim.lsp.config("yamlls", {
     on_attach = on_attach,
     on_init = on_init,
     capabilities = capabilities,
+    -- 1. Allow yamlls to attach to both standard YAML and Ansible files
+    filetypes = { "yaml", "yaml.ansible" },
     settings = {
         yaml = {
             completion = true,
@@ -354,17 +389,58 @@ vim.lsp.config("yamlls", {
             maxItemsComputed = 5000,
             validate = true,
 
+            -- 2. Keep the automatic schema downloader disabled
             schemaStore = {
-                enable = true,
-                url = "https://www.schemastore.org/api/json/catalog.json",
+                enable = false,
+                url = "",
             },
 
+            -- 3. Explicitly pair schemas to files (they will never cross-pollinate)
             schemas = {
+                -- Docker Compose Schema (Only matches Docker files)
                 ["https://raw.githubusercontent.com/compose-spec/compose-go/master/schema/compose-spec.json"] = {
-                    "docker-compose.yml",
-                    "docker-compose.*.yml",
-                    "compose.yml",
-                    "compose.*.yml",
+                    "**/docker-compose.yml",
+                    "**/docker-compose.yaml",
+                    "**/docker-compose.*.yml",
+                    "**/docker-compose.*.yaml",
+                    "**/compose.yml",
+                    "**/compose.yaml",
+                    "**/compose.*.yml",
+                    "**/compose.*.yaml",
+                },
+
+                -- Ansible Playbook Schema (Only matches playbooks)
+                ["https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/playbook"] = {
+                    "playbook.yml",
+                    "playbook.yaml",
+                    "site.yml",
+                    "site.yaml",
+                    "**/playbooks/*.yml",
+                    "**/playbooks/*.yaml",
+                },
+
+                -- Ansible Tasks Schema (Only matches files inside tasks/ or handlers/)
+                ["https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/tasks"] = {
+                    "**/tasks/*.yml",
+                    "**/tasks/*.yaml",
+                    "**/handlers/*.yml",
+                    "**/handlers/*.yaml",
+                },
+
+                -- Ansible Variables Schema (Only matches host/group/role vars)
+                ["https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/vars.json"] = {
+                    "**/vars/*.yml",
+                    "**/vars/*.yaml",
+                    "**/host_vars/*.yml",
+                    "**/host_vars/*.yaml",
+                    "**/group_vars/*.yml",
+                    "**/group_vars/*.yaml",
+                },
+
+                -- Ansible Inventory Schema (Only matches inventory files)
+                ["https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/inventory.json"] = {
+                    "inventory.yml",
+                    "inventory.yaml",
                 },
             },
         },

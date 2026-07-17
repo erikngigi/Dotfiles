@@ -29,9 +29,9 @@ export PATH="$HOME/.scripts:$HOME/.scripts/terraform:$PATH"
 export PATH="$HOME/.local/bin/flutter/bin:$PATH"
 
 # Android SDK
-export ANDROID_HOME="$HOME/.local/bin/android-sdk"
-export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
-export PATH="$ANDROID_HOME/platform-tools:$PATH"
+# export ANDROID_HOME="$HOME/.local/bin/android-sdk"
+# export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
+# export PATH="$ANDROID_HOME/platform-tools:$PATH"
 
 # Java Home
 export JAVA_HOME="/usr/lib/jvm/java-26-openjdk"

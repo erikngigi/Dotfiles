@@ -30,102 +30,56 @@ vim.diagnostic.config({
 -- Filetype detection
 vim.filetype.add({
     extension = {
+        ["yaml.ansible"] = "yaml.ansible",
         tf = "terraform",
         tfvars = "terraform-vars",
-        nginx = "nginx",
-    },
-    filename = {
-        ["nginx.conf"] = "nginx",
     },
 })
 
--- Content-based Nginx detection for files without extensions
-local function detect_nginx_by_content()
-    local filename = vim.fn.expand("%:t")
-    local current_ft = vim.bo.filetype
+-- Reclassify .yml/.yaml files as "yaml.ansible" when:
+-- 1. An ansible root marker is found
+-- 2. The file is in a standard Ansible directory (tasks, roles, handlers, group_vars, etc.)
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+    pattern = { "*.yml", "*.yaml" },
+    callback = function(args)
+        local path = vim.api.nvim_buf_get_name(args.buf)
 
-    -- Only proceed if:
-    -- 1. File has no extension (no dot in filename), OR
-    -- 2. Current filetype is empty or 'conf'
-    local has_extension = filename:match("%.%w+$")
+        -- Check for root markers first[cite: 3]
+        local root = vim.fs.root(args.buf, { "ansible.cfg" })
 
-    if has_extension and current_ft ~= "" and current_ft ~= "conf" then
-        return
-    end
+        -- Check for common Ansible folder paths
+        local is_ansible_path = path:match("/tasks/")
+            or path:match("/handlers/")
+            or path:match("/roles/")
+            or path:match("/group_vars/")
+            or path:match("/host_vars/")
+            or path:match("/playbooks/")
 
-    -- Read first 150 lines
-    local lines = vim.api.nvim_buf_get_lines(0, 0, 150, false)
-    if #lines == 0 then
-        return
-    end
+        if root or is_ansible_path then
+            vim.bo[args.buf].filetype = "yaml.ansible"
+        end
+    end,
+})
 
-    local content = table.concat(lines, "\n")
+local function manage_lsp_log()
+    local log_path = vim.lsp.get_log_path()
+    local max_size = 10 * 1024 * 1024 -- 10MB in bytes
 
-    -- Primary Nginx indicators - these are very specific to Nginx
-    local primary_patterns = {
-        "server%s*{", -- server block
-        "upstream%s+%w+", -- upstream block
-        "location%s+", -- location directive
-        "proxy_pass%s+", -- proxy_pass
-    }
+    -- vim.fn.getfsize returns size in bytes. Returns -1 if file doesn't exist.
+    local file_size = vim.fn.getfsize(log_path)
 
-    -- Secondary Nginx indicators
-    local secondary_patterns = {
-        "listen%s+%d+",
-        "server_name%s+",
-        "proxy_set_header",
-        "ssl_certificate",
-        "client_max_body_size",
-        "access_log%s+",
-        "error_log%s+",
-        "root%s+/",
-        "add_header%s+",
-    }
-
-    -- Count primary matches
-    local primary_count = 0
-    for _, pattern in ipairs(primary_patterns) do
-        if content:match(pattern) then
-            primary_count = primary_count + 1
+    if file_size > max_size then
+        -- Open in write mode ("w") to truncate the file to 0 bytes
+        local f = io.open(log_path, "w")
+        if f then
+            f:write("")
+            f:close()
+            vim.notify("LSP log exceeded 10MB and has been cleared.", vim.log.levels.INFO, { title = "NvChad System" })
         end
     end
-
-    -- Count secondary matches
-    local secondary_count = 0
-    for _, pattern in ipairs(secondary_patterns) do
-        if content:match(pattern) then
-            secondary_count = secondary_count + 1
-        end
-    end
-
-    -- Decision logic:
-    -- If we find 2+ primary patterns (like server + upstream), it's definitely nginx
-    -- OR if we find 1 primary + 2+ secondary, it's nginx
-    if primary_count >= 2 or (primary_count >= 1 and secondary_count >= 2) then
-        vim.bo.filetype = "nginx"
-        return true
-    end
-
-    return false
 end
 
--- Run detection when files are opened
-vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-    pattern = "*",
-    callback = function()
-        -- Use vim.schedule to avoid conflicts with other filetype detection
-        vim.schedule(function()
-            detect_nginx_by_content()
-        end)
-    end,
-})
-
--- Override 'conf' filetype if it's actually nginx
-vim.api.nvim_create_autocmd("FileType", {
-    pattern = "conf",
-    callback = function()
-        vim.schedule(function()
-            detect_nginx_by_content()
-        end)
-    end,
+-- Trigger the check automatically every time Neovim starts up
+vim.api.nvim_create_autocmd("VimEnter", {
+    callback = manage_lsp_log,
 })

@@ -6,7 +6,6 @@ local formatters = {
     null_ls.builtins.formatting.gofumpt,
     null_ls.builtins.formatting.goimports_reviser,
     null_ls.builtins.formatting.golines,
-    null_ls.builtins.formatting.sqruff,
 }
 
 -- Diagnostics
@@ -19,7 +18,9 @@ local diagnostics = {
         end,
     }),
     null_ls.builtins.diagnostics.golangci_lint,
-    null_ls.builtins.diagnostics.sqruff,
+    -- null_ls.builtins.diagnostics.ansiblelint.with({
+    --     filetypes = { "yaml.ansible" },
+    -- }),
 }
 
 local sources = {}
