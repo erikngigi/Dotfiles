@@ -1,0 +1,7 @@
+# Global Prettier Configuration optimized for YAML and Ansible playbooks/tasks
+printWidth: 120
+tabWidth: 2
+useTabs: false
+singleQuote: false
+bracketSpacing: true
+proseWrap: preserve
