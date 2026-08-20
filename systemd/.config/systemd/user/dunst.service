@@ -1,0 +1,17 @@
+[Unit]
+Description=Dunst notification daemon
+# Ensures it doesn't try to start before the graphical session is up
+After=graphical-session.target
+
+[Service]
+Type=dbus
+BusName=org.freedesktop.Notifications
+# Path to the binary
+ExecStart=/usr/bin/dunst
+# Automatically restart if it crashes
+Restart=on-failure
+RestartSec=5
+
+[Install]
+# This makes it start when you log in
+WantedBy=default.target

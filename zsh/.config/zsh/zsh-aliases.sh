@@ -29,7 +29,7 @@ alias unlock='doas rm /var/lib/pacman/db.lck' # remove pacman lock
 alias cleanup='yay -Rns $(yay -Qtdq)'         # remove orphaned packages
 alias checkupdates='checkupdates && yay -Qua'
 alias update-arch='yay -Syu --noconfirm'
-alias clear-cache='yay -Scc --noconfirm'
+alias clear-cache='pacman -Scc && yay -Scc --noconfirm'
 
 # Infracost
 alias infracost-breakdown='infracost breakdown --path . --show-skipped'
@@ -179,14 +179,32 @@ alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate ar
 alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
 
 # Game mode
-alias game-mode-on="xrandr --output DP2 --off"
-alias game-mode-off="xrandr --output DP2 --mode 1920x1080 --left-of DP1"
+alias game-mode-on="xrandr --output DP-2 --off"
+alias game-mode-off="xrandr --output DP-2 --mode 1920x1080 --left-of DP-1"
+gaming() {
+  local target_dir="${1:-.}" # Default to current directory
+
+  if [ ! -d "$target_dir" ]; then
+    echo "Error: Directory '$target_dir' not found"
+    return 1
+  fi
+
+  cd "$target_dir"
+}
+alias fear3='gaming ~/.wine/my-games/drive_c/Program\ Files\ \(x86\)/WB\ Games/F.E.A.R.\ 3'
+alias outland='gaming ~/.wine/my-games/drive_c/Program\ Files\ \(x86\)/Housemarque/Outland'
+alias nfs-mw='gaming ~/.wine/my-games/drive_c/Program\ Files\ \(x86\)/R.G.\ Mechanics/Need\ for\ Speed\ -\ Most\ Wanted/'
 
 # Anime
 alias legend-of-the-galatic-heroes="mpv --aid=1 --sid=1 /storage/Tv-Shows/Anime/Legend\ of\ the\ Galatic\ Heroes/"
+alias dr-stone="mpv /storage/Tv-Shows/Anime/Dr\ Stone"
 
 # Western Tv-Shows
-alias the-wire="mpv /storage/Tv-Shows/Western/The\ Wire"
 alias 1883="mpv /storage/Tv-Shows/Western/1883"
+alias house-of-the-dragon="mpv /storage/Tv-Shows/Western/House\ of\ the\ Dragon"
 alias my-adventures-with-superman="mpv /storage/Tv-Shows/Western/My\ Adventures\ With\ Superman"
+alias star-wars-maul="mpv /storage/Tv-Shows/Western/Star\ Wars\ Maul\ -\ Shadow\ Lord"
+alias the-wire="mpv /storage/Tv-Shows/Western/The\ Wire"
+alias wolverine-and-the-xmen="mpv /storage/Tv-Shows/Western/Wolverine\ and\ the\ X-Men"
 alias xmen-the-animated-series="mpv /storage/Tv-Shows/Western/X-Men\ The\ Animated\ Series"
+alias xmen-97="mpv /storage/Tv-Shows/Western/X-Men\ 97"

@@ -90,3 +90,6 @@ export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
 
 # Disable Python Prompt
 export VIRTUAL_ENV_DISABLE_PROMPT=1
+
+# Wine
+export WINEPREFIX="/home/eric/.wine/my-games"

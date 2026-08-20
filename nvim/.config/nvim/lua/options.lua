@@ -30,35 +30,21 @@ vim.diagnostic.config({
 -- Filetype detection
 vim.filetype.add({
     extension = {
-        ["yaml.ansible"] = "yaml.ansible",
+        j2 = "jinja",
+        jinja2 = "jinja",
+        jinja = "jinja",
+        service = "systemd",
+        timer = "systemd",
+        target = "systemd",
+        mount = "systemd",
+        socket = "systemd",
         tf = "terraform",
         tfvars = "terraform-vars",
     },
-})
-
--- Reclassify .yml/.yaml files as "yaml.ansible" when:
--- 1. An ansible root marker is found
--- 2. The file is in a standard Ansible directory (tasks, roles, handlers, group_vars, etc.)
-vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
-    pattern = { "*.yml", "*.yaml" },
-    callback = function(args)
-        local path = vim.api.nvim_buf_get_name(args.buf)
-
-        -- Check for root markers first[cite: 3]
-        local root = vim.fs.root(args.buf, { "ansible.cfg" })
-
-        -- Check for common Ansible folder paths
-        local is_ansible_path = path:match("/tasks/")
-            or path:match("/handlers/")
-            or path:match("/roles/")
-            or path:match("/group_vars/")
-            or path:match("/host_vars/")
-            or path:match("/playbooks/")
-
-        if root or is_ansible_path then
-            vim.bo[args.buf].filetype = "yaml.ansible"
-        end
-    end,
+    pattern = {
+        [".*/etc/nginx/.*"] = "nginx",
+        [".*/nginx/.*"] = "nginx",
+    },
 })
 
 local function manage_lsp_log()

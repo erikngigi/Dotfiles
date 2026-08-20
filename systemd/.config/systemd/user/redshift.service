@@ -1,0 +1,12 @@
+[Unit]
+Description=Redshift display colour temperature adjustment
+Partof=graphical-session.target
+
+[Service]
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/redshift -m randr
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target

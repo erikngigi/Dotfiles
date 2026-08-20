@@ -5,8 +5,14 @@ usctl() {
   local cmd="${1:-restart}"
   local service="$2"
 
+  # Handle daemon-reload separately as it doesn't accept a service argument
+  if [[ "$cmd" == "daemon-reload" ]]; then
+    systemctl --user daemon-reload
+    return $?
+  fi
+
   if [[ -z "$service" ]]; then
-    echo "Usage: usctl [enable|disable|restart|start|stop|status] <service>"
+    echo "Usage: usctl [enable|daemon-reload|disable|restart|start|stop|status] <service>"
     return 1
   fi
 
@@ -19,7 +25,7 @@ usctl() {
       ;;
     *)
       echo "Unknown command $cmd"
-      echo "Usage: usctl [enable|disable|restart|start|stop|status] <service>"
+      echo "Usage: usctl [enable|daemon-reload|disable|restart|start|stop|status] <service>"
       return 1
       ;;
   esac
@@ -30,8 +36,15 @@ ssctl() {
   local cmd="${1:-restart}"
   local service="$2"
 
+  # Handle daemon-reload separately as it doesn't accept a service argument
+  if [[ "$cmd" == "daemon-reload" ]]; then
+    sudo systemctl --user daemon-reload
+    return $?
+  fi
+
+  # Validate service name for all other commands
   if [[ -z "$service" ]]; then
-    echo "Usage: ssctl [enable|disable|restart|start|stop|status] <service>"
+    echo "Usage: ssctl [enable|daemon-reload|disable|restart|start|stop|status] <service>"
     return 1
   fi
 
@@ -44,7 +57,7 @@ ssctl() {
       ;;
     *)
       echo "Unknown command $cmd"
-      echo "Usage: ssctl [restart|start|stop|status] <service>"
+      echo "Usage: ssctl [enable|daemon-reload|disable|restart|start|stop|status] <service>"
       return 1
       ;;
   esac

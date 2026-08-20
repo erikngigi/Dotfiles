@@ -17,6 +17,7 @@ lspconfig.servers = {
     "lua_ls",
     "marksman",
     "ruff",
+    "systemd_lsp",
     "taplo",
     "terraformls",
     "texlab",
@@ -28,6 +29,7 @@ lspconfig.servers = {
 local default_servers = {
     "cssls",
     "jsonls",
+    "systemd_lsp",
     "texlab",
     "ts_ls",
 }
@@ -49,19 +51,27 @@ vim.lsp.config("ansiblels", {
     on_init = on_init,
     capabilities = capabilities,
     filetypes = { "yaml.ansible" },
-    root_markers = { "ansible.cfg" },
+    root_markers = { "ansible.cfg", ".git" },
     settings = {
         ansible = {
             ansible = {
                 useFullyQualifiedCollectionNames = true,
+                path = "/usr/bin/ansible",
+            },
+            completion = {
+                provideRedirectModules = true,
+                provideModuleOptionAliases = true,
             },
             python = {
                 interpreterPath = "/usr/bin/python3",
             },
+            telemetry = {
+                enabled = false,
+            },
             validation = {
-                enabled = true,
+                enabled = false,
                 lint = {
-                    enabled = true,
+                    enabled = false,
                 },
             },
         },
@@ -108,6 +118,10 @@ vim.lsp.config("basedpyright", {
     capabilities = capabilities,
     root_markers = { "pyproject.toml", "uv.lock", ".git" },
     settings = {
+        python = {
+            venvPath = ".",
+            venv = "venv",
+        },
         basedpyright = {
             analysis = {
                 autoImportCompletions = true,
@@ -133,7 +147,6 @@ vim.lsp.config("config_lsp", {
         "sshdconfig",
         "fstab",
         "aliases",
-        "conf",
         "gitconfig",
         "hosts",
     },
@@ -293,6 +306,23 @@ vim.lsp.config("html", {
 })
 vim.lsp.enable("html")
 
+-- JinjaLSP custom settings
+-- vim.lsp.config("jinja_lsp", {
+--     on_attach = on_attach,
+--     on_init = on_init,
+--     capabilities = capabilities,
+--     filetypes = { "jinja" },
+--     root_markers = { "ansible.cfg", ".git" },
+--     settings = {
+--         backend = { "./vars", "./defaults", "./roles", "./" },
+--         hide_undefined = true,
+--         lang = "python",
+--         template_extension = { "j2", "jinja2", "jinja" },
+--         templates = "./templates",
+--     },
+-- })
+-- vim.lsp.enable("jinja_lsp")
+
 -- Lua LSP custom setup
 vim.lsp.config("lua_ls", {
     on_attach = on_attach,
@@ -327,6 +357,16 @@ vim.lsp.config("marksman", {
     root_markers = { ".marksman.toml", ".git" },
 })
 vim.lsp.enable("marksman")
+
+-- Nginx LSP configuration
+vim.lsp.config("nginx_language_server", {
+    cmd = { "nginx-language-server" },
+    filetypes = { "nginx" },
+    on_attach = on_attach,
+    on_init = on_init,
+    capabilities = capabilities,
+})
+vim.lsp.enable("nginx_language_server")
 
 -- Ruff LSP custom settings
 vim.lsp.config("ruff", {
@@ -374,7 +414,7 @@ vim.lsp.config("yamlls", {
     on_init = on_init,
     capabilities = capabilities,
     -- 1. Allow yamlls to attach to both standard YAML and Ansible files
-    filetypes = { "yaml", "yaml.ansible" },
+    filetypes = { "yaml" },
     settings = {
         yaml = {
             completion = true,
@@ -383,7 +423,7 @@ vim.lsp.config("yamlls", {
                 enable = true,
                 printWidth = 120,
                 proseWrap = "preserve",
-                singleQuote = false,
+                singleQuote = true,
             },
             hover = true,
             maxItemsComputed = 5000,
@@ -409,39 +449,48 @@ vim.lsp.config("yamlls", {
                     "**/compose.*.yaml",
                 },
 
+                ["https://www.schemastore.org/github-workflow.json"] = {
+                    "**/.github/workflows/*.yml",
+                    "**/.github/workflows/*.yaml",
+                    "**/.gitea/workflows/*.yml",
+                    "**/.gitea/workflows/*.yaml",
+                    "**/.forgejo/workflows/*.yml",
+                    "**/.forgejo/workflows/*.yaml",
+                },
+
                 -- Ansible Playbook Schema (Only matches playbooks)
-                ["https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/playbook"] = {
-                    "playbook.yml",
-                    "playbook.yaml",
-                    "site.yml",
-                    "site.yaml",
-                    "**/playbooks/*.yml",
-                    "**/playbooks/*.yaml",
-                },
-
-                -- Ansible Tasks Schema (Only matches files inside tasks/ or handlers/)
-                ["https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/tasks"] = {
-                    "**/tasks/*.yml",
-                    "**/tasks/*.yaml",
-                    "**/handlers/*.yml",
-                    "**/handlers/*.yaml",
-                },
-
-                -- Ansible Variables Schema (Only matches host/group/role vars)
-                ["https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/vars.json"] = {
-                    "**/vars/*.yml",
-                    "**/vars/*.yaml",
-                    "**/host_vars/*.yml",
-                    "**/host_vars/*.yaml",
-                    "**/group_vars/*.yml",
-                    "**/group_vars/*.yaml",
-                },
-
-                -- Ansible Inventory Schema (Only matches inventory files)
-                ["https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/inventory.json"] = {
-                    "inventory.yml",
-                    "inventory.yaml",
-                },
+                -- ["https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/playbook"] = {
+                --     "playbook.yml",
+                --     "playbook.yaml",
+                --     "site.yml",
+                --     "site.yaml",
+                --     "**/playbooks/*.yml",
+                --     "**/playbooks/*.yaml",
+                -- },
+                --
+                -- -- Ansible Tasks Schema (Only matches files inside tasks/ or handlers/)
+                -- ["https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/ansible.json#/$defs/tasks"] = {
+                --     "**/tasks/*.yml",
+                --     "**/tasks/*.yaml",
+                --     "**/handlers/*.yml",
+                --     "**/handlers/*.yaml",
+                -- },
+                --
+                -- -- Ansible Variables Schema (Only matches host/group/role vars)
+                -- ["https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/vars.json"] = {
+                --     "**/vars/*.yml",
+                --     "**/vars/*.yaml",
+                --     "**/host_vars/*.yml",
+                --     "**/host_vars/*.yaml",
+                --     "**/group_vars/*.yml",
+                --     "**/group_vars/*.yaml",
+                -- },
+                --
+                -- -- Ansible Inventory Schema (Only matches inventory files)
+                -- ["https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/inventory.json"] = {
+                --     "inventory.yml",
+                --     "inventory.yaml",
+                -- },
             },
         },
     },

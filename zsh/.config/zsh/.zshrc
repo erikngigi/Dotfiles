@@ -72,7 +72,7 @@ complete -o nospace -C "/usr/bin/terraform terraform"
 # Autocomplete for usctl
 _usctl() {
   local -a cmds
-  cmds=(enable disable restart start stop status)
+  cmds=(enable daemon-reload disable restart start stop status)
 
   if ((CURRENT == 2)); then
     # First arg: complete subcommands
@@ -88,7 +88,7 @@ _usctl() {
 # Autocomplete for ssctl
 _ssctl() {
   local -a cmds
-  cmds=(enable disable restart start stop status)
+  cmds=(enable daemon-reload disable restart start stop status)
 
   if ((CURRENT == 2)); then
     # First arg: complete subcommands
@@ -159,13 +159,10 @@ m2t() {
   m2t "$@"
 }
 
-# Conda — source hook file directly instead of running subprocess every launch
-# The eval "$(...conda hook...)" forks a process; this avoids it
-# if [ -f "/home/eric/.miniconda3/etc/profile.d/conda.sh" ]; then
-#   source "/home/eric/.miniconda3/etc/profile.d/conda.sh"
-# else
-#   export PATH="/home/eric/.miniconda3/bin:$PATH"
-# fi
+# Custom Wine logger function
+winelog() {
+  WINEDEBUG="+all" wine "$@" >"$HOME/.wine_debug.log" 2>&1
+}
 
 # Confirm ssh-agent is running
 if [ -z "$SSH_AUTH_SOCK" ]; then

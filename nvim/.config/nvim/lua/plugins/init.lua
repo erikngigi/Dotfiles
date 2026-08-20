@@ -110,9 +110,9 @@ return {
 
             -- Add sources (order = priority)
             opts.sources = cmp.config.sources({
-                { name = "nvim_lsp", priority = 1000 },
+                { name = "luasnip", priority = 2000, keyword_length = 2 },
+                { name = "nvim_lsp", priority = 1000, keyword_length = 2 },
                 { name = "nvim_lsp_signature_help", priority = 900 }, -- NEW: inline sig help
-                { name = "luasnip", priority = 800 },
                 { name = "buffer", priority = 500, keyword_length = 3 },
                 { name = "path", priority = 300 },
             })
@@ -138,12 +138,6 @@ return {
                 }),
             }
 
-            -- Better completion window
-            -- opts.window = {
-            --     completion = cmp.config.window.bordered(),
-            --     documentation = cmp.config.window.bordered(), -- bordered docs popup
-            -- }
-
             -- Show completions even mid-word
             opts.completion = {
                 completeopt = "menu,menuone,noinsert",
@@ -163,6 +157,23 @@ return {
             }
 
             cmp.setup(opts)
+
+            -- Filetype overrider for Terraform / HCL (No LuaSnips & No LSP Snippets)
+            cmp.setup.filetype({ "terraform", "hcl" }, {
+                sources = cmp.config.sources({
+                    {
+                        name = "nvim_lsp",
+                        priority = 1000,
+                        keyword_length = 2,
+                        entry_filter = function(entry, _)
+                            return require("cmp.types").lsp.CompletionItemKind[entry:get_kind()] ~= "Snippet"
+                        end,
+                    },
+                    { name = "nvim_lsp_signature_help", priority = 900 },
+                    { name = "buffer", priority = 500, keyword_length = 3 },
+                    { name = "path", priority = 300 },
+                }),
+            })
         end,
     },
     {
@@ -273,5 +284,9 @@ return {
                 updateevents = "TextChanged,TextChangedI",
             })
         end,
+    },
+    {
+        "mfussenegger/nvim-ansible",
+        lazy = false,
     },
 }

@@ -18,6 +18,7 @@ local options = {
         "html",
         "ini",
         "javascript",
+        "jinja",
         "json",
         "lua",
         "luadoc",

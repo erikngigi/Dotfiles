@@ -10,6 +10,7 @@ lint.linters_by_ft = {
     python = { "ruff", "mypy" },
     scss = { "stylelint" },
     sh = { "shellcheck" },
+    systemd = { "systemdlint" },
     tex = { "vale" },
     yaml = { "yamllint" },
     zsh = { "shellcheck" },

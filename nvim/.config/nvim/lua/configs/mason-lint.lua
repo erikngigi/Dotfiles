@@ -1,7 +1,9 @@
 local lint = package.loaded["lint"]
 
 -- List of linters to ignore during install
-local ignore_install = {}
+local ignore_install = {
+    "systemdlint",
+}
 
 -- Helper function to find if value is in table.
 local function table_contains(table, value)

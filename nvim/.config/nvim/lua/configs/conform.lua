@@ -8,6 +8,7 @@ local options = {
         lua = { "stylua" },
         make = { "mbake" },
         markdown = { "prettier" },
+        nginx = { "nginxfmt" },
         python = {
             "ruff_organize_imports",
             "ruff_fix",
@@ -38,6 +39,12 @@ local options = {
             args = { "format", "$FILENAME" },
             stdin = false,
         },
+        prettier = {
+            prepend_args = {
+                "--config",
+                vim.fn.expand("~/.config/prettier/.prettierrc.yml"),
+            },
+        },
         shfmt = {
             prepend_args = {
                 "-i",
@@ -54,6 +61,12 @@ local options = {
                 "4",
             },
             stdin = true,
+        },
+        yamlfmt = {
+            prepend_args = {
+                "-conf",
+                vim.fn.expand("~/.config/yamlfmt/.yamlfmt.yml"),
+            },
         },
     },
     format_on_save = {
